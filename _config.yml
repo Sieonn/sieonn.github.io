@@ -17,7 +17,7 @@ minimal_mistakes_skin    : "mint" # "air", "aqua", "contrast", "dark", "dirt", "
 # Site Settings
 # locale                   : "kor-ko"
 title                    : ""
-title_separator          : "-"
+title_separator          : "Sample Page | My Awesome"
 subtitle                 : # site tagline that appears below site title in masthead
 name                     : "Sieon"
 description              : "꾸준하게 코딩하기"
