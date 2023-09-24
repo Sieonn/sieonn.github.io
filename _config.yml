@@ -19,7 +19,7 @@ locale                   : "ko-KR"
 title                    : "언박스"
 title_separator          : "|"
 subtitle                 : "My Box: 꾸준하게 코딩하기"
-name                     : "eion's Box"
+name                     : "Eion's Box"
 description              : "꾸준하게 코딩하기"
 url                      :  "https://sieonn.github.io"
 baseurl                  :  #"https://sieonn.github.io"
@@ -104,11 +104,11 @@ analytics:
 
 # Site Author
 author:
-  name             : "Your Name"
+  name             : "Eon's Box"
   avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
-  bio              : "I am an **amazing** person."
-  location         : "Somewhere"
-  email            :
+  bio              : "끄적끄적 개발 블로그입니다."
+  location         : "South Korea"
+  email            : "sieon.eve@gmail.com"
   links:
     - label: "Email"
       icon: "fas fa-fw fa-envelope-square"
