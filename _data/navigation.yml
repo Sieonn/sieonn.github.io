@@ -10,7 +10,7 @@ main:
   #   url: /collection-archive/
   # - title: "Sitemap"
   #   url: /sitemap/
-  sidebar-category:
+sidebar-category:
   - title: "카테고리"
     children:
       - title: "GitHub Blog"
