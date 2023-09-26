@@ -2,10 +2,6 @@
 title: "GitHub Blog 만들기"
 layout: archive
 permalink: /blog
-
-title: "Python"
-layout: archive
-permalink: /python
 ---
 
 {% assign posts = site.categories.blog %}
