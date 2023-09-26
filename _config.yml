@@ -10,7 +10,7 @@
 # Review documentation to determine if you should use `theme` or `remote_theme`
 # https://mmistakes.github.io/minimal-mistakes/docs/quick-start-guide/#installing-the-theme
 
-# theme                  : "minimal-mistakes-jekyll"
+theme                  : "minimal-mistakes-jekyll"
 # remote_theme           : "mmistakes/minimal-mistakes"
 minimal_mistakes_skin    : "mint" # "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
 
@@ -22,7 +22,7 @@ subtitle                 : "My Box: 꾸준하게 코딩하기"
 name                     : "Eion's Box"
 description              : "꾸준하게 코딩하기"
 url                      :  "https://sieonn.github.io"
-baseurl                  :  #"https://sieonn.github.io"
+# baseurl                  :  "https://sieonn.github.io"
 repository               : # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
 teaser                   : # path of fallback teaser image, e.g. "/assets/images/500x300.png"
 logo                     : "/assets/images/단체01.png"
