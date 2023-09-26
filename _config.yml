@@ -115,14 +115,14 @@ author:
       url: "mailto:sieon.eve@gmail.com"
     - label: "Website"
       icon: "fas fa-fw fa-link"
-      # url: "https://your-website.com"
+      url: "https://sieonn.github.io"
    
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
       url: "https://github.com/Sieonn"
     - label: "Instagram"
       icon: "fab fa-fw fa-instagram"
-      # url: "https://instagram.com/"
+      url: "https://www.instagram.com/_eonist/"
 
 # Site Footer
 footer:
@@ -132,7 +132,8 @@ footer:
       url: "https://github.com/Sieonn"
     - label: "Instagram"
       icon: "fab fa-fw fa-instagram"
-      # url:
+      url: "https://www.instagram.com/_eonist/"
+      
 
 
 # Reading Files
