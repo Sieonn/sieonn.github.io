@@ -16,8 +16,8 @@ sidebar-category:
       - title: "GitHub Blog"
         url: "/blog"
       - title: "Python"
-        children: 
+        children: "기초 300제"
         url:  "/python"
-        - title: "기초 300제"
-          children:
-          url:  "/python/300"
+      - title: "기초 300제"
+        children:
+        url:  "/python/300"
