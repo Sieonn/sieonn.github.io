@@ -16,8 +16,7 @@ sidebar-category:
       - title: "블로그 제작기"
         url: "/blog"
   - title: "Python"
-    children:
     url:  "/python"
+    children:
       - title: "기초 300제"
-        children:
         url:  "/python/300"
