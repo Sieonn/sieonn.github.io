@@ -11,11 +11,13 @@ main:
   # - title: "Sitemap"
   #   url: /sitemap/
 sidebar-category:
-  - title: "카테고리"
+  - title: "Category"
     children:
       - title: "GitHub Blog"
         url: "/blog"
       - title: "Python"
+        children: 
         url:  "/Python"
-      - title: "기초 300제"
-        url:  "/Python/300"
+        children:
+        - title: "기초 300제"
+          url:  "/Python/300"
