@@ -17,7 +17,7 @@ sidebar-category:
         url: "/blog"
       - title: "Python"
         children: 
-        url:  "/Python"
-        children:
+        url:  "/python"
         - title: "기초 300제"
-          url:  "/Python/300"
+          children:
+          url:  "/python/300"
