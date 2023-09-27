@@ -1,8 +1,8 @@
 ---
-title: "GitHub Blog"
+title: "🌴01. 기초"
 layout: category
-permalink: /blog/
+permalink: /python/samback/one/
 ---
 
-{% assign posts = site.categories.blog %}
+{% assign posts = site.categories.one %}
 {% for post in posts %} {% include archive-single.html type=page.entries_layout %} {% endfor %}

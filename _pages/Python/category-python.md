@@ -1,6 +1,6 @@
 ---
-title: "Python 공부하기"
-layout: archive
+title: "Python"
+layout: sieonm
 permalink: /python/
 ---
 
