@@ -20,4 +20,4 @@ sidebar-category:
     url: /python/
     children:
       - title: "기초 300제"
-        url:  /python/300
+        url:  /python/samback/
