@@ -1,6 +1,6 @@
 ---
 title: "🌴01. 기초"
-layout: sieonm
+layout: catefory
 permalink: /python/samback/01기초/
 ---
 
