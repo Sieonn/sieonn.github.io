@@ -1,6 +1,6 @@
 ---
 title: "🌴01. 기초"
-layout: catefory
+layout: category
 permalink: /python/samback/01기초/
 ---
 

@@ -1,6 +1,6 @@
 ---
 title: "🌴기초 300제"
-layout: sieonm
+layout: category
 permalink: /python/samback/
 ---
 
