@@ -24,4 +24,4 @@ sidebar-category:
         url:  /python/samback/ 
         children:
           - title: "01.기초"
-            url: /python/samback/기초01/
+            url: /python/samback/one/
