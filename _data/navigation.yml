@@ -2,22 +2,25 @@
 main:
   - title: "Quick-Start Guide"
     url: https://mmistakes.github.io/minimal-mistakes/docs/quick-start-guide/
-  # - title: "About"
-  #   url: https://mmistakes.github.io/minimal-mistakes/about/
-  # - title: "Sample Posts"
-  #   url: /year-archive/
-  # - title: "Sample Collections"
-  #   url: /collection-archive/
-  # - title: "Sitemap"
-  #   url: /sitemap/
+  - title: "About"
+    url: https://mmistakes.github.io/minimal-mistakes/about/
+  - title: "Sample Posts"
+    url: /year-archive/
+  - title: "Sample Collections"
+    url: /collection-archive/
+  - title: "Sitemap"
+    url: /sitemap/
 sidebar-category:
   - title: 'GitHub Blog'
     url: '/blog/'
     children:
       - title: "블로그 제작기"
-        url: /blog/
+        url: /blog/       
   - title: 'Python'
     url: /python/
     children:
       - title: "기초 300제"
         url:  /python/samback/
+        children:
+          -title: "01.기초"
+            url: /python/samback/01기초/

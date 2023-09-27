@@ -1,6 +1,6 @@
 ---
-title: "GitHub Blog 만들기"
-layout: category
+title: "🌴기초 300제"
+layout: sieonm
 permalink: /python/samback/
 ---
 
