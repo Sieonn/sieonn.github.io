@@ -10,6 +10,7 @@ main:
     url: /collection-archive/
   - title: "Sitemap"
     url: /sitemap/
+
 sidebar-category:
   - title: 'GitHub Blog'
     url: '/blog/'
@@ -20,7 +21,7 @@ sidebar-category:
     url: /python/
     children:
       - title: "기초 300제"
-        url:  /python/samback/
+        url:  /python/samback/ 
         children:
-          -title: "01.기초"
+          - title: "01.기초"
             url: /python/samback/01기초/
