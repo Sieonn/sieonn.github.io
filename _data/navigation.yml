@@ -25,3 +25,5 @@ sidebar-category:
         children:
           - title: "01.기초"
             url: /python/samback/one/
+      - title: "프로그래머스"
+        url: /python/programmers/
