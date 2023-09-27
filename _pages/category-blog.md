@@ -1,6 +1,6 @@
 ---
 title: "GitHub Blog 만들기"
-layout: archive
+layout: category
 permalink: /blog/
 ---
 
