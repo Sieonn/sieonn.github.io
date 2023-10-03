@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://sieonn.github.io/sitemap.xml
