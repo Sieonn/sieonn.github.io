@@ -1,0 +1,812 @@
+<!doctype html>
+<!--
+  Minimal Mistakes Jekyll Theme 4.24.0 by Michael Rose
+  Copyright 2013-2020 Michael Rose - mademistakes.com | @mmistakes
+  Free for personal and commercial use under the MIT license
+  https://github.com/mmistakes/minimal-mistakes/blob/master/LICENSE
+-->
+<html lang="ko" class="no-js">
+  <head>
+    <meta charset="utf-8">
+
+<!-- begin _includes/seo.html --><title>[프로그래머스] 글자 이어 붙이기 | 언박스</title>
+<meta name="description" content="문자 설명    문자열 my_string과 정수 배열 ‘index_list’가 매개변수로 주어집니다. my_string의 index_list의 원소들에 해당하는 인덱스의 글자들을 순서대로 이어 붙인 문자열을 return 하는 solution 함수를 작성해 주세요.    제한사항         1 ≤ my_string의 길이 ≤ 1,000     my_string의 원소는 영소문자로 이루어져 있습니다.     1 ≤ index_list의 길이 ≤ 1,000     0 ≤ index_list의 원소 &lt; my_string의 길이       📌my solution ```python def solution(my_string, index_list):     new = []     for i in index_list:         new.append(my_string[i])     return ‘‘.join(new)">
+
+
+  <meta name="author" content="Eon's Box">
+  
+  <meta property="article:author" content="Eon's Box">
+  
+
+
+<meta property="og:type" content="article">
+<meta property="og:locale" content="ko_KR">
+<meta property="og:site_name" content="언박스">
+<meta property="og:title" content="[프로그래머스] 글자 이어 붙이기">
+<meta property="og:url" content="http://localhost:4000/programmers/%EA%B8%80%EC%9E%90-%EC%9D%B4%EC%96%B4-%EB%B6%99%EC%97%AC-%EB%AC%B8%EC%9E%90%EC%97%B4-%EB%A7%8C%EB%93%A4%EA%B8%B0/">
+
+
+  <meta property="og:description" content="문자 설명    문자열 my_string과 정수 배열 ‘index_list’가 매개변수로 주어집니다. my_string의 index_list의 원소들에 해당하는 인덱스의 글자들을 순서대로 이어 붙인 문자열을 return 하는 solution 함수를 작성해 주세요.    제한사항         1 ≤ my_string의 길이 ≤ 1,000     my_string의 원소는 영소문자로 이루어져 있습니다.     1 ≤ index_list의 길이 ≤ 1,000     0 ≤ index_list의 원소 &lt; my_string의 길이       📌my solution ```python def solution(my_string, index_list):     new = []     for i in index_list:         new.append(my_string[i])     return ‘‘.join(new)">
+
+
+
+
+
+
+
+  <meta property="article:published_time" content="2023-09-30T00:00:00+09:00">
+
+
+
+
+
+  
+
+  
+
+
+<link rel="canonical" href="http://localhost:4000/programmers/%EA%B8%80%EC%9E%90-%EC%9D%B4%EC%96%B4-%EB%B6%99%EC%97%AC-%EB%AC%B8%EC%9E%90%EC%97%B4-%EB%A7%8C%EB%93%A4%EA%B8%B0/">
+
+
+
+
+<script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    
+      "@type": "Person",
+      "name": "Eion's Box",
+      "url": "http://localhost:4000/"
+    
+  }
+</script>
+
+
+
+
+
+
+
+<!-- end _includes/seo.html -->
+
+
+
+  <link href="/feed.xml" type="application/atom+xml" rel="alternate" title="언박스 Feed">
+
+
+<!-- https://t.co/dKP3o1e -->
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<script>
+  document.documentElement.className = document.documentElement.className.replace(/\bno-js\b/g, '') + ' js ';
+</script>
+
+<!-- For all browsers -->
+<link rel="stylesheet" href="/assets/css/main.css">
+<link rel="preload" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5/css/all.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+<noscript><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5/css/all.min.css"></noscript>
+
+
+
+    <!-- start custom head snippets -->
+
+<!-- insert favicons. use https://realfavicongenerator.net/ -->
+
+<!-- end custom head snippets -->
+
+  </head>
+
+  <body class="layout--single">
+    <nav class="skip-links">
+  <ul>
+    <li><a href="#site-nav" class="screen-reader-shortcut">Skip to primary navigation</a></li>
+    <li><a href="#main" class="screen-reader-shortcut">Skip to content</a></li>
+    <li><a href="#footer" class="screen-reader-shortcut">Skip to footer</a></li>
+  </ul>
+</nav>
+
+    
+
+<div class="masthead">
+  <div class="masthead__inner-wrap">
+    <div class="masthead__menu">
+      <nav id="site-nav" class="greedy-nav">
+        
+          <a class="site-logo" href="/"><img src="/assets/images/%EB%8B%A8%EC%B2%B401.png" alt="언박스"></a>
+        
+        <a class="site-title" href="/">
+          언박스
+          <span class="site-subtitle">개발 공부 기록</span>
+        </a>
+       
+        <ul class="visible-links"><li class="masthead__menu-item">
+              <a href="https://mmistakes.github.io/minimal-mistakes/docs/installation/#install-the-theme/">category</a>
+            </li><li class="masthead__menu-item">
+              <a href="https://mmistakes.github.io/minimal-mistakes/about/">About</a>
+            </li><li class="masthead__menu-item">
+              <a href="/year-archive/">Sample Posts</a>
+            </li><li class="masthead__menu-item">
+              <a href="/collection-archive/">Sample Collections</a>
+            </li><li class="masthead__menu-item">
+              <a href="/sitemap/">Sitemap</a>
+            </li></ul>
+        
+        <button class="search__toggle" type="button">
+          <span class="visually-hidden">Toggle search</span>
+          <i class="fas fa-search"></i>
+        </button>
+        
+        <button class="greedy-nav__toggle hidden" type="button">
+          <span class="visually-hidden">토글 메뉴</span>
+          <div class="navicon"></div>
+        </button>
+        <ul class="hidden-links hidden"></ul>
+      </nav>
+    </div>
+  </div>
+</div>
+
+
+    <div class="initial-content">
+      
+
+
+
+
+  
+    
+
+
+
+<nav class="breadcrumbs">
+  <ol itemscope itemtype="https://schema.org/BreadcrumbList">
+    
+    
+    
+      
+        <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+          <a href="/" itemprop="item"><span itemprop="name">Home</span></a>
+
+          <meta itemprop="position" content="1" />
+        </li>
+        <span class="sep">/</span>
+      
+      
+        
+        <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+          <a href="/categories/#programmers" itemprop="item"><span itemprop="name">Programmers</span></a>
+          <meta itemprop="position" content="2" />
+        </li>
+        <span class="sep">/</span>
+      
+    
+      
+      
+        <li class="current">[프로그래머스] 글자 이어 붙이기</li>
+      
+    
+  </ol>
+</nav>
+
+  
+
+
+<div id="main" role="main">
+  
+  <div class="sidebar sticky">
+  
+
+
+<div itemscope itemtype="https://schema.org/Person" class="h-card">
+
+  
+
+  <div class="author__content">
+    <h3 class="author__name p-name" itemprop="name">
+      <a class="u-url" rel="me" href="http://localhost:4000/" itemprop="url">Eon's Box</a>
+    </h3>
+    
+      <div class="author__bio p-note" itemprop="description">
+        <p>끄적끄적 개발 블로그입니다.</p>
+
+      </div>
+    
+  </div>
+
+  <div class="author__urls-wrapper">
+    <button class="btn btn--inverse">팔로우</button>
+    <ul class="author__urls social-icons">
+      
+        <li itemprop="homeLocation" itemscope itemtype="https://schema.org/Place">
+          <i class="fas fa-fw fa-map-marker-alt" aria-hidden="true"></i> <span itemprop="name" class="p-locality">South Korea</span>
+        </li>
+      
+
+      
+        
+          
+            <li><a href="mailto:sieon.eve@gmail.com" rel="nofollow noopener noreferrer me"><i class="fas fa-fw fa-envelope-square" aria-hidden="true"></i><span class="label">Email</span></a></li>
+          
+        
+          
+            <li><a href="https://sieonn.github.io" rel="nofollow noopener noreferrer me" itemprop="sameAs"><i class="fas fa-fw fa-link" aria-hidden="true"></i><span class="label">Website</span></a></li>
+          
+        
+          
+            <li><a href="https://github.com/Sieonn" rel="nofollow noopener noreferrer me" itemprop="sameAs"><i class="fab fa-fw fa-github" aria-hidden="true"></i><span class="label">GitHub</span></a></li>
+          
+        
+          
+            <li><a href="https://www.instagram.com/_eonist/" rel="nofollow noopener noreferrer me" itemprop="sameAs"><i class="fab fa-fw fa-instagram" aria-hidden="true"></i><span class="label">Instagram</span></a></li>
+          
+        
+      
+
+      
+
+      
+        <li>
+          <a href="mailto:sieon.eve@gmail.com" rel="me" class="u-email">
+            <meta itemprop="email" content="sieon.eve@gmail.com" />
+            <i class="fas fa-fw fa-envelope-square" aria-hidden="true"></i><span class="label">이메일</span>
+          </a>
+        </li>
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      <!--
+  <li>
+    <a href="http://link-to-whatever-social-network.com/user/" itemprop="sameAs" rel="nofollow noopener noreferrer me">
+      <i class="fas fa-fw" aria-hidden="true"></i> Custom Social Profile Link
+    </a>
+  </li>
+-->
+    </ul>
+  </div>
+</div>
+
+  
+    
+      
+      
+      
+      
+    
+    
+      
+
+<nav class="nav__list">
+  
+  <input id="ac-toc" name="accordion-toc" type="checkbox" />
+  <label for="ac-toc">토글 메뉴</label>
+  <ul class="nav__items">
+    
+      <li>
+        
+          <a href="/blog/"><span class="nav__sub-title">GitHub Blog</span></a>
+        
+
+        
+        <ul>
+          
+            <li><a href="/blog/">블로그 제작기</a></li>
+          
+        </ul>
+        
+      </li>
+    
+      <li>
+        
+          <a href="/python/"><span class="nav__sub-title">Python</span></a>
+        
+
+        
+        <ul>
+          
+            <li><a href="/python/samback/">기초 300제</a></li>
+          
+            <li><a href="/python/programmers/">프로그래머스</a></li>
+          
+        </ul>
+        
+      </li>
+    
+  </ul>
+</nav>
+
+    
+  
+  </div>
+
+
+
+  <article class="page h-entry" itemscope itemtype="https://schema.org/CreativeWork">
+    <meta itemprop="headline" content="[프로그래머스] 글자 이어 붙이기">
+    <meta itemprop="description" content="문자 설명  문자열 my_string과 정수 배열 ‘index_list’가 매개변수로 주어집니다. my_string의 index_list의 원소들에 해당하는 인덱스의 글자들을 순서대로 이어 붙인 문자열을 return 하는 solution 함수를 작성해 주세요.제한사항      1 ≤ my_string의 길이 ≤ 1,000    my_string의 원소는 영소문자로 이루어져 있습니다.    1 ≤ index_list의 길이 ≤ 1,000    0 ≤ index_list의 원소 &lt; my_string의 길이  📌my solution```pythondef solution(my_string, index_list):    new = []    for i in index_list:        new.append(my_string[i])    return ‘‘.join(new)">
+    <meta itemprop="datePublished" content="2023-09-30T00:00:00+09:00">
+    
+
+    <div class="page__inner-wrap">
+      
+        <header>
+          <h1 id="page-title" class="page__title p-name" itemprop="headline">
+            <a href="http://localhost:4000/programmers/%EA%B8%80%EC%9E%90-%EC%9D%B4%EC%96%B4-%EB%B6%99%EC%97%AC-%EB%AC%B8%EC%9E%90%EC%97%B4-%EB%A7%8C%EB%93%A4%EA%B8%B0/" class="u-url" itemprop="url">[프로그래머스] 글자 이어 붙이기
+</a>
+          </h1>
+          
+
+  <p class="page__meta">
+    
+      
+      <span class="page__meta-date">
+        <i class="far fa-calendar-alt" aria-hidden="true"></i>
+        
+        <time datetime="2023-09-30T00:00:00+09:00">2023-09-30</time>
+      </span>
+    
+
+    <span class="page__meta-sep"></span>
+
+    
+      
+      
+
+      <span class="page__meta-readtime">
+        <i class="far fa-clock" aria-hidden="true"></i>
+        
+          최대 1 분 소요
+        
+      </span>
+    
+  </p>
+
+
+        </header>
+      
+
+      <section class="page__content e-content" itemprop="text">
+        
+        <h4 id="문자-설명">문자 설명</h4>
+<div class="notice">
+  <p>문자열 <code class="language-plaintext highlighter-rouge">my_string</code>과 정수 배열 ‘index_list’가 매개변수로 주어집니다. <code class="language-plaintext highlighter-rouge">my_string</code>의 <code class="language-plaintext highlighter-rouge">index_list</code>의 원소들에 해당하는 인덱스의 글자들을 순서대로 이어 붙인 문자열을 return 하는 solution 함수를 작성해 주세요.</p>
+</div>
+<hr />
+<h4 id="제한사항">제한사항</h4>
+<div class="notice">
+  <ul>
+    <li>1 ≤ <code class="language-plaintext highlighter-rouge">my_string</code>의 길이 ≤ 1,000</li>
+    <li><code class="language-plaintext highlighter-rouge">my_string</code>의 원소는 영소문자로 이루어져 있습니다.</li>
+    <li>1 ≤ <code class="language-plaintext highlighter-rouge">index_list</code>의 길이 ≤ 1,000</li>
+    <li>0 ≤ <code class="language-plaintext highlighter-rouge">index_list</code>의 원소 &lt; <code class="language-plaintext highlighter-rouge">my_string</code>의 길이</li>
+  </ul>
+</div>
+<hr />
+<h4 id="my-solution">📌my solution</h4>
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">def</span> <span class="nf">solution</span><span class="p">(</span><span class="n">my_string</span><span class="p">,</span> <span class="n">index_list</span><span class="p">):</span>
+    <span class="n">new</span> <span class="o">=</span> <span class="p">[]</span>
+    <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="n">index_list</span><span class="p">:</span>
+        <span class="n">new</span><span class="p">.</span><span class="nf">append</span><span class="p">(</span><span class="n">my_string</span><span class="p">[</span><span class="n">i</span><span class="p">])</span>
+    <span class="k">return</span> <span class="sh">''</span><span class="p">.</span><span class="nf">join</span><span class="p">(</span><span class="n">new</span><span class="p">)</span>
+
+</code></pre></div></div>
+<hr />
+<h4 id="other-solution">💕other solution</h4>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>def solution(my_string, index_list):
+    return ''.join(my_string[idx] for idx in index_list)
+</code></pre></div></div>
+
+        
+      </section>
+
+      <footer class="page__meta">
+        
+        
+  
+
+
+  
+
+  <p class="page__taxonomy">
+    <strong><i class="fas fa-fw fa-tags" aria-hidden="true"></i> 태그: </strong>
+    <span itemprop="keywords">
+    
+      <a href="/tags/#python" class="page__taxonomy-item p-category" rel="tag">python</a><span class="sep">, </span>
+    
+      <a href="/tags/#%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4" class="page__taxonomy-item p-category" rel="tag">프로그래머스</a>
+    
+    </span>
+  </p>
+
+
+
+
+  
+
+
+  
+
+  <p class="page__taxonomy">
+    <strong><i class="fas fa-fw fa-folder-open" aria-hidden="true"></i> 카테고리: </strong>
+    <span itemprop="keywords">
+    
+      <a href="/categories/#programmers" class="page__taxonomy-item p-category" rel="tag">programmers</a>
+    
+    </span>
+  </p>
+
+
+        
+
+  <p class="page__date"><strong><i class="fas fa-fw fa-calendar-alt" aria-hidden="true"></i> 업데이트:</strong> <time class="dt-published" datetime="2023-09-30T00:00:00+09:00">2023-09-30</time></p>
+
+      </footer>
+
+      <section class="page__share">
+  
+    <h4 class="page__share-title">공유하기</h4>
+  
+
+  <a href="https://twitter.com/intent/tweet?text=%5B%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4%5D+%EA%B8%80%EC%9E%90+%EC%9D%B4%EC%96%B4+%EB%B6%99%EC%9D%B4%EA%B8%B0%20http%3A%2F%2Flocalhost%3A4000%2Fprogrammers%2F%25EA%25B8%2580%25EC%259E%2590-%25EC%259D%25B4%25EC%2596%25B4-%25EB%25B6%2599%25EC%2597%25AC-%25EB%25AC%25B8%25EC%259E%2590%25EC%2597%25B4-%25EB%25A7%258C%25EB%2593%25A4%25EA%25B8%25B0%2F" class="btn btn--twitter" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="공유하기 Twitter"><i class="fab fa-fw fa-twitter" aria-hidden="true"></i><span> Twitter</span></a>
+
+  <a href="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Flocalhost%3A4000%2Fprogrammers%2F%25EA%25B8%2580%25EC%259E%2590-%25EC%259D%25B4%25EC%2596%25B4-%25EB%25B6%2599%25EC%2597%25AC-%25EB%25AC%25B8%25EC%259E%2590%25EC%2597%25B4-%25EB%25A7%258C%25EB%2593%25A4%25EA%25B8%25B0%2F" class="btn btn--facebook" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="공유하기 Facebook"><i class="fab fa-fw fa-facebook" aria-hidden="true"></i><span> Facebook</span></a>
+
+  <a href="https://www.linkedin.com/shareArticle?mini=true&url=http%3A%2F%2Flocalhost%3A4000%2Fprogrammers%2F%25EA%25B8%2580%25EC%259E%2590-%25EC%259D%25B4%25EC%2596%25B4-%25EB%25B6%2599%25EC%2597%25AC-%25EB%25AC%25B8%25EC%259E%2590%25EC%2597%25B4-%25EB%25A7%258C%25EB%2593%25A4%25EA%25B8%25B0%2F" class="btn btn--linkedin" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="공유하기 LinkedIn"><i class="fab fa-fw fa-linkedin" aria-hidden="true"></i><span> LinkedIn</span></a>
+</section>
+
+
+      
+  <nav class="pagination">
+    
+      <a href="/programmers/%EA%B0%84%EB%8B%A8%ED%95%9C-%EB%85%BC%EB%A6%AC-%EC%97%B0%EC%82%B0/" class="pagination--pager" title="[프로그래머스]간단한 논리 연산
+">이전</a>
+    
+    
+      <a href="/programmers/%EC%A3%BC%EC%82%AC%EC%9C%84-%EA%B2%8C%EC%9E%84-3/" class="pagination--pager" title="[프로그래머스]주사위 게임 3
+">다음</a>
+    
+  </nav>
+
+    </div>
+
+    
+  </article>
+
+  
+  
+    <div class="page__related">
+      <h2 class="page__related-title">참고</h2>
+      <div class="grid__wrapper">
+        
+          
+
+
+
+<div class="grid__item">
+  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+    
+    <h2 class="archive__item-title no_toc" itemprop="headline">
+      
+        <a href="/programmers/%EC%A3%BC%EC%82%AC%EC%9C%84-%EA%B2%8C%EC%9E%84-3/" rel="permalink">[프로그래머스]주사위 게임 3
+</a>
+      
+    </h2>
+    
+
+  <p class="page__meta">
+    
+      
+      <span class="page__meta-date">
+        <i class="far fa-fw fa-calendar-alt" aria-hidden="true"></i>
+        
+        <time datetime="2023-09-30T00:00:00+09:00">2023-09-30</time>
+      </span>
+    
+
+    <span class="page__meta-sep"></span>
+
+    
+      
+      
+
+      <span class="page__meta-readtime">
+        <i class="far fa-fw fa-clock" aria-hidden="true"></i>
+        
+          1 분 소요
+        
+      </span>
+    
+  </p>
+
+
+    <p class="archive__item-excerpt" itemprop="description">문제설명
+
+  1부터 6까지 숫자가 적힌 주사위가 네 개 있습니다. 네 주사위를 굴렸을 때 나온 숫자에 따라 다음과 같은 점수를 얻습니다.
+  
+    네 주사위에서 나온 숫자가 모두 p로 같다면 1111 x p점을 얻습니다.
+    세 주사위에서 나온 숫자가 p로 같고 나머지 다...</p>
+  </article>
+</div>
+
+        
+          
+
+
+
+<div class="grid__item">
+  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+    
+    <h2 class="archive__item-title no_toc" itemprop="headline">
+      
+        <a href="/programmers/%EA%B0%84%EB%8B%A8%ED%95%9C-%EB%85%BC%EB%A6%AC-%EC%97%B0%EC%82%B0/" rel="permalink">[프로그래머스]간단한 논리 연산
+</a>
+      
+    </h2>
+    
+
+  <p class="page__meta">
+    
+      
+      <span class="page__meta-date">
+        <i class="far fa-fw fa-calendar-alt" aria-hidden="true"></i>
+        
+        <time datetime="2023-09-30T00:00:00+09:00">2023-09-30</time>
+      </span>
+    
+
+    <span class="page__meta-sep"></span>
+
+    
+      
+      
+
+      <span class="page__meta-readtime">
+        <i class="far fa-fw fa-clock" aria-hidden="true"></i>
+        
+          최대 1 분 소요
+        
+      </span>
+    
+  </p>
+
+
+    <p class="archive__item-excerpt" itemprop="description">문서설명
+
+  boolean 변수 x1,x2,x3,x4가 매개변수로 주어질 때, 다음의 식의 true/false를 return하는 solution 함수를 작성해 주세요.
+  
+    (x1∨ x2) ∧ (x3 ∨ x4 )
+  
+
+</p>
+  </article>
+</div>
+
+        
+          
+
+
+
+<div class="grid__item">
+  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+    
+    <h2 class="archive__item-title no_toc" itemprop="headline">
+      
+        <a href="/programmers/%EC%BD%9C%EB%9D%BC%EC%B8%A0-%EC%88%98%EC%97%B4-%EB%A7%8C%EB%93%A4%EA%B8%B0/" rel="permalink">[프로그래머스]] 콜라츠 수열 만들기
+</a>
+      
+    </h2>
+    
+
+  <p class="page__meta">
+    
+      
+      <span class="page__meta-date">
+        <i class="far fa-fw fa-calendar-alt" aria-hidden="true"></i>
+        
+        <time datetime="2023-09-27T00:00:00+09:00">2023-09-27</time>
+      </span>
+    
+
+    <span class="page__meta-sep"></span>
+
+    
+      
+      
+
+      <span class="page__meta-readtime">
+        <i class="far fa-fw fa-clock" aria-hidden="true"></i>
+        
+          최대 1 분 소요
+        
+      </span>
+    
+  </p>
+
+
+    <p class="archive__item-excerpt" itemprop="description">콜라츠 수열 만들기
+</p>
+  </article>
+</div>
+
+        
+          
+
+
+
+<div class="grid__item">
+  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+    
+    <h2 class="archive__item-title no_toc" itemprop="headline">
+      
+        <a href="/blog/GitHub-Blog-GitHub%EB%B8%94%EB%A1%9C%EA%B7%B8-%EC%A0%95%EC%B0%A9%EA%B8%B0-%EC%8B%9C%EC%9E%91/" rel="permalink">블로그 만들기
+</a>
+      
+    </h2>
+    
+
+  <p class="page__meta">
+    
+      
+      <span class="page__meta-date">
+        <i class="far fa-fw fa-calendar-alt" aria-hidden="true"></i>
+        
+        <time datetime="2023-09-27T00:00:00+09:00">2023-09-27</time>
+      </span>
+    
+
+    <span class="page__meta-sep"></span>
+
+    
+      
+      
+
+      <span class="page__meta-readtime">
+        <i class="far fa-fw fa-clock" aria-hidden="true"></i>
+        
+          최대 1 분 소요
+        
+      </span>
+    
+  </p>
+
+
+    <p class="archive__item-excerpt" itemprop="description">블로그를 찾아서..
+</p>
+  </article>
+</div>
+
+        
+      </div>
+    </div>
+  
+  
+</div>
+
+    </div>
+
+    
+      <div class="search-content">
+        <div class="search-content__inner-wrap"><form class="search-content__form" onkeydown="return event.key != 'Enter';" role="search">
+    <label class="sr-only" for="search">
+      Enter your search term...
+    </label>
+    <input type="search" id="search" class="search-input" tabindex="-1" placeholder="검색어를 입력하세요..." />
+  </form>
+  <div id="results" class="results"></div></div>
+
+      </div>
+    
+
+    <div id="footer" class="page__footer">
+      <footer>
+        <!-- start custom footer snippets -->
+
+<!-- end custom footer snippets -->
+        <div class="page__footer-follow">
+  <ul class="social-icons">
+    
+      <li><strong>팔로우:</strong></li>
+    
+
+    
+      
+        
+          <li><a href="https://github.com/Sieonn" rel="nofollow noopener noreferrer"><i class="fab fa-fw fa-github" aria-hidden="true"></i> GitHub</a></li>
+        
+      
+        
+          <li><a href="https://www.instagram.com/_eonist/" rel="nofollow noopener noreferrer"><i class="fab fa-fw fa-instagram" aria-hidden="true"></i> Instagram</a></li>
+        
+      
+    
+
+    
+      <li><a href="/feed.xml"><i class="fas fa-fw fa-rss-square" aria-hidden="true"></i> 피드</a></li>
+    
+  </ul>
+</div>
+
+<div class="page__footer-copyright">&copy; 2023 Eion's Box. Powered by <a href="https://jekyllrb.com" rel="nofollow">Jekyll</a> &amp; <a href="https://mademistakes.com/work/minimal-mistakes-jekyll-theme/" rel="nofollow">Minimal Mistakes</a>.</div>
+
+      </footer>
+    </div>
+
+    
+  <script src="/assets/js/main.min.js"></script>
+
+
+
+
+<script src="/assets/js/lunr/lunr.min.js"></script>
+<script src="/assets/js/lunr/lunr-store.js"></script>
+<script src="/assets/js/lunr/lunr-en.js"></script>
+
+
+
+
+    
+  <script>
+    var disqus_config = function () {
+      this.page.url = "http://localhost:4000/programmers/%EA%B8%80%EC%9E%90-%EC%9D%B4%EC%96%B4-%EB%B6%99%EC%97%AC-%EB%AC%B8%EC%9E%90%EC%97%B4-%EB%A7%8C%EB%93%A4%EA%B8%B0/";  /* Replace PAGE_URL with your page's canonical URL variable */
+      this.page.identifier = "/programmers/글자 이어 붙여 문자열 만들기"; /* Replace PAGE_IDENTIFIER with your page's unique identifier variable */
+    };
+    (function() { /* DON'T EDIT BELOW THIS LINE */
+      var d = document, s = d.createElement('script');
+      s.src = 'https://eons-box.disqus.com/embed.js';
+      s.setAttribute('data-timestamp', +new Date());
+      (d.head || d.body).appendChild(s);
+    })();
+  </script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+
+
+  
+
+
+
+
+
+  </body>
+</html>

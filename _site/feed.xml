@@ -1,0 +1,386 @@
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.3.2">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2023-10-03T15:35:01+09:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">언박스</title><subtitle>꾸준하게 코딩하기</subtitle><author><name>Eon&apos;s Box</name><email>sieon.eve@gmail.com</email></author><entry><title type="html">[프로그래머스]간단한 논리 연산</title><link href="http://localhost:4000/programmers/%EA%B0%84%EB%8B%A8%ED%95%9C-%EB%85%BC%EB%A6%AC-%EC%97%B0%EC%82%B0/" rel="alternate" type="text/html" title="[프로그래머스]간단한 논리 연산" /><published>2023-09-30T00:00:00+09:00</published><updated>2023-09-30T00:00:00+09:00</updated><id>http://localhost:4000/programmers/%EA%B0%84%EB%8B%A8%ED%95%9C%20%EB%85%BC%EB%A6%AC%20%EC%97%B0%EC%82%B0</id><content type="html" xml:base="http://localhost:4000/programmers/%EA%B0%84%EB%8B%A8%ED%95%9C-%EB%85%BC%EB%A6%AC-%EC%97%B0%EC%82%B0/"><![CDATA[<h4 id="문서설명">문서설명</h4>
+<div class="notice">
+  <p>boolean 변수 <code class="language-plaintext highlighter-rouge">x1</code>,<code class="language-plaintext highlighter-rouge">x2</code>,<code class="language-plaintext highlighter-rouge">x3</code>,<code class="language-plaintext highlighter-rouge">x4</code>가 매개변수로 주어질 때, 다음의 식의 true/false를 return하는 solution 함수를 작성해 주세요.</p>
+  <ul>
+    <li>(<code class="language-plaintext highlighter-rouge">x1</code>∨ <code class="language-plaintext highlighter-rouge">x2</code>) ∧ (<code class="language-plaintext highlighter-rouge">x3</code> ∨ <code class="language-plaintext highlighter-rouge">x4 </code>)</li>
+  </ul>
+</div>
+
+<p>And, or 논리 연산이라고 생각하면 된다.
+<code class="language-plaintext highlighter-rouge">∨</code>는 or 연산으로 둘 중에 하나만 참이여도 <code class="language-plaintext highlighter-rouge">True</code>이다.
+<code class="language-plaintext highlighter-rouge">∧</code>는 and 연산으로 둘 다 참인 경우만 <code class="language-plaintext highlighter-rouge">True</code>를 반환한다.</p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">def</span> <span class="nf">solution</span><span class="p">(</span><span class="n">x1</span><span class="p">,</span> <span class="n">x2</span><span class="p">,</span> <span class="n">x3</span><span class="p">,</span> <span class="n">x4</span><span class="p">):</span>
+    <span class="n">answer</span> <span class="o">=</span> <span class="bp">False</span>
+    <span class="nf">if </span><span class="p">(</span><span class="n">x1</span><span class="o">+</span><span class="n">x2</span><span class="p">)</span> <span class="ow">and</span> <span class="p">(</span><span class="n">x3</span><span class="o">+</span><span class="n">x4</span><span class="p">)</span> <span class="o">&gt;=</span><span class="mi">1</span><span class="p">:</span>
+        <span class="n">answer</span> <span class="o">=</span> <span class="bp">True</span>
+    <span class="nf">elif </span><span class="p">(</span><span class="n">x1</span><span class="o">+</span><span class="n">x2</span><span class="p">)</span> <span class="ow">or</span> <span class="p">(</span><span class="n">x3</span><span class="o">+</span><span class="n">x4</span><span class="p">)</span> <span class="o">==</span><span class="mi">0</span><span class="p">:</span>
+        <span class="n">answer</span> <span class="o">=</span> <span class="bp">False</span>
+    <span class="nf">elif </span><span class="p">(</span><span class="n">x1</span><span class="o">+</span><span class="n">x2</span><span class="p">)</span> <span class="ow">and</span> <span class="p">(</span><span class="n">x3</span><span class="o">+</span><span class="n">x4</span><span class="p">)</span> <span class="o">==</span><span class="mi">0</span><span class="p">:</span>
+        <span class="n">answer</span> <span class="o">=</span> <span class="bp">False</span>
+    <span class="k">return</span> <span class="n">answer</span>
+</code></pre></div></div>
+
+<h4 id="다른-답">다른 답</h4>
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">def</span> <span class="nf">solution</span><span class="p">(</span><span class="n">x1</span><span class="p">,</span> <span class="n">x2</span><span class="p">,</span> <span class="n">x3</span><span class="p">,</span> <span class="n">x4</span><span class="p">):</span>
+    <span class="nf">return </span><span class="p">(</span><span class="n">x1</span> <span class="o">|</span> <span class="n">x2</span><span class="p">)</span> <span class="o">&amp;</span> <span class="p">(</span><span class="n">x3</span> <span class="o">|</span> <span class="n">x4</span><span class="p">)</span>
+</code></pre></div></div>
+<p><code class="language-plaintext highlighter-rouge">|</code>와 <code class="language-plaintext highlighter-rouge">&amp;</code>의 정의를 해야겠다.</p>]]></content><author><name>Eon&apos;s Box</name><email>sieon.eve@gmail.com</email></author><category term="programmers" /><summary type="html"><![CDATA[문서설명 boolean 변수 x1,x2,x3,x4가 매개변수로 주어질 때, 다음의 식의 true/false를 return하는 solution 함수를 작성해 주세요. (x1∨ x2) ∧ (x3 ∨ x4 )]]></summary></entry><entry><title type="html">[프로그래머스]주사위 게임 3</title><link href="http://localhost:4000/programmers/%EC%A3%BC%EC%82%AC%EC%9C%84-%EA%B2%8C%EC%9E%84-3/" rel="alternate" type="text/html" title="[프로그래머스]주사위 게임 3" /><published>2023-09-30T00:00:00+09:00</published><updated>2023-09-30T00:00:00+09:00</updated><id>http://localhost:4000/programmers/%EC%A3%BC%EC%82%AC%EC%9C%84%20%EA%B2%8C%EC%9E%84%203</id><content type="html" xml:base="http://localhost:4000/programmers/%EC%A3%BC%EC%82%AC%EC%9C%84-%EA%B2%8C%EC%9E%84-3/"><![CDATA[<h4 id="문제설명">문제설명</h4>
+<div class="notice">
+  <p>1부터 6까지 숫자가 적힌 주사위가 네 개 있습니다. 네 주사위를 굴렸을 때 나온 숫자에 따라 다음과 같은 점수를 얻습니다.<br /></p>
+  <ul>
+    <li>네 주사위에서 나온 숫자가 모두 p로 같다면 1111 x p점을 얻습니다.</li>
+    <li>세 주사위에서 나온 숫자가 p로 같고 나머지 다른 주사위에서 나온 숫자가 q(p ≠ q)라면 (10 × p + q)2 점을 얻습니다.</li>
+    <li>
+      <table>
+        <tbody>
+          <tr>
+            <td>주사위가 두 개씩 같은 값이 나오고, 나온 숫자를 각각 p, q(p ≠ q)라고 한다면 (p + q) ×</td>
+            <td>p - q</td>
+            <td>점을 얻습니다.</td>
+          </tr>
+        </tbody>
+      </table>
+    </li>
+    <li>어느 두 주사위에서 나온 숫자가 p로 같고 나머지 두 주사위에서 나온 숫자가 각각 p와 다른 q, r(q ≠ r)이라면 q × r점을 얻습니다.</li>
+    <li>네 주사위에 적힌 숫자가 모두 다르다면 나온 숫자 중 가장 작은 숫자 만큼의 점수를 얻습니다. <br />네 주사위를 굴렸을 때 나온 숫자가 정수 매개변수 a, b, c, d로 주어질 때, 얻는 점수를 return 하는 solution 함수를 작성해 주세요.</li>
+  </ul>
+</div>
+<hr />
+<h4 id="제한-사항">제한 사항</h4>
+<ul>
+  <li><code class="language-plaintext highlighter-rouge">a</code>, <code class="language-plaintext highlighter-rouge">b</code>, <code class="language-plaintext highlighter-rouge">c</code>, <code class="language-plaintext highlighter-rouge">d</code>는 1 이상 6 이하의 정수 입니다.</li>
+</ul>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">def</span> <span class="nf">solution</span><span class="p">(</span><span class="n">a</span><span class="p">,</span><span class="n">b</span><span class="p">,</span><span class="n">c</span><span class="p">,</span><span class="n">d</span><span class="p">):</span>
+    <span class="n">all_num</span> <span class="o">=</span> <span class="p">[</span><span class="n">a</span><span class="p">,</span> <span class="n">b</span><span class="p">,</span> <span class="n">c</span><span class="p">,</span> <span class="n">d</span><span class="p">]</span>
+    <span class="n">counts</span> <span class="o">=</span> <span class="p">[</span><span class="n">all_num</span><span class="p">.</span><span class="nf">count</span><span class="p">(</span><span class="n">i</span><span class="p">)</span> <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="n">all_num</span><span class="p">]</span>
+    <span class="c1">#각 수가 들어가면서 해당 원소가 몇 개 겹치는지 그 수를 넣어준다.
+</span>    <span class="k">if</span> <span class="nf">max</span><span class="p">(</span><span class="n">counts</span><span class="p">)</span> <span class="o">==</span> <span class="mi">4</span><span class="p">:</span> <span class="c1">#만약 다 같은 수라면 counts = [4,4,4,4]이다.
+</span>        <span class="k">return</span> <span class="n">a</span> <span class="o">*</span> <span class="mi">1111</span>
+    <span class="k">elif</span> <span class="nf">max</span><span class="p">(</span><span class="n">counts</span><span class="p">)</span> <span class="o">==</span> <span class="mi">3</span><span class="p">:</span>
+        <span class="n">p</span> <span class="o">=</span> <span class="n">all_num</span><span class="p">[</span><span class="n">counts</span><span class="p">.</span><span class="nf">index</span><span class="p">(</span><span class="mi">3</span><span class="p">)]</span>
+        <span class="n">q</span> <span class="o">=</span> <span class="n">all_num</span><span class="p">[</span><span class="n">counts</span><span class="p">.</span><span class="nf">index</span><span class="p">(</span><span class="mi">1</span><span class="p">)]</span>
+        <span class="nf">return </span><span class="p">(</span><span class="mi">10</span> <span class="o">*</span> <span class="n">p</span> <span class="o">+</span> <span class="n">q</span><span class="p">)</span> <span class="o">**</span> <span class="mi">2</span>
+    <span class="k">elif</span> <span class="nf">max</span><span class="p">(</span><span class="n">counts</span><span class="p">)</span> <span class="o">==</span> <span class="mi">2</span><span class="p">:</span>
+        <span class="k">if</span> <span class="nf">min</span><span class="p">(</span><span class="n">counts</span><span class="p">)</span> <span class="o">==</span><span class="mi">2</span><span class="p">:</span>
+            <span class="nf">return </span><span class="p">(</span><span class="n">a</span> <span class="o">+</span> <span class="n">c</span><span class="p">)</span> <span class="o">*</span> <span class="nf">abs</span><span class="p">(</span><span class="n">a</span> <span class="o">-</span> <span class="n">c</span><span class="p">)</span> <span class="k">if</span> <span class="n">a</span> <span class="o">==</span> <span class="n">b</span> <span class="nf">else </span><span class="p">(</span><span class="n">a</span> <span class="o">+</span> <span class="n">b</span><span class="p">)</span> <span class="o">*</span> <span class="nf">abs</span><span class="p">(</span><span class="n">a</span> <span class="o">-</span> <span class="n">b</span><span class="p">)</span>
+        <span class="k">else</span><span class="p">:</span>
+            <span class="n">p</span> <span class="o">=</span> <span class="n">all_num</span><span class="p">[</span><span class="n">counts</span><span class="p">.</span><span class="nf">index</span><span class="p">(</span><span class="mi">2</span><span class="p">)]</span>
+            <span class="nf">return </span><span class="p">(</span><span class="n">a</span> <span class="o">*</span> <span class="n">b</span> <span class="o">*</span> <span class="n">c</span> <span class="o">*</span> <span class="n">d</span><span class="p">)</span> <span class="o">/</span> <span class="n">p</span> <span class="o">**</span> <span class="mi">2</span>
+    <span class="k">else</span><span class="p">:</span>
+        <span class="k">return</span> <span class="nf">min</span><span class="p">(</span><span class="n">all_num</span><span class="p">)</span> 
+</code></pre></div></div>
+
+<p>너무 어려웠다..ㅠㅠ풀다가 이 한 문제로 시간을 엄청 소비하고 있다는것을 알게됐다.
+그래서 답을 보고 정의하고 다시 풀어보기로 했다. 꼭 다시 풀어봐야지…</p>
+
+<div class="notice">
+  <ul>
+    <li>abs
+절대값을 구하는 것이다. abs(실수)</li>
+    <li>count
+count는 겹치는 숫자를 말해준다.
+<code class="language-plaintext highlighter-rouge">리스트.count(찾는 값)</code>
+리스트안에 찾는 값을 넣어주면 그 안에서 몇개가 겹치는지 나온다.</li>
+    <li>index()
+안에 값을 넣으면 그 값이 있는 순서를 출력해준다.</li>
+  </ul>
+</div>]]></content><author><name>Eon&apos;s Box</name><email>sieon.eve@gmail.com</email></author><category term="programmers" /><summary type="html"><![CDATA[문제설명 1부터 6까지 숫자가 적힌 주사위가 네 개 있습니다. 네 주사위를 굴렸을 때 나온 숫자에 따라 다음과 같은 점수를 얻습니다. 네 주사위에서 나온 숫자가 모두 p로 같다면 1111 x p점을 얻습니다. 세 주사위에서 나온 숫자가 p로 같고 나머지 다른 주사위에서 나온 숫자가 q(p ≠ q)라면 (10 × p + q)2 점을 얻습니다. 주사위가 두 개씩 같은 값이 나오고, 나온 숫자를 각각 p, q(p ≠ q)라고 한다면 (p + q) × p - q 점을 얻습니다. 어느 두 주사위에서 나온 숫자가 p로 같고 나머지 두 주사위에서 나온 숫자가 각각 p와 다른 q, r(q ≠ r)이라면 q × r점을 얻습니다. 네 주사위에 적힌 숫자가 모두 다르다면 나온 숫자 중 가장 작은 숫자 만큼의 점수를 얻습니다. 네 주사위를 굴렸을 때 나온 숫자가 정수 매개변수 a, b, c, d로 주어질 때, 얻는 점수를 return 하는 solution 함수를 작성해 주세요. 제한 사항 a, b, c, d는 1 이상 6 이하의 정수 입니다.]]></summary></entry><entry><title type="html">[프로그래머스] 글자 이어 붙이기</title><link href="http://localhost:4000/programmers/%EA%B8%80%EC%9E%90-%EC%9D%B4%EC%96%B4-%EB%B6%99%EC%97%AC-%EB%AC%B8%EC%9E%90%EC%97%B4-%EB%A7%8C%EB%93%A4%EA%B8%B0/" rel="alternate" type="text/html" title="[프로그래머스] 글자 이어 붙이기" /><published>2023-09-30T00:00:00+09:00</published><updated>2023-09-30T00:00:00+09:00</updated><id>http://localhost:4000/programmers/%EA%B8%80%EC%9E%90%20%EC%9D%B4%EC%96%B4%20%EB%B6%99%EC%97%AC%20%EB%AC%B8%EC%9E%90%EC%97%B4%20%EB%A7%8C%EB%93%A4%EA%B8%B0</id><content type="html" xml:base="http://localhost:4000/programmers/%EA%B8%80%EC%9E%90-%EC%9D%B4%EC%96%B4-%EB%B6%99%EC%97%AC-%EB%AC%B8%EC%9E%90%EC%97%B4-%EB%A7%8C%EB%93%A4%EA%B8%B0/"><![CDATA[<h4 id="문자-설명">문자 설명</h4>
+<div class="notice">
+  <p>문자열 <code class="language-plaintext highlighter-rouge">my_string</code>과 정수 배열 ‘index_list’가 매개변수로 주어집니다. <code class="language-plaintext highlighter-rouge">my_string</code>의 <code class="language-plaintext highlighter-rouge">index_list</code>의 원소들에 해당하는 인덱스의 글자들을 순서대로 이어 붙인 문자열을 return 하는 solution 함수를 작성해 주세요.</p>
+</div>
+<hr />
+<h4 id="제한사항">제한사항</h4>
+<div class="notice">
+  <ul>
+    <li>1 ≤ <code class="language-plaintext highlighter-rouge">my_string</code>의 길이 ≤ 1,000</li>
+    <li><code class="language-plaintext highlighter-rouge">my_string</code>의 원소는 영소문자로 이루어져 있습니다.</li>
+    <li>1 ≤ <code class="language-plaintext highlighter-rouge">index_list</code>의 길이 ≤ 1,000</li>
+    <li>0 ≤ <code class="language-plaintext highlighter-rouge">index_list</code>의 원소 &lt; <code class="language-plaintext highlighter-rouge">my_string</code>의 길이</li>
+  </ul>
+</div>
+<hr />
+<h4 id="my-solution">📌my solution</h4>
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">def</span> <span class="nf">solution</span><span class="p">(</span><span class="n">my_string</span><span class="p">,</span> <span class="n">index_list</span><span class="p">):</span>
+    <span class="n">new</span> <span class="o">=</span> <span class="p">[]</span>
+    <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="n">index_list</span><span class="p">:</span>
+        <span class="n">new</span><span class="p">.</span><span class="nf">append</span><span class="p">(</span><span class="n">my_string</span><span class="p">[</span><span class="n">i</span><span class="p">])</span>
+    <span class="k">return</span> <span class="sh">''</span><span class="p">.</span><span class="nf">join</span><span class="p">(</span><span class="n">new</span><span class="p">)</span>
+
+</code></pre></div></div>
+<hr />
+<h4 id="other-solution">💕other solution</h4>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>def solution(my_string, index_list):
+    return ''.join(my_string[idx] for idx in index_list)
+</code></pre></div></div>]]></content><author><name>Eon&apos;s Box</name><email>sieon.eve@gmail.com</email></author><category term="programmers" /><category term="프로그래머스" /><category term="python" /><summary type="html"><![CDATA[문자 설명 문자열 my_string과 정수 배열 ‘index_list’가 매개변수로 주어집니다. my_string의 index_list의 원소들에 해당하는 인덱스의 글자들을 순서대로 이어 붙인 문자열을 return 하는 solution 함수를 작성해 주세요. 제한사항 1 ≤ my_string의 길이 ≤ 1,000 my_string의 원소는 영소문자로 이루어져 있습니다. 1 ≤ index_list의 길이 ≤ 1,000 0 ≤ index_list의 원소 &lt; my_string의 길이 📌my solution ```python def solution(my_string, index_list): new = [] for i in index_list: new.append(my_string[i]) return ‘‘.join(new)]]></summary></entry><entry><title type="html">블로그 만들기</title><link href="http://localhost:4000/blog/GitHub-Blog-GitHub%EB%B8%94%EB%A1%9C%EA%B7%B8-%EC%A0%95%EC%B0%A9%EA%B8%B0-%EC%8B%9C%EC%9E%91/" rel="alternate" type="text/html" title="블로그 만들기" /><published>2023-09-27T00:00:00+09:00</published><updated>2023-09-27T00:00:00+09:00</updated><id>http://localhost:4000/blog/%5BGitHub%20Blog%5D%20GitHub%EB%B8%94%EB%A1%9C%EA%B7%B8%20%EC%A0%95%EC%B0%A9%EA%B8%B0%20%EC%8B%9C%EC%9E%91</id><content type="html" xml:base="http://localhost:4000/blog/GitHub-Blog-GitHub%EB%B8%94%EB%A1%9C%EA%B7%B8-%EC%A0%95%EC%B0%A9%EA%B8%B0-%EC%8B%9C%EC%9E%91/"><![CDATA[<h3 id="블로그를-찾아서">블로그를 찾아서..</h3>
+
+<p>기존에 기록용으로 Notion을 사용했다. UI도 깔끔하고 작성하기 좋았으나 제대로된 블로그를 만들어보라는 권유를 받고 내가 공부하는것들을 기록할 수 있는 최적의 플랫폼을 찾아서 떠돌게 됐다.</p>
+
+<h4 id="tistory-velog-naver">Tistory? velog? Naver?</h4>
+
+<p>나는 우선 네이버 블로그를 오래 전부터 메모장같이 사용해왔다.편한 기능과 깔끔한 디자인이 좋았지만 커스텀의 한계가 있었다.
+velog와 Tistory도 너무 좋은 플랫폼인데 하나씩 신경쓰였다.
+‘‘이것만 이랬어도…’ 사용하면서 자꾸 이런 생각에 시간만 뺏겼다.</p>
+
+<h3 id="없으면-만들어야지">없으면 만들어야지</h3>
+
+<p>그러다 GitBlog를 발견했다. 제대로 개발도 못하는 내가 얘를 잘 다룰 수 있을지 고민이 됐지만, 더 이상 떠돌기에는 시간이 아까웠고 GitHub Blog를 개성있게 자기가 원하는데로 꾸민 여러 블로그를 보고나니까 결심이 섰다. 깨지고 부셔지면서 배우지 뭐…</p>]]></content><author><name>Eon&apos;s Box</name><email>sieon.eve@gmail.com</email></author><category term="blog" /><summary type="html"><![CDATA[블로그를 찾아서..]]></summary></entry><entry><title type="html">[프로그래머스]] 콜라츠 수열 만들기</title><link href="http://localhost:4000/programmers/%EC%BD%9C%EB%9D%BC%EC%B8%A0-%EC%88%98%EC%97%B4-%EB%A7%8C%EB%93%A4%EA%B8%B0/" rel="alternate" type="text/html" title="[프로그래머스]] 콜라츠 수열 만들기" /><published>2023-09-27T00:00:00+09:00</published><updated>2023-09-27T00:00:00+09:00</updated><id>http://localhost:4000/programmers/%EC%BD%9C%EB%9D%BC%EC%B8%A0%20%EC%88%98%EC%97%B4%20%EB%A7%8C%EB%93%A4%EA%B8%B0</id><content type="html" xml:base="http://localhost:4000/programmers/%EC%BD%9C%EB%9D%BC%EC%B8%A0-%EC%88%98%EC%97%B4-%EB%A7%8C%EB%93%A4%EA%B8%B0/"><![CDATA[<h2 id="콜라츠-수열-만들기">콜라츠 수열 만들기</h2>
+
+<h4 id="문제-설명">문제 설명<br /></h4>
+
+<div class="notice">
+  <p>모든 자연수 x에 대해서 현재 값이 <code class="language-plaintext highlighter-rouge">x</code>이면 <code class="language-plaintext highlighter-rouge">x</code>가 짝수일 때는 2로 나누고, <code class="language-plaintext highlighter-rouge">x</code>가 홀수일 때는 <code class="language-plaintext highlighter-rouge">3 * x + 1</code>로 바꾸는 계산을 계속해서 반복하면 언젠가는 반드시 <code class="language-plaintext highlighter-rouge">x</code>가 1이 되는지 묻는 문제를 콜라츠 문제라고 부릅니다.그리고 위 과정에서 거쳐간 모든 수를 기록한 수열을 콜라츠 수열이라고 부릅니다.계산 결과 1,000 보다 작거나 같은 수에 대해서는 전부 언젠가 1에 도달한다는 것이 알려져 있습니다.임의의 1,000 보다 작거나 같은 양의 정수 <code class="language-plaintext highlighter-rouge">n</code>이 주어질 때 초기값이 <code class="language-plaintext highlighter-rouge">n</code>인 콜라츠 수열을 return 하는 solution 함수를 완성해 주세요.</p>
+</div>
+
+<hr />
+
+<h4 id="제한사항">제한사항</h4>
+
+<ul>
+  <li>1 ≤ <code class="language-plaintext highlighter-rouge">n</code> ≤ 1,000</li>
+</ul>
+
+<hr />
+
+<h4 id="입출력-예">입출력 예</h4>
+
+<table>
+  <thead>
+    <tr>
+      <th style="text-align: center">n</th>
+      <th>result</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align: center">10</td>
+      <td>[10, 5, 16, 8, 4, 2, 1]</td>
+    </tr>
+  </tbody>
+</table>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">def</span> <span class="nf">solution</span><span class="p">(</span><span class="n">n</span><span class="p">):</span>
+     <span class="n">s</span> <span class="o">=</span> <span class="p">[]</span>
+     <span class="k">while</span> <span class="n">n</span> <span class="o">!=</span> <span class="mi">0</span><span class="p">:</span>
+         <span class="k">if</span> <span class="n">n</span> <span class="o">%</span> <span class="mi">2</span> <span class="o">==</span> <span class="mi">0</span><span class="p">:</span>
+             <span class="n">s</span><span class="p">.</span><span class="nf">append</span><span class="p">(</span><span class="n">n</span><span class="p">)</span>
+             <span class="n">n</span> <span class="o">//=</span> <span class="mi">2</span>
+         <span class="k">else</span><span class="p">:</span>
+             <span class="n">s</span><span class="p">.</span><span class="nf">append</span><span class="p">(</span><span class="n">n</span><span class="p">)</span>
+             <span class="n">n</span> <span class="o">=</span> <span class="mi">3</span><span class="o">*</span><span class="n">n</span> <span class="o">+</span> <span class="mi">1</span>
+         <span class="nf">if </span><span class="p">(</span><span class="n">n</span> <span class="o">==</span> <span class="mi">1</span><span class="p">):</span>
+             <span class="n">s</span><span class="p">.</span><span class="nf">append</span><span class="p">(</span><span class="n">n</span><span class="p">)</span> 
+             <span class="k">break</span>
+ <span class="err">    </span><span class="k">return</span> <span class="n">s</span>
+</code></pre></div></div>]]></content><author><name>Eon&apos;s Box</name><email>sieon.eve@gmail.com</email></author><category term="programmers" /><summary type="html"><![CDATA[콜라츠 수열 만들기]]></summary></entry><entry><title type="html">Python 공부 기록</title><link href="http://localhost:4000/%EC%A0%95%EB%A6%AC/" rel="alternate" type="text/html" title="Python 공부 기록" /><published>2023-09-24T00:00:00+09:00</published><updated>2023-09-24T00:00:00+09:00</updated><id>http://localhost:4000/%EC%A0%95%EB%A6%AC</id><content type="html" xml:base="http://localhost:4000/%EC%A0%95%EB%A6%AC/"><![CDATA[<p>https://seungwubaek.github.io/blog/whole_toc/#page-title</p>
+
+<h2 id="이미지-목차">이미지 목차</h2>
+
+<h3 id="이미지-세부-목차1">이미지 세부 목차1</h3>
+
+<p>이미지입니다</p>
+
+<h3 id="이미지-세부-목차2">이미지 세부 목차2</h3>
+
+<p>이미지 입니다.</p>
+
+<h3 id="이미지-세부-목차3">이미지 세부 목차3</h3>
+
+<p>이미지 입니다.</p>]]></content><author><name>Eon&apos;s Box</name><email>sieon.eve@gmail.com</email></author><summary type="html"><![CDATA[https://seungwubaek.github.io/blog/whole_toc/#page-title]]></summary></entry><entry><title type="html">첫 포스팅 입니다. 설레네유</title><link href="http://localhost:4000/first/" rel="alternate" type="text/html" title="첫 포스팅 입니다. 설레네유" /><published>2023-09-22T00:00:00+09:00</published><updated>2023-09-22T00:00:00+09:00</updated><id>http://localhost:4000/first</id><content type="html" xml:base="http://localhost:4000/first/"><![CDATA[<h1 id="오늘-처음-블로그를-만들었어요">오늘 처음 블로그를 만들었어요.</h1>
+
+<p>앞으로 꾸준히 써야겠어용.</p>
+
+<h2 id="너무-힘든-하루였다">너무 힘든 하루였다.</h2>
+
+<p>힘들다… 푹 자고싶어..</p>
+
+<p><img src="../images/2023-09-22-first/eks.png" alt="왁경화면3.png" /></p>]]></content><author><name>Eon&apos;s Box</name><email>sieon.eve@gmail.com</email></author><summary type="html"><![CDATA[오늘 처음 블로그를 만들었어요.]]></summary></entry><entry><title type="html">Python 공부 기록</title><link href="http://localhost:4000/python/second/" rel="alternate" type="text/html" title="Python 공부 기록" /><published>2023-09-22T00:00:00+09:00</published><updated>2023-09-22T00:00:00+09:00</updated><id>http://localhost:4000/python/second</id><content type="html" xml:base="http://localhost:4000/python/second/"><![CDATA[<p>##Json이란?&lt;\n&gt;
+json의 함수이름을 알아 봅시다.
+s가 안 붙은게 함수다. dump는 직렬화하는 함수이다.</p>
+
+<p>####json - JSON 인코더와 디코더</p>
+
+<p><code class="language-plaintext highlighter-rouge">인코더는 직렬화(Serialization)</code></p>
+
+<p>사용하는 자료형을 문자열화 하는 것</p>
+
+<p><code class="language-plaintext highlighter-rouge">디코더는 역직렬화 (Deserialization)</code></p>
+
+<p>문자열화 된 것을 다시 자료형으로 만드는 것.</p>
+
+<p>s가 붙으면 데이터 처리 s가 안 붙어있으면 파일을 처리를 합니다.
+json.load()f], *)
+load는 역직렬화 시키는 것 입니다. 객체를 string으로 바꿔줍니다.</p>]]></content><author><name>Eon&apos;s Box</name><email>sieon.eve@gmail.com</email></author><category term="python" /><summary type="html"><![CDATA[##Json이란?&lt;\n&gt; json의 함수이름을 알아 봅시다. s가 안 붙은게 함수다. dump는 직렬화하는 함수이다.]]></summary></entry><entry><title type="html">01.기초</title><link href="http://localhost:4000/one/300%EC%A0%9C-1/" rel="alternate" type="text/html" title="01.기초" /><published>2023-08-22T00:00:00+09:00</published><updated>2023-08-22T00:00:00+09:00</updated><id>http://localhost:4000/one/300%EC%A0%9C-1</id><content type="html" xml:base="http://localhost:4000/one/300%EC%A0%9C-1/"><![CDATA[]]></content><author><name>Eon&apos;s Box</name><email>sieon.eve@gmail.com</email></author><category term="one" /><summary type="html"><![CDATA[]]></summary></entry><entry><title type="html">0110</title><link href="http://localhost:4000/0110/" rel="alternate" type="text/html" title="0110" /><published>2023-08-21T00:00:00+09:00</published><updated>2023-08-21T00:00:00+09:00</updated><id>http://localhost:4000/0110</id><content type="html" xml:base="http://localhost:4000/0110/"><![CDATA[<p>1.
+화면에 <code class="language-plaintext highlighter-rouge">Hello World</code> 문자열을 출력하세요.</p>
+
+<ul>
+  <li>
+    <p><strong>정답</strong></p>
+
+    <div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  <span class="nf">print</span><span class="p">(</span><span class="sh">'</span><span class="s">Hello World</span><span class="sh">'</span><span class="p">)</span>
+</code></pre></div>    </div>
+  </li>
+</ul>
+
+<hr />
+
+<p>2.
+화면에 <code class="language-plaintext highlighter-rouge">Mary's cosmetics</code> 을 출력하세요.</p>
+
+<ul>
+  <li>
+    <p><strong>정답</strong></p>
+
+    <div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  <span class="nf">print</span><span class="p">(</span><span class="sh">"</span><span class="s">Mary</span><span class="sh">'</span><span class="s">s cometics</span><span class="sh">"</span><span class="p">)</span>
+</code></pre></div>    </div>
+  </li>
+</ul>
+
+<hr />
+
+<p>3.
+화면에 아래 문장을 출력하세요.</p>
+
+<aside>
+<img src="/icons/camera-roll-portrait_lightgray.svg" alt="/icons/camera-roll-portrait_lightgray.svg" width="40px" /> 신씨가 소리 질렀다. “도둑이야”.
+
+</aside>
+
+<ul>
+  <li>
+    <p><strong>정답</strong></p>
+
+    <div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  <span class="nf">print</span><span class="p">(</span><span class="sh">'</span><span class="s">신씨가 소리 질렀다. </span><span class="sh">"</span><span class="s">도둑이야</span><span class="sh">'</span><span class="p">)</span>
+</code></pre></div>    </div>
+  </li>
+</ul>
+
+<hr />
+
+<p>4.
+화면에 <code class="language-plaintext highlighter-rouge">C:\Windows</code> 을 출력하세요.</p>
+
+<ul>
+  <li>
+    <p><strong>정답</strong></p>
+
+    <div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  <span class="nf">print</span><span class="p">(</span><span class="sh">"</span><span class="s">C:\Windows</span><span class="sh">"</span><span class="p">)</span>
+</code></pre></div>    </div>
+  </li>
+</ul>
+
+<hr />
+
+<p>5.
+다음 코드를 실행해보고 \t와 \n의 역할을 설명해보세요.</p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nf">print</span><span class="p">(</span><span class="sh">"</span><span class="s">안녕하세요.</span><span class="se">\n</span><span class="s">만나서</span><span class="se">\t\t</span><span class="s">반갑습니다.</span><span class="sh">"</span><span class="p">)</span>
+</code></pre></div></div>
+
+<ul>
+  <li>
+    <p><strong>정답</strong></p>
+
+    <div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  <span class="n">안녕하세요</span><span class="p">.</span>
+  <span class="n">만나서</span>      <span class="n">반갑습니다</span><span class="p">.</span>
+</code></pre></div>    </div>
+  </li>
+</ul>
+
+<hr />
+
+<p>6.
+print 함수에 두 개의 단어를 입력한 예제입니다. 아래 코드의 출력 결과를 예상해봅시다.</p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nf">print </span><span class="p">(</span><span class="sh">"</span><span class="s">오늘은</span><span class="sh">"</span><span class="p">,</span> <span class="sh">"</span><span class="s">일요일</span><span class="sh">"</span><span class="p">)</span>
+</code></pre></div></div>
+
+<ul>
+  <li>
+    <p><strong>정답</strong></p>
+
+    <aside>
+  💡 여러 값을 출력 가능하다. 
+  쉼표로 구별해주면 된다. ⇒ 결과: 오늘은 일요일
+    
+  </aside>
+  </li>
+</ul>
+
+<hr />
+
+<p>7.
+print() 함수를 사용하여 다음과 같이 출력하세요.</p>
+
+<aside>
+<img src="/icons/camera-roll-portrait_lightgray.svg" alt="/icons/camera-roll-portrait_lightgray.svg" width="40px" /> naver;kakao;sk;samsung
+
+</aside>
+
+<ul>
+  <li>
+    <p><strong>정답</strong></p>
+
+    <div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  <span class="nf">print</span><span class="p">(</span><span class="sh">"</span><span class="s">naver;kakao;sk;samsung</span><span class="sh">"</span><span class="p">)</span>
+</code></pre></div>    </div>
+
+    <p>💡other sol</p>
+
+    <div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  <span class="nf">print</span><span class="p">(</span><span class="sh">"</span><span class="s">naver</span><span class="sh">"</span><span class="p">,</span><span class="sh">"</span><span class="s">kakao</span><span class="sh">"</span><span class="p">,</span><span class="sh">"</span><span class="s">sk</span><span class="sh">"</span><span class="p">,</span><span class="sh">"</span><span class="s">samsung</span><span class="sh">"</span><span class="p">,</span> <span class="n">sep</span><span class="o">=</span><span class="sh">"</span><span class="s">;</span><span class="sh">"</span><span class="p">)</span>
+</code></pre></div>    </div>
+  </li>
+</ul>
+
+<hr />
+
+<p>8.
+print() 함수를 사용하여 다음과 같이 출력하세요.</p>
+
+<aside>
+<img src="/icons/camera-roll-portrait_lightgray.svg" alt="/icons/camera-roll-portrait_lightgray.svg" width="40px" /> naver/kakao/sk/samsung
+
+</aside>
+
+<ul>
+  <li>
+    <p><strong>정답</strong></p>
+
+    <div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  <span class="nf">print</span><span class="p">(</span><span class="sh">"</span><span class="s">naver</span><span class="sh">"</span><span class="p">,</span><span class="sh">"</span><span class="s">kakao</span><span class="sh">"</span><span class="p">,</span><span class="sh">"</span><span class="s">sk</span><span class="sh">"</span><span class="p">,</span><span class="sh">"</span><span class="s">samsung</span><span class="sh">"</span><span class="p">,</span> <span class="n">sep</span><span class="o">=</span><span class="sh">"</span><span class="s">/</span><span class="sh">"</span><span class="p">)</span>
+</code></pre></div>    </div>
+  </li>
+</ul>
+
+<hr />
+
+<p>9.
+다음 코드를 수정하여 줄바꿈이 없이 출력하세요.</p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code>
+<span class="nf">print</span><span class="p">(</span><span class="sh">"</span><span class="s">first</span><span class="sh">"</span><span class="p">);</span><span class="nf">print</span><span class="p">(</span><span class="sh">"</span><span class="s">second</span><span class="sh">"</span><span class="p">)</span>
+</code></pre></div></div>
+
+<ul>
+  <li>
+    <p><strong>정답</strong></p>
+
+    <div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  <span class="nf">print</span><span class="p">(</span><span class="sh">"</span><span class="s">first</span><span class="sh">"</span><span class="p">,</span> <span class="n">end</span><span class="o">=</span><span class="sh">""</span><span class="p">);</span><span class="nf">print</span><span class="p">(</span><span class="sh">"</span><span class="s">second</span><span class="sh">"</span><span class="p">)</span>
+</code></pre></div>    </div>
+  </li>
+</ul>
+
+<hr />
+
+<p>10.
+5/3의 결과를 화면에 출력하세요.</p>
+
+<ul>
+  <li>
+    <p><strong>정답</strong></p>
+
+    <div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  <span class="nf">print</span><span class="p">(</span><span class="mi">5</span><span class="o">/</span><span class="mi">3</span><span class="p">)</span>
+</code></pre></div>    </div>
+  </li>
+</ul>
+
+<hr />]]></content><author><name>Eon&apos;s Box</name><email>sieon.eve@gmail.com</email></author><summary type="html"><![CDATA[1. 화면에 Hello World 문자열을 출력하세요.]]></summary></entry></feed>
