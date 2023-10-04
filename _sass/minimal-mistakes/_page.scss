@@ -64,6 +64,7 @@ body {
       margin-right: 0;
       width: 100%;
       clear: both;
+      line-height: 1.2;
     }
   }
 }
@@ -91,6 +92,7 @@ body {
   h2 {
     padding-bottom: 0.5em;
     border-bottom: 1px solid $border-color;
+    line-height: 1;
   }
 
 	h1, h2, h3, h4, h5, h6 {
@@ -113,7 +115,7 @@ body {
   p,
   li,
   dl {
-    font-size: 1em;
+    font-size: 0.9em;
   }
 
   /* paragraph indents */
