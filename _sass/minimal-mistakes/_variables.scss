@@ -63,7 +63,7 @@ $light-gray: mix(#fff, $gray, 50%) !default;
 $lighter-gray: mix(#fff, $gray, 90%) !default;
 
 $background-color: #fff !default;
-$code-background-color: #fff2a0de !default;
+$code-background-color: #dbdad7de !default;
 $code-background-color-dark: $light-gray !default;
 $text-color: $dark-gray !default;
 $muted-text-color: mix(#fff, $text-color, 20%) !default;
@@ -164,7 +164,7 @@ $right-sidebar-width-wide: 400px !default;
    Other
    ========================================================================== */
 
-$border-radius: 4px !default;
+$border-radius: 2px !default;
 $box-shadow: 0 1px 1px rgba(0, 0, 0, 0.125) !default;
 $nav-height: 2em !default;
 $nav-toggle-height: 2rem !default;
