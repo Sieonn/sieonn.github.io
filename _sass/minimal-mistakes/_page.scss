@@ -92,7 +92,7 @@ body {
   h2 {
     padding-bottom: 0.5em;
     border-bottom: 1px solid $border-color;
-    line-height: 1;
+    line-height: 1.2;
   }
 
 	h1, h2, h3, h4, h5, h6 {
@@ -144,7 +144,7 @@ body {
   :not(pre) > code {
     padding-top: 0.1rem;
     padding-bottom: 0.1rem;
-    font-size: 0.8em;
+    font-size: 1em;
     background: $code-background-color;
     border-radius: $border-radius;
 
@@ -436,12 +436,12 @@ body {
 }
 
 .page__comments-title {
-  margin-top: 2rem;
   margin-bottom: 10px;
   padding-top: 2rem;
   font-size: $type-size-6;
-  border-top: 1px solid $border-color;
+  border-top: 0.5px solid $border-color;
   text-transform: uppercase;
+  overflow:auto
 }
 
 .page__comments-form {
@@ -465,9 +465,11 @@ body {
 .comment {
   @include clearfix();
   margin: 1em 0;
+  overflow:auto
 
   &:not(:last-child) {
     border-bottom: 1px solid $border-color;
+    overflow:auto
   }
 }
 
