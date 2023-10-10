@@ -503,11 +503,12 @@
      Table of contents navigation
      ========================================================================== */
 
+/* toc설정하기*/
 .toc {
   font-family: $sans-serif-narrow;
   color: $gray;
   background-color: $background-color;
-  border: 1px solid $border-color;
+  border: 1px solid #75d4a3;
   border-radius: $border-radius;
   -webkit-box-shadow: $box-shadow;
   box-shadow: $box-shadow;
@@ -515,7 +516,7 @@
   .nav__title {
     color: #fff;
     font-size: $type-size-6;
-    background: $primary-color;
+    background: #75d4a3;
     border-top-left-radius: $border-radius;
     border-top-right-radius: $border-radius;
   }
@@ -568,6 +569,6 @@
   }
 
   li ul li ul li ul li ul li ul > li a {
-    padding-left: 3.25rem
+    padding-left: 3.25rem;
   }
 }
