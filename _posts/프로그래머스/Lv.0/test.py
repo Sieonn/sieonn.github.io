@@ -35,5 +35,4 @@
 # print(solution(my_string, s, e))
 
 def solution(my_string,m, c):
-   return my_string.split[::4]
-my_string = "asdfghjlk;zx"
+   
