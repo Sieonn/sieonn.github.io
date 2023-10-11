@@ -3,13 +3,14 @@
    ========================================================================== */
 
 table {
-  display: inline-block;
+  display: block;
   margin-bottom: 2em;
   width: 100%;
-  font-family: $global-font-family;
+  width: 100%;
   font-size: $type-size-6;
   border-collapse: collapse;
   overflow-x: auto;
+  table-layout: fixed;
 
   & + table {
     margin-top: 1em;
@@ -18,18 +19,23 @@ table {
 
 thead {
   background-color: $border-color;
+  text-align: center;
+  height: 200%;
   border-bottom: 3px solid mix(#000, $border-color, 25%);
 }
 
 th {
   padding: 0.5em;
   font-weight: bold;
-  text-align: left;
+  text-align: center;
+  border: 1px solid mix(#000, $border-color, 25%);
 }
 
 td {
-  padding: 0.5em;
+  padding: 1em;
+  border: 1px solid $border-color;
   border-bottom: 1px solid mix(#000, $border-color, 25%);
+  width: 50%;
 }
 
 tr,
