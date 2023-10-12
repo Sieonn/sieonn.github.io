@@ -43,7 +43,7 @@ AWS Identity 및 Access Management(IAM)
 
 ### 정책 및 권한
 
-![image-20231012105950685](/../images/2023-10-12-정책및 /image-20231012105950685.png)
+![image-20231012105950685](/../images/2023-10-12-AWS Identity 및 Access Management(IAM) 검토/image-20231012105950685.png)
 
 권한정책에서 권한은 Rights, policy, permisson으로 나뉠수 있는데, Permission은 리소스에 대한 권한이라고 합니다.
 
@@ -84,21 +84,21 @@ AWS Identity 및 Access Management(IAM)
 
 ### IAM 역할 사용하기
 
-![image-20231012110101188](/../images/2023-10-12-정책및 /image-20231012110101188.png)
+![image-20231012110101188](/../images/2023-10-12-AWS Identity 및 Access Management(IAM) 검토/image-20231012110101188.png)
 
 ### IAM 사용자 역할 위임
 
 사용자 기반 권한
 
-![image-20231012110134971](/../images/2023-10-12-정책및 /image-20231012110134971.png)
+![image-20231012110134971](/../images/2023-10-12-AWS Identity 및 Access Management(IAM) 검토/image-20231012110134971.png)
 
 리소스 기반 권한
 
-![image-20231012110150977](/../images/2023-10-12-정책및 /image-20231012110150977.png)
+![image-20231012110150977](/../images/2023-10-12-AWS Identity 및 Access Management(IAM) 검토/image-20231012110150977.png)
 
 ### IAM  모범 사례
 
-![image-20231012110211361](/../images/2023-10-12-정책및 /image-20231012110211361.png)
+![image-20231012110211361](/../images/2023-10-12-AWS Identity 및 Access Management(IAM) 검토/image-20231012110211361.png)
 
 ### 핵심 사항
 
