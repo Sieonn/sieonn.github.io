@@ -1,7 +1,7 @@
 ---
 title: "Jumpstart on AWS"
 layout: category
-permalink: /AWS restart/Jumpstart on AWS/
+permalink: /AWS restart/Jumpstart-on-AWS/
 ---
 
 {% assign posts = site.categories.Jumpstart on AWS%}
