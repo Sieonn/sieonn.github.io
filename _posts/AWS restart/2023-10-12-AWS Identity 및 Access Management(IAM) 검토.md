@@ -94,7 +94,7 @@ AWS Identity 및 Access Management(IAM)
 
 리소스 기반 권한
 
-![image-20231012110150977](/../images/2023-10-12-AWS Identity 및 Access Management(IAM) 검토/image-20231012110150977.png)
+![image-20231012110150977](/../images/2023-10-12-AWS Identity 및 Access Management(IAM) 검토/image-20231012110150977.png)s
 
 ### IAM  모범 사례
 
