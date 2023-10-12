@@ -34,5 +34,17 @@
 # e = 12
 # print(solution(my_string, s, e))
 
-def solution(my_string,m, c):
+# def solution(my_string,m, c):
    
+   
+def solution(my_string, indices):
+    new = ''
+    for i in range(len(my_string)):
+        if i not in indice:
+                return new = new + i 
+                
+    return new
+my_string = "apporoograpemmemprs"
+indice = [1, 16, 6, 15, 0, 10, 11, 3]
+
+print(solution(my_string,indice))
