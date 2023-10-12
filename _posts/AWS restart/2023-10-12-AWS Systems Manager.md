@@ -1,6 +1,7 @@
 ---
 title: "AWS Systems Manager"
 toc: true
+category: Jumpstart on AWS
 ---
 
 ## 도구 및 자동화 개요

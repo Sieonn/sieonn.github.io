@@ -1,7 +1,7 @@
 ---
 title: "AWS Identity 및 Access Management(IAM) 검토"
 toc: true
-category: 'AWS restart'
+category: Jumpstart on AWS
 
 ---
 

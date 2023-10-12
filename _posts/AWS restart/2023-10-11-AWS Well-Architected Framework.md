@@ -1,6 +1,6 @@
 ---
 title: "AWS Well-Architected Framework"
-category: 'AWS restart'
+category: Jumpstart on AWS
 toc: true
 ---
 

@@ -1,7 +1,7 @@
 ---
 title: "[AWS]Mom & Pop cafe & Bakery"
 toc: True
-category: 'AWS restart'
+category: Jumpstart on AWS
 ---
 
 ## 프로젝트 목표
