@@ -1,6 +1,7 @@
 ---
 title: "AWS Command Line Interface(AWS CLI)"
 toc: true
+category: 'AWS restart'
 ---
 
 ## AWS Command Line Interface(AWS CLI)

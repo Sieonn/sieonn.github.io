@@ -1,5 +1,7 @@
 ---
 title: "AWS Well-Architected Framework"
+category: 'AWS restart'
+toc: true
 ---
 
 클라우드 아키텍트는 AWS Well-Architected Framework를 활용해 다음을 수행해야 합니다. – 아키텍처 모범 사례에 대한 인식을 개선합니다. – 소홀히 할 때가 많은 기초적인 영역을 다룹니다. – 일관된 원칙 세트를 사용하여 아키텍처를 평가합니다.

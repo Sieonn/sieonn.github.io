@@ -16,7 +16,7 @@ sidebar-category:
     url: '/blog/'
     children:
       - title: "블로그 제작기"
-        url: /blog/            
+        url: /blog/블로그 제작기/            
   - title: 'Python'
     url: /python/
     children:
@@ -27,3 +27,5 @@ sidebar-category:
             url: /python/samback/one/
       - title: "프로그래머스"
         url: /python/programmers/
+  - title: 'AWS restart'
+    url: /AWS restart/

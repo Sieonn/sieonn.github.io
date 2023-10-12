@@ -2,6 +2,7 @@
 title: "심층 분석: Well-Architected 설계 원칙"
 toc : true
 toc_label: "Well-Architected 설계 원칙"
+category: 'AWS restart'
 ---
 
 ### Well-Architected 설계 원칙
