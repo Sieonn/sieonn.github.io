@@ -10,7 +10,7 @@ category: Jumpstart on AWS
 
 ### AWS를 사용하는 3가지 방법
 
-![image-20231012111629996](/../images/Untitled/image-20231012111629996.png)
+![image-20231012111629996](/../images/2023-10-12-AWS Command Line Interface(AWS CLI)/image-20231012111629996.png)
 
 - AWS 관리 콘솔
   -  사용하기 쉬운 AWS 그래픽 인터페이스
