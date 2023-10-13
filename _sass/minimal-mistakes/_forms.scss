@@ -137,7 +137,7 @@ input[type="reset"],
 input[type="submit"] {
   width: auto;
   height: auto;
-  cursor: not-allowed;
+  cursor: pointer;
   *overflow: visible;
 }
 
@@ -207,7 +207,7 @@ input[readonly],
 select[readonly],
 textarea[readonly] {
   opacity: 0.5;
-  cursor: pointer;
+  cursor: not-allowed;
 }
 
 /*
