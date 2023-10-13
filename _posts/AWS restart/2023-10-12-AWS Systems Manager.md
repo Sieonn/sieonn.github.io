@@ -25,6 +25,10 @@ category: Jumpstart on AWS
 
 ![image-20231012124347438](/../images/2023-10-12-도구 및 자동화개요/image-20231012124347438.png)
 
+Fleet Manager:
+
+리눅스를 들어가지 않고 Fleet Manager를 통해서 copy, move가 가능합니다.
+
 ### AWS Systems Manager 기능
 
 ![image-20231012124415246](/../images/2023-10-12-도구 및 자동화개요/image-20231012124415246.png)

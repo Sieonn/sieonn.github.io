@@ -90,15 +90,14 @@ AWS CLI의 모든 명령에 구문과 사용할 수 있는 명령의 예시가 �
 
 --dry run 옵션:
 
-- 요청을 수행하지 않고 필요한 권한을 확인합니다. 
+- 요청을 수행하지 않고 필요한 <span style="background-color: #cceecc">권한을 확인</span>합니다. 
 -  사용 권한이 없으면 오류 응답을 제공합니다
 
 {: .notice}
 
-aws ec2 run-instances --image-id ami-1a2b3c4d 
---count 1 
---instance-type c5.large --key-name MyKeyPair 
---security-groups MySecurityGroup --dry-run
+aws ec2 run-instances --image-id ami-1a2b3c4d <br>
+--count 1 <br>
+--instance-type c5.large --key-name MyKeyPair<br> --security-groups MySecurityGroup <br>--dry-run
 
 ### 일반적인 AWS CLI 명령
 
