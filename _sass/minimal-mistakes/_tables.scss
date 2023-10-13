@@ -10,7 +10,6 @@ table {
   font-size: $type-size-6;
   border-collapse: collapse;
   overflow-x: auto;
-  border-radius: 6px;
   
 
 
@@ -23,24 +22,24 @@ thead {
   background-color: $main-color;
   text-align: center;
   // height: 200%;
-  // border-bottom: 3px solid #861515;
   // table-layout: fixed;
   // mix(#000, $border-color, 25%)
+
 }
 
 th {
   padding: 0.5em;
   font-weight: bold;
+  text-size-adjust: 14px;
   text-align: center;
-  border: 1px solid #000;
+  border-bottom: 2px solid #c1bebe;
+  border: 1px solid #fff;
+
 }
 
 td {
   padding: 1em;
-  border: 3px solid #000;
-  // border-bottom: 1px solid #000;
-  border-color: #000;
-  // width: auto;
+  border: 1px solid #c5c1c1;
 }
 
 tr,
