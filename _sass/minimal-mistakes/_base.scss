@@ -107,13 +107,13 @@ abbr[data-original-title] {
 /* blockquotes */
 
 blockquote {
-  margin: 2em 1em 2em 0;
+  margin: 2em 2em 2em 0;
   padding-left: 0.5em;
   padding-right: 1em;
   font-style: normal;
-  border: 0.25em solid $vine-color;
-
-  cite {
+  border: 0.25em solid $main-color;
+  border-radius: 6px;
+  text- cite {
     font-style: italic;
 
     &:before {
