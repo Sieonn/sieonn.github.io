@@ -506,6 +506,7 @@
      ========================================================================== */
 
 /* toc설정하기*/
+
 .toc {
   font-family: $sans-serif-narrow;
   color: $gray;
@@ -535,9 +536,7 @@
   width: 100%;
   list-style: none;
   font-size: $type-size-6;
-  .target::-webkit-scrollbar {
-    display: none; /* Chrome, Safari, Opera*/
-  }
+  scrollbar-color: white;
 
   @include breakpoint($large) {
     font-size: $type-size-7;

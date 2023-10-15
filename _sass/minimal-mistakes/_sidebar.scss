@@ -92,17 +92,17 @@
 
       .toc {
         .toc__menu {
-          overflow-y: auto;
+          overflow-y: scroll;
           max-height: calc(100vh - 7em);
         }
       }
     }
   }
+}
 
-  @include breakpoint($x-large) {
-    width: $right-sidebar-width;
-    margin-right: -1 * $right-sidebar-width;
-  }
+@include breakpoint($x-large) {
+  width: $right-sidebar-width;
+  margin-right: -1 * $right-sidebar-width;
 }
 
 .splash .sidebar__right {
