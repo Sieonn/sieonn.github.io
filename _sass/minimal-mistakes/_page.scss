@@ -92,11 +92,24 @@ body {
 }
 
 .page__content {
-  h2 {
-    // padding-bottom: 0.5em;
-    padding-left: 0.5em;
-    border-left: 1rem solid #75d4a3;
+  h3 {
+    border-style: solid;
+    border-width: 0px 0px 1px 10px;
+    border-color: #75d4a3;
+    background-color: #fff;
+    // padding-left: 0.7em;
+    padding: 7.5px 7.5px;
     font-weight: bold;
+    line-height: 2;
+  }
+  h2 {
+    background-color: #75d4a3;
+    color: #fff;
+    margin-top: 30px;
+    margin-bottom: 15px;
+    padding: 15px 20px;
+    font-weight: bold;
+    border-radius: 25px 2px 25px 2px;
     line-height: 2;
   }
 
