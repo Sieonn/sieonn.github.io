@@ -531,12 +531,12 @@
 }
 
 .toc__menu {
+  -ms-overflow-style: none;
   margin: 0;
   padding: 0;
   width: 100%;
   list-style: none;
   font-size: $type-size-6;
-  scrollbar-color: white;
 
   @include breakpoint($large) {
     font-size: $type-size-7;
@@ -575,4 +575,7 @@
   li ul li ul li ul li ul li ul > li a {
     padding-left: 3.25rem;
   }
+}
+.toc__menu::-webkit-scrollbar {
+  display: none;
 }
