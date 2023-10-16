@@ -108,6 +108,7 @@ input[type="radio"] {
   border-radius: 0;
   border: 0 \9;
   box-shadow: none;
+  background-color: $vine-color;
 }
 
 input[type="checkbox"],
@@ -194,13 +195,14 @@ input[type="hidden"] {
 .radio.inline + .radio.inline,
 .checkbox.inline + .checkbox.inline {
   margin-left: 10px;
+  // background-color: $primary-color;
 }
 
 /*
      Disabled state
      ========================================================================== */
 
-input[disabled],
+// input[disabled],
 select[disabled],
 textarea[disabled],
 input[readonly],
