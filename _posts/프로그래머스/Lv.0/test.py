@@ -37,14 +37,33 @@
 # def solution(my_string,m, c):
    
    
-def solution(my_string, indices):
-    new = ''
-    for i in range(len(my_string)):
-        if i not in indice:
-                return new = new + i 
+# def solution(my_string, indices):
+#     new = ''
+#     for i in range(len(my_string)):
+#         if i not in indice:
+#                 return new = new + i 
                 
-    return new
-my_string = "apporoograpemmemprs"
-indice = [1, 16, 6, 15, 0, 10, 11, 3]
+#     return new
+# my_string = "apporoograpemmemprs"
+# indice = [1, 16, 6, 15, 0, 10, 11, 3]
 
-print(solution(my_string,indice))
+# print(solution(my_string,indice))
+
+# def solution(num_list):
+#     a= []
+#     b = []
+#     for i in range(0, len(num_list)):
+#         if i % 2 == 0:
+#             a.append(num_list[i])
+#         else:
+#             b.append(num_list[i])
+#     return max(sum(a),sum(b))
+
+def solution(names):
+    a = []
+    for i, v in enumerate(names):
+        if i % 5 == 0:
+            a.append(v)
+    return a
+names = ["nami", "ahri", "jayce", "garen", "ivern", "vex", "jinx"]
+print(solution(names))

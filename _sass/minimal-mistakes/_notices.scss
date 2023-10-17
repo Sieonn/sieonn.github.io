@@ -25,6 +25,7 @@
     $notice-color,
     $notice-background-mix
   );
+  //폰트 사이즈> 글자겹침현상
   border-radius: $border-radius;
   box-shadow: 0 1px 1px rgba($notice-color, 0.25);
 
