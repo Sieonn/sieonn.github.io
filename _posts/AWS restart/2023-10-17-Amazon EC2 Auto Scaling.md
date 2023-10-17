@@ -1,6 +1,6 @@
 ---
 title: "Amazon EC2 Auto Scaling"
-toc_label:Amazon EC2 Auto Scaling
+toc_label: "Amazon EC2 Auto Scaling"
 toc: true
 toc_sticky: true
 ---
