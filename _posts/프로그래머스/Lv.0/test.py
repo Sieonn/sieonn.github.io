@@ -59,11 +59,21 @@
 #             b.append(num_list[i])
 #     return max(sum(a),sum(b))
 
-def solution(names):
-    a = []
-    for i, v in enumerate(names):
-        if i % 5 == 0:
-            a.append(v)
-    return a
-names = ["nami", "ahri", "jayce", "garen", "ivern", "vex", "jinx"]
-print(solution(names))
+# def solution(names):
+#     a = []
+#     for i, v in range(names):
+#         if i % 5 == 0:
+#             a.append(v)
+#     return a
+# names = ["nami", "ahri", "jayce", "garen", "ivern", "vex", "jinx"]
+# print(solution(names))4
+
+
+# def solution(todo_list, finished):
+#     a = []
+#     for i in range(len(todo_list)):
+#         if finished[i] == False:
+#             a.append(todo_list[i])
+#     return a
+
+# todo_list = ["problemsolving", "practiceguitar", "swim", "studygraph"]
