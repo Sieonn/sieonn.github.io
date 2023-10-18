@@ -3,6 +3,7 @@ title: "Amazon S3"
 toc: true
 toc_label: "Amazon S3"
 toc_sticky: true
+category: 'Base'
 ---
 
 ## Amazon S3
