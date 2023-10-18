@@ -12,9 +12,10 @@
 
 @mixin notice($notice-color) {
   margin: 2em 0 !important; /* override*/
-  padding-left: 2.5em;
-  padding-top: 1em;
-  padding-bottom: 1em;
+  // padding-left: 2.5em;
+  // padding-top: 1em;
+  // padding-bottom: 1em;
+  padding: 1.5em;
   color: $text-color;
   font-family: $global-font-family;
   font-size: $type-size-6 !important;
