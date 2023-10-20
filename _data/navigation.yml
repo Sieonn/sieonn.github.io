@@ -30,7 +30,9 @@ sidebar-category:
   - title: 'AWS restart'
     url: /AWS restart/
     children:
-      - title: "Jumpstart on AWS"
-        url: /AWS restart/Jumpstart on AWS/
       - title: "클라우드 기본 사항"
-        url: /AWS restart/Cloud Base/ 
+        url: /AWS restart/Cloud Base/
+      - title: "Linux"
+        url: /AWS restart/Linux/
+      - title: "Jumpstart on AWS"
+        url: /AWS restart/Jumpstart on AWS/   
