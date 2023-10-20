@@ -77,3 +77,56 @@
 #     return a
 
 # todo_list = ["problemsolving", "practiceguitar", "swim", "studygraph"]
+# def solution(arr):
+#     idx = 0
+#     while True:
+#         change = []
+#         for i in arr:
+#             if i >= 50 and i % 2 == 0: 
+#                 change.append(int(i / 2))
+#             elif i < 50 and i % 2 == 1: 
+#                 change.append(i * 2 + 1)
+#             else: 
+#                 change.append(i)
+
+#         same = all(a == b for a, b in zip(arr, change))
+#         if same:
+#             break
+#         idx += 1
+
+#         arr = change
+    
+#     return idx
+
+# arr = [1, 2, 3, 100, 99, 98]
+# print(solution(arr))
+
+# def soultion(num_list):
+#     cnt = 0
+#     for i in num_list:
+#         while i != 1:
+#             if i % 2 == 0:
+#                 i /= 2
+#                 cnt += 1
+#             else:
+#                 i -= 1
+#                 i /= 2
+#                 cnt += 1
+#     return cnt        
+# num_list = [12, 4, 15, 1, 14]
+# print(soultion(num_list))4
+
+# a = []
+# if a:
+#     print("참")
+# else:
+#     print("거짓")
+
+# def solution(myString, pat):
+#     return int(pat.lower() in myString.lower())
+# myString = "AbCdEfG"
+# pat = "aBc"
+
+# print(solution(myString, pat))
+
+print(int(True))
