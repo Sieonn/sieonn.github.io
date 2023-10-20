@@ -1,7 +1,7 @@
 ---
 title: "Linux"
 layout: archive
-category: "AWS restart"
+category: AWS restart
 permalink: /AWS restart/Linux/ 
 ---
 
