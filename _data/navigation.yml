@@ -12,27 +12,27 @@ main:
     url: /sitemap/
 
 sidebar-category:
-  - title: 'GitHub Blog'
-    url: '/blog/'
+  - title: "GitHub Blog"
+    url: "/blog/"
     children:
       - title: "블로그 제작기"
-        url: /blog/블로그 제작기/            
-  - title: 'Python'
+        url: /blog/블로그 제작기/
+  - title: "Python"
     url: /python/
     children:
       - title: "기초 300제"
-        url:  /python/samback/ 
+        url: /python/samback/
         children:
           - title: "01.기초"
             url: /python/samback/one/
       - title: "프로그래머스"
         url: /python/programmers/
-  - title: 'AWS restart'
+  - title: "AWS restart"
     url: /AWS restart/
     children:
       - title: "클라우드 기본 사항"
         url: /AWS restart/Cloud Base/
-      - title: "Linux"
+      - title: "Linux 기본 사항"
         url: /AWS restart/Linux/
       - title: "Jumpstart on AWS"
-        url: /AWS restart/Jumpstart on AWS/   
+        url: /AWS restart/Jumpstart on AWS/
