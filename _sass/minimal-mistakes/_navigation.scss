@@ -484,7 +484,7 @@
   margin: 0;
   padding: 0.5rem 0.75rem;
   font-family: $sans-serif-narrow;
-  font-size: $type-size-5;
+  font-size: $type-size-4;
   font-weight: bold;
 }
 
@@ -535,24 +535,25 @@
   margin: 0;
   padding: 0;
   width: 100%;
+  border: #8E8FFA;
   list-style: none;
-  font-size: $type-size-6;
+  font-size: 12px;
 
   @include breakpoint($large) {
-    font-size: $type-size-6;
+    font-size: 12px;
   }
 
   a {
     display: block;
     padding: 0.25rem 0.75rem;
-    color: #333333;
-    font-weight: bold;
+    color: #5e5e5e;
+    font-weight: 600;
     line-height: 1.5;
     border: 1px solid $muted-text-color;
     font-size: 12px;
 
     &:hover {
-      color: $text-color;
+      color: mix(#fff, $text-color, 70%);
     }
   }
 
