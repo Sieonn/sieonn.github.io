@@ -71,7 +71,7 @@ toc_sticky: true
 1. Arecord
 2. S3 버킷등록(버킷 자체가 정적웹사이트 호스팅 가능, 별칭을 활용해서)
 3. ALB + auto scaling 
-4. 
+4. s3 bucket에 리다이렉션을 이용한 도메인 정책
 
 ## 학습 내용 확인
 
