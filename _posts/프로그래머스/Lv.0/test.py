@@ -29,20 +29,20 @@
 
 # def solution(my_string, s, e):
 #     return my_string[:s] + my_string[s:e+1][::-1] + my_string[e+1:]
-# my_string = "Progra21Sremm3"	
+# my_string = "Progra21Sremm3"
 # s = 6
 # e = 12
 # print(solution(my_string, s, e))
 
 # def solution(my_string,m, c):
-   
-   
+
+
 # def solution(my_string, indices):
 #     new = ''
 #     for i in range(len(my_string)):
 #         if i not in indice:
-#                 return new = new + i 
-                
+#                 return new = new + i
+
 #     return new
 # my_string = "apporoograpemmemprs"
 # indice = [1, 16, 6, 15, 0, 10, 11, 3]
@@ -82,11 +82,11 @@
 #     while True:
 #         change = []
 #         for i in arr:
-#             if i >= 50 and i % 2 == 0: 
+#             if i >= 50 and i % 2 == 0:
 #                 change.append(int(i / 2))
-#             elif i < 50 and i % 2 == 1: 
+#             elif i < 50 and i % 2 == 1:
 #                 change.append(i * 2 + 1)
-#             else: 
+#             else:
 #                 change.append(i)
 
 #         same = all(a == b for a, b in zip(arr, change))
@@ -95,7 +95,7 @@
 #         idx += 1
 
 #         arr = change
-    
+
 #     return idx
 
 # arr = [1, 2, 3, 100, 99, 98]
@@ -112,7 +112,7 @@
 #                 i -= 1
 #                 i /= 2
 #                 cnt += 1
-#     return cnt        
+#     return cnt
 # num_list = [12, 4, 15, 1, 14]
 # print(soultion(num_list))4
 
@@ -129,4 +129,17 @@
 
 # print(solution(myString, pat))
 
-print(int(True))
+# print(int(True))
+
+def solution(myString, pat):
+    i = myString.rfind(pat)
+    if i != len(myString):
+        return myString[: i+len(pat)]
+    else:
+        return myString
+
+
+myString = "AbCdEFG"
+pat = "dE"
+
+print(solution(myString, pat))
