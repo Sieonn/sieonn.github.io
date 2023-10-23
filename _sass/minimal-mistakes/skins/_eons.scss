@@ -6,12 +6,13 @@
 $background-color: #ffff !default;
 // #f3f6f6
 $text-color: #0f0f0f !default;
-$muted-text-color: mix(#fff #190482 75%) !default;
+$muted-text-color: mix(#fff, #190482, 75%) !default;
 $primary-color: #190482 !default;
 // #11999e
 $border-color: #7752FE !default;
 //  mix(#fff, #7dd8ae, 75%) !default;
-$footer-background-color: #190482 !default;
+$footer-background-color: linear-gradient(#190482, #C2D9FF);
+// linear-gradient(#190482, #C2D9FF) !default;
 // #30e3ca#9EBECB#7296A4#97b197
 $link-color: #8E8FFA !default;
 $masthead-link-color: $text-color !default;
@@ -22,7 +23,7 @@ $navicon-link-color-hover: mix(#fff, $text-color, 80%) !default;
   color: #fff !important; // override
 }
 
-.page__footer-follow .social-icons i,
+.page__footer-follow .social-icons i,s
 .page__footer-follow .social-icons .svg-inline--fa {
   color: inherit;
 }
