@@ -593,11 +593,13 @@ a.reversefootnote {
 }
 
 //형광펜
-.hly {
-  background-color: #38f6b3;
+.hlm {
+  background: linear-gradient(to top, #8be8e5 60%, transparent 40%);
+  font-weight: 500;
 } //highlight mint
 .hlm_h {
-  background: linear-gradient(to top, #caee12 30%, transparent 40%);
+  background: linear-gradient(to top, #8be8e5 30%, transparent 40%);
+  font-weight: 500;
 } //hightlight mint halfs
 
 //형광펜 색 모음
