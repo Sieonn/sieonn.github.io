@@ -131,15 +131,25 @@
 
 # print(int(True))
 
-def solution(myString, pat):
-    i = myString.rfind(pat)
-    if i != len(myString):
-        return myString[: i+len(pat)]
-    else:
-        return myString
+# def solution(myString, pat):
+#     i = myString.rfind(pat)
+#     if i != len(myString):
+#         return myString[: i+len(pat)]
+#     else:
+#         return myString
 
 
-myString = "AbCdEFG"
-pat = "dE"
+# myString = "AbCdEFG"
+# pat = "dE"
 
-print(solution(myString, pat))
+# print(solution(myString, pat))
+
+def solution(strArr):
+    for i in strArr:
+        if "ad" in i:
+            strArr.remove(i)
+    return strArr
+
+strArr = ["and","notad","abcd"]
+
+print(solution(strArr))
