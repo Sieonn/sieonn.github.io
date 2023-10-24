@@ -144,12 +144,22 @@
 
 # print(solution(myString, pat))
 
-def solution(strArr):
-    for i in strArr:
-        if "ad" in i:
-            strArr.remove(i)
-    return strArr
+# def solution(strArr):
+#     for i in strArr:
+#         if "ad" in i:
+#             strArr.remove(i)
+#     return strArr
 
-strArr = ["and","notad","abcd"]
+# strArr = ["there","are","no","a","ds"]
 
-print(solution(strArr))
+# print(solution(strArr))
+# def solution(my_string):
+#     new = my_string.split(" ")
+#     return [i for i in new if i != '']
+
+# my_string = " i    lov y"
+# print(solution(my_string)) 
+            
+string = "AABBAB"
+string.swapcase()
+print(string)
