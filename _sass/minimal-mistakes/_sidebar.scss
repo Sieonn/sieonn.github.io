@@ -73,7 +73,7 @@
 
 .sidebar__right {
   margin-bottom: 1em;
-  padding: 0;
+  padding: 1;
   font-size: $type-size-5; //toc 제목 크기
 
   @include breakpoint($large) {

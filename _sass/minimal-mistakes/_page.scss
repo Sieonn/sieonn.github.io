@@ -4,8 +4,8 @@
 
 #main {
   @include clearfix;
-  margin-left: auto;
-  margin-right: auto;
+  // margin-left: auto;
+  // margin-right: auto;
   padding-left: 1em;
   padding-right: 1em;
   -webkit-animation: $intro-transition;
@@ -15,7 +15,7 @@
   animation-delay: 0.15s;
 
   @include breakpoint($x-large) {
-    max-width: $max-width;
+    max-width: 100%;
   }
 }
 
@@ -44,7 +44,7 @@ body {
 
   @include breakpoint($x-large) {
     width: calc(100% - #{$right-sidebar-width});
-    padding-right: $right-sidebar-width;
+    padding-right: 20%;//$right-sidebar-width;
   }
 
   .page__inner-wrap {
@@ -99,7 +99,7 @@ body {
     border-color: $border-color;
     background-color: #fff;
     // padding-left: 0.7em;
-    padding: 7.5px 7.5px;
+    padding: 10px 10px;
     font-weight: bold;
     line-height: 1.3;
   }

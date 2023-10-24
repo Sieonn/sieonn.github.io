@@ -22,6 +22,7 @@ thead {
   background-color: #8E8FFA;
   color: #fff;
   text-align: center;
+  font-size: 14.5px;
   // height: 200%;
   // table-layout: fixed;
   // mix(#000, $border-color, 25%)
@@ -31,7 +32,8 @@ thead {
 th {
   padding: 0.5em;
   font-weight: bold;
-  text-size-adjust: 14px;
+  text-size-adjust: 16px;
+  color: #fff;
   text-align: center;
   border-bottom: 2px solid #c1bebe;
   border: 1px solid #fff;
@@ -39,8 +41,12 @@ th {
 }
 
 td {
-  padding: 1em;
+  padding-top: 2em;
+  padding-bottom: 2em;
+  padding-right: 2em;
+  padding-left: 1em;
   border: 1px solid #c5c1c1;
+  line-height: 1.5;
 }
 
 tr,

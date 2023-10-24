@@ -160,6 +160,21 @@
 # my_string = " i    lov y"
 # print(solution(my_string)) 
             
-string = "AABBAB"
-string.swapcase()
-print(string)
+# string = "AABBAB"
+# string.swapcase()
+# print(string)
+
+from collections import OrderedDict
+
+# 기본 딕셔너리
+dict_a = {'a': 'apple', 'b': 'banana', 'p': 'pineapple'}
+dict_b = {'b': 'banana', 'a': 'apple', 'p': 'pineapple'}
+dict_a == dict_b
+# True
+
+OrderedDict
+ordered_a = OrderedDict([('a', 'apple'), ('b', 'banana'), ('p', 'pineapple')])
+ordered_b = OrderedDict([('b', 'banana'), ('a', 'apple'), ('p', 'pineapple')])
+
+ordered_a == ordered_b
+# False

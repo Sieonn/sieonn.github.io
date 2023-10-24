@@ -78,7 +78,7 @@ $danger-color: #ee5f5b !default;
 $info-color: #3b9cba !default;
 $focus-color: $primary-color !default;
 $highlight-color: #8be8e5 !default;
-$active-color: mix(#fff, #c2d9ff, 10%) !default;
+$active-color:#8be8e5;// mix(#fff, #8be8e5, 10%) !default;
 
 /* YIQ color contrast */
 $yiq-contrasted-dark-default: $dark-gray !default;
@@ -158,9 +158,9 @@ $max-width: $x-large !default;
    Grid
    ========================================================================== */
 
-$right-sidebar-width-narrow: 200px !default; //default 200px
-$right-sidebar-width: 250px !default; //300px
-$right-sidebar-width-wide: 300px !default; //400px
+$right-sidebar-width-narrow: 300px !default; //default 200px
+$right-sidebar-width: 300px !default; //300px
+$right-sidebar-width-wide: 400px !default; //400px
 
 /*
    Other
