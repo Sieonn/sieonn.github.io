@@ -10,7 +10,7 @@
   @include clearfix;
   margin: 0 auto;
   max-width: 100%;
-  padding-left: 1em;
+  // padding-left: 1em;
   padding-right: 1em;
   font-family: $sans-serif;
   -webkit-animation: $intro-transition;
@@ -19,7 +19,7 @@
   animation-delay: 0.3s;
 
   @include breakpoint($x-large) {
-    max-width: $x-large;
+    max-width: 100%; //$x-large;
   }
 
   ol {
@@ -396,7 +396,7 @@
     /* selected*/
     input:checked + label {
       color: white;
-      background-color: mix(white, #8E8FFA, 20%);
+      background-color: mix(white, #8e8ffa, 20%);
 
       &:before,
       &:after {
@@ -496,8 +496,8 @@
   font-size: $type-size-5;
   font-weight: bold;
   text-transform: uppercase;
-  border-bottom: 1px solid #8E8FFA;
-  border-left: 0.5rem solid #8E8FFA;
+  border-bottom: 1px solid #8e8ffa;
+  border-left: 0.5rem solid #8e8ffa;
   padding-left: 0.5em;
 }
 
