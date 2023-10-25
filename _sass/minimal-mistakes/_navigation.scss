@@ -10,7 +10,7 @@
   @include clearfix;
   margin: 0 auto;
   max-width: 100%;
-  // padding-left: 1em;
+  padding-left: 1em;
   padding-right: 1em;
   font-family: $sans-serif;
   -webkit-animation: $intro-transition;
@@ -26,6 +26,8 @@
     padding: 0;
     list-style: none;
     font-size: $type-size-6;
+    margin-bottom: 0;
+    color: #8c8da1;
 
     @include breakpoint($large) {
       float: right;
