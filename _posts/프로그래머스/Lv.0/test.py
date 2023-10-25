@@ -164,17 +164,29 @@
 # string.swapcase()
 # print(string)
 
-from collections import OrderedDict
+# from collections import OrderedDict
 
-# 기본 딕셔너리
-dict_a = {'a': 'apple', 'b': 'banana', 'p': 'pineapple'}
-dict_b = {'b': 'banana', 'a': 'apple', 'p': 'pineapple'}
-dict_a == dict_b
-# True
+# # 기본 딕셔너리
+# dict_a = {'a': 'apple', 'b': 'banana', 'p': 'pineapple'}
+# dict_b = {'b': 'banana', 'a': 'apple', 'p': 'pineapple'}
+# dict_a == dict_b
+# # True
 
-OrderedDict
-ordered_a = OrderedDict([('a', 'apple'), ('b', 'banana'), ('p', 'pineapple')])
-ordered_b = OrderedDict([('b', 'banana'), ('a', 'apple'), ('p', 'pineapple')])
+# OrderedDict
+# ordered_a = OrderedDict([('a', 'apple'), ('b', 'banana'), ('p', 'pineapple')])
+# ordered_b = OrderedDict([('b', 'banana'), ('a', 'apple'), ('p', 'pineapple')])
 
-ordered_a == ordered_b
-# False
+# ordered_a == ordered_b
+# # False
+
+# def solution(myStr):
+#     new = ("a", "b", "c")
+#     myStr.split
+#     return myStr
+
+# myStr = "baconlettucetomato"
+# print(solution(myStr))
+
+a = ["", "" , ""]
+if [] == a:
+    print('["EMPTY"]')
