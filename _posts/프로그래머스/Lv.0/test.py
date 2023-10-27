@@ -158,8 +158,8 @@
 #     return [i for i in new if i != '']
 
 # my_string = " i    lov y"
-# print(solution(my_string)) 
-            
+# print(solution(my_string))
+
 # string = "AABBAB"
 # string.swapcase()
 # print(string)
@@ -195,10 +195,10 @@
 # a= []
 # a.append()
 
-    
+
 # def solution(arr):
 #     answer = []
-    
+
 #     for i in range(len(arr)):
 #         if len(answer) == 0:
 #             answer.append(arr[i])
@@ -209,29 +209,33 @@
 #             elif answer[-1] != arr[i]:
 #                 answer.append(arr[i])
 #                 i += 1
-    
+
 #     if len(answer) == 0:
 #         return [-1]
-    
+
 #     return answer
 
-def solution(arr):
-    stk = []
-    for i in range(len(arr)):
-        if len(stk) == 0:
-            stk.append(arr[i])
-        else:
-            if stk[-1] == arr[i]:
-                stk.pop()
-                i += 1
-            else:
-                stk.append(arr[i])
-                i += 1
-    if len(stk) == 0:
-        return [-1]
-    return stk
-arr = [0, 1, 1, 1, 0]
 
-print(solution(arr))	
+# 빈 배열만들기 6
+# def solution(arr):
+#     stk = []
+#     for i in range(len(arr)):
+#         if len(stk) == 0:
+#             stk.append(arr[i])
+#         else:
+#             if stk[-1] == arr[i]:
+#                 stk.pop()
+#                 i += 1
+#             else:
+#                 stk.append(arr[i])
+#                 i += 1
+#     if len(stk) == 0:
+#         return [-1]
+#     return stk
+# arr = [0, 1, 1, 1, 0]
 
-z
+# print(solution(arr))
+
+a = {1, 1, 2, 3}
+b = list(a)
+print(b, type(b))
