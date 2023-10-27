@@ -188,85 +188,49 @@
 # print(solution(myStr))
 
 # a = ["", "" , ""]
-# if [] == a:
-
+# if a == :
 #     print('["EMPTY"]')
+# range
 
-
-# def solution(arr, flag):
-#     x =[]
-#     for i in range(len(flag)):
-#         if flag[i]:
-#             for v in range(arr[i] * 2):
-#                 x.append(arr[i])
-#         else:
-#             for v in range(arr[i]):
-#                 x.pop(x[-1])
-#     return x
-# #     return a
-# arr = [3, 2, 4, 1, 3]
-# flag = [True, False, True, False, False]
-
-# print(solution(arr, flag))
-# b = ["a"]
-# print(b * 3)
-
-# def solution(myStr):
-#     n2 = myStr.replace("b", "a").replace("c", "a")
-#     new = n2.split("a")
-#     # new2 = []
-
-#     # if new.count("") == len(new):
-#     #     return ["EMPTY"]
-#     # for i in new:
-#     #     if i != "":
-#     #         new2.append(i)
-#     # return new2
-#     x = []
-#     for i in new:
-#         if i:
-#             x += [i]
-#     if x:
-#         return x
-#     else:
-#         return ['EMPTY']
-            
-# def solution(myStr):
-#     answer = [x for x in myStr.replace('a', ' ').replace('b', ' ').replace('c', ' ').split() if x]
-#     return answer if answer else ['EMPTY']
-# def solution(myStr):
-#     new = myStr.replace("b", "a").replace("c", "a").split("a")
-#     x = []
-#     for i in new:
-#         if i:
-#             x += [i]
-#     if x:
-#         return x
-#     else:
-#         return ['EMPTY']
-# myStr = 'baconlettucetomato'
-# print(solution(myStr))
+# a= []
+# a.append()
 
 def solution(arr):
-    i = 0
-    if i < len(arr):
-        if i == 0:
-            stk = [arr[i]]
-            i += 1
-            return stk
-        if stk[-1] == arr[i]:
-            del stk[-1]
-            i = i + 1
-            return stk
-        else:
+    stk = []
+    
+    for i in range(len(arr)):
+        if len(stk) == 0:
             stk.append(arr[i])
-            i = i + 1
-            return stk
-    print(i)
+        else:
+            if stk[-1] == arr[i]:
+                stk.pop()
+                i += 1
+            elif stk[-1] != arr[i]:
+                stk.append(arr[i])
+                i += 1
     if stk == False:
         return [-1]
-    else: 
-        return stk
+    return stk
     
+# def solution(arr):
+#     answer = []
+    
+#     for i in range(len(arr)):
+#         if len(answer) == 0:
+#             answer.append(arr[i])
+#         else:
+#             if answer[-1] == arr[i]:
+#                 answer.pop()
+#                 i += 1
+#             elif answer[-1] != arr[i]:
+#                 answer.append(arr[i])
+#                 i += 1
+    
+#     if len(answer) == 0:
+#         return [-1]
+    
+#     return answer
 arr = [0, 1, 1, 1, 0]
-print(solution(arr))
+
+print(solution(arr))	
+
