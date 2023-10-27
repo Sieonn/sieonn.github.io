@@ -58,25 +58,29 @@ AWS DMS를 AWS SCT와 함께 사용하면 가동 중지 시간을 줄 이면서 
 
 ### AWS SCT가 지원하는 변환
 
-AWS SCT 변환: • 소스 데이터베이스 스키마 • 보기 • 축적 절차(stored procedure) • 함수
+**AWS SCT 변환:** 
 
-|      |      |
-| ---- | ---- |
-|      |      |
-|      |      |
-|      |      |
-|      |      |
-|      |      |
-|      |      |
-|      |      |
-|      |      |
-|      |      |
-|      |      |
-|      |      |
-|      |      |
-|      |      |
-|      |      |
-|      |      |
+- 소스 데이터베이스 스키마 • 
+- 보기 • 
+- 축적 절차(stored procedure) • 
+- 함수
+
+| 소스 데이터베이스        | Amazon RDS의 대상 데이터베이스                               |
+| ------------------------ | ------------------------------------------------------------ |
+| Oracle Database          | Amazon Aurora, MySQL, PostgreSQL, MariaDB                    |
+| Oracle 데이터 웨어하우스 | Amazon Redshift                                              |
+| Azure SQL                | Amazon Aurora, MySQL, PostgreSQL                             |
+| Microsoft SQL Server     | Amazon Aurora, Amazon Redshift, MySQL, PostgreSQL, MariaDB   |
+| Teradata                 | Amazon Redshift                                              |
+| IBM Netezza              | Amazon Redshift                                              |
+| Greenplum                | Amazon Redshift                                              |
+| HPE Vertica              | Amazon Redshift                                              |
+| MySQL 및 MariaDB         | PostgreSQL                                                   |
+| PostgreSQL               | Amazon Aurora, MySQL, MariaDB                                |
+| Amazon Aurora            | PostgreSQL                                                   |
+| IBM Db2 LUW              | Amazon Aurora, MySQL, PostgreSQL                             |
+| Apache Cassandra         | Amazon DynamoDB                                              |
+| SAP ASE                  | RDS for MySQL, Aurora MySQL, RDS for PostgreSQL, Aurora PostgreSQL |
 
 ## 거의 연속적인 데이터베이스 복제
 
