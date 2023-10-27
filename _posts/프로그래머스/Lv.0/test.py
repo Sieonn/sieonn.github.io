@@ -234,8 +234,31 @@
 #     return stk
 # arr = [0, 1, 1, 1, 0]
 
+# print(solution(arr))7
+
+# def solution(arr):
+#     for i in range(len(arr)):
+#         if len(arr) < 2**i:
+#             return arr + ([0] * (2**i - len(arr)))
+#         elif len(arr) == 2 ** i:
+#             return arr
+
+
+# arr = [1, 2, 3, 4, 5, 6]
+
 # print(solution(arr))
 
-a = {1, 1, 2, 3}
-b = list(a)
-print(b, type(b))
+
+def solution(strArr):
+    new = []
+    zarr = [0] * len(strArr)
+    for i in strArr:
+        zarr[len(i)] += 1
+
+    return max(zarr)
+
+
+strArr = ["a", "bc", "d", "efg", "hi"]
+
+strArr = ["a", "bc", "d", "efg", "hi"]
+print(solution(strArr))
