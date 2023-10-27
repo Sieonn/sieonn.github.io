@@ -3,6 +3,7 @@ title: "Amazon VPC 연결 옵션"
 toc_lable: "Amazon VPC  연결 옵션"
 toc: true
 toc_sticky: true
+category: Jumpstart on AWS
 ---
 
 ## Amazon VPC 연결 옵션
@@ -19,15 +20,16 @@ toc_sticky: true
 
 ### Network address translation(NAT)
 
-당면 과제: 
+**당면 과제**
 
 프라이빗 서브넷의 Amazon Elastic Compute Cloud(Amazon EC2) 인스턴 스를 인터넷에 연결해야 합니다. 
 
-솔루션:  
+**솔루션**:
 
 사설 IP를 공인 IP로 바꿔준다.
 
- NAT 게이트웨이  NAT 인스턴스
+- NAT 게이트웨이 
+- NAT 인스턴스
 
 
 
@@ -69,13 +71,13 @@ VPC 피어링 연결을 생성하려면 다음을 수행합니다.
 
 ### VPC 피어링 연결을 위한 AWS CLI 명령
 
-명령
+**명령**
 
-aws ec2 create-vpc-peering-connection --vpc-id vpc-1a2b3c4d --peer-vpc-id vpc-11122233
+`aws ec2 create-vpc-peering-connection --vpc-id vpc-1a2b3c4d --peer-vpc-id vpc-11122233`
 
 ###  예제: VPC 피어링을 위한 AWS CloudFormation
 
-JavaScript Object Notation(JSON)의 AWS CloudFormation 스크립트 항목
+**JavaScript Object Notation(JSON)의 AWS CloudFormation 스크립트 항목**
 
 ```javascript
 {

@@ -22,11 +22,8 @@ sidebar-category:
     children:
       - title: "기초 300제"
         url: /python/samback/
-        children:
-          - title: "01.기초"
-            url: /python/samback/one/
       - title: "프로그래머스"
-        url: /python/programmers/
+        url: /python/programmers/        
   - title: "AWS restart"
     url: /AWS restart/
     children:

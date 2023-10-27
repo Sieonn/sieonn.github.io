@@ -3,6 +3,7 @@ title: "Amazon Redshift"
 toc: true
 toc_sticky: true
 toc_label: "Amazon Redshift"
+category: Jumpstart on AWS
 ---
 
 <span class="hlm">**Amazon Redshift**</span>는 클라우드 내에서 사용되는 <span class="hlm_h">페타바이트 규모</span>의 **완전관리형 데이터 웨어하우스** 서비스입니다.

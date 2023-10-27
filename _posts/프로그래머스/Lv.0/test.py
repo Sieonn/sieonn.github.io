@@ -195,22 +195,6 @@
 # a= []
 # a.append()
 
-def solution(arr):
-    stk = []
-    
-    for i in range(len(arr)):
-        if len(stk) == 0:
-            stk.append(arr[i])
-        else:
-            if stk[-1] == arr[i]:
-                stk.pop()
-                i += 1
-            elif stk[-1] != arr[i]:
-                stk.append(arr[i])
-                i += 1
-    if stk == False:
-        return [-1]
-    return stk
     
 # def solution(arr):
 #     answer = []
@@ -230,6 +214,22 @@ def solution(arr):
 #         return [-1]
     
 #     return answer
+
+def solution(arr):
+    stk = []
+    for i in range(len(arr)):
+        if len(stk) == 0:
+            stk.append(arr[i])
+        else:
+            if stk[-1] == arr[i]:
+                stk.pop()
+                i += 1
+            else:
+                stk.append(arr[i])
+                i += 1
+    if len(stk) == 0:
+        return [-1]
+    return stk
 arr = [0, 1, 1, 1, 0]
 
 print(solution(arr))	
