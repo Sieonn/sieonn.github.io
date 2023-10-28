@@ -249,16 +249,33 @@
 # print(solution(arr))
 
 
-def solution(strArr):
+# def solution(strArr):
+#     new = []
+#     zarr = [0] * len(strArr)
+#     for i in strArr:
+#         zarr[len(i)] += 1
+
+#     return max(zarr)
+
+
+# strArr = ["a", "bc", "d", "efg", "hi"]
+
+# strArr = ["a", "bc", "d", "efg", "hi"]
+# print(solution(strArr))
+
+
+def solution(rank, attendance):
     new = []
-    zarr = [0] * len(strArr)
-    for i in strArr:
-        zarr[len(i)] += 1
+    for i, v in enumerate(attendance):
+        if v:
+            new.append(rank[i])
+        print(new)
+    new2 = sorted(new)
+    print(new2)
+    print(new2[-1])
+    return new2[0] * 10000 + 100 * new2[1] + new2[2]
 
-    return max(zarr)
 
-
-strArr = ["a", "bc", "d", "efg", "hi"]
-
-strArr = ["a", "bc", "d", "efg", "hi"]
-print(solution(strArr))
+rank = [3, 7, 2, 5, 4, 6, 1]
+attendance = [False, True, True, True, True, False, False]
+print(solution(rank, attendance))
