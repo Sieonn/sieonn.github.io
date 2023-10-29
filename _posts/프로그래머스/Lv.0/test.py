@@ -264,18 +264,25 @@
 # print(solution(strArr))
 
 
-def solution(rank, attendance):
-    new = []
-    for i, v in enumerate(attendance):
-        if v:
-            new.append(rank[i])
-        print(new)
-    new2 = sorted(new)
-    print(new2)
-    print(new2[-1])
-    return new2[0] * 10000 + 100 * new2[1] + new2[2]
+# def solution(rank, attendance):
+#     new = []
+#     for i, v in enumerate(attendance):
+#         if v:
+#             new.append(rank[i])
+#     new2 = sorted(new)
+
+#     return rank.index(new2[0]) * 10000 + 100 * rank.index(new2[1]) + rank.index(new2[2])
 
 
-rank = [3, 7, 2, 5, 4, 6, 1]
-attendance = [False, True, True, True, True, False, False]
-print(solution(rank, attendance))
+# rank = [3, 7, 2, 5, 4, 6, 1]
+# attendance = [False, True, True, True, True, False, False]
+# print(solution(rank, attendance))
+
+# str = "1234"
+# sum = 0
+# for i in str:
+#     sum = sum + int(i)
+# print(sum)
+
+a = "1234"
+print(sum(map(int, a)))
