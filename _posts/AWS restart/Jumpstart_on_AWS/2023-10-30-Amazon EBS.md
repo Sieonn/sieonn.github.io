@@ -94,10 +94,92 @@ Amazon EBS를 사용하여 개별 스토리지 볼륨을 생성하고 Amazon EC2
 
 ### Amazon EBS 볼륨 유형
 
-|                    |                            | 솔리드 스테이트 드라이브(SSD) |               | 하드 디스크 드라이브(HDD) |
-| ------------------ | -------------------------- | ----------------------------- | ------------- | ------------------------- |
-|                    | 범용                       | 프로비저닝된 IOPS             | 처리량 최적화 | 콜드                      |
-| 최대 볼륨 크기     | 16테비바이트(TiB)          | 16TiB                         | 16TiB         | 16TiB                     |
-| 볼륨당 최대 IOPS   | 10,000                     | 32,000                        | 500           | 250                       |
-| 볼륨당 최대 처리량 | 초당 160메비바이트 (MiB/s) | 500MiB/s                      | 500MiB/s      | 250MiB/s                  |
+<style type="text/css"><center>
+.tg  {border-collapse:collapse;border-spacing:0;}
+.tg td{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;
+  overflow:hidden;padding:10px 1em;word-break:normal;}
+.tg th{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:12px;
+  font-weight:normal;overflow:hidden;padding:7px 1em;word-break:normal;}
+.tg .tg-oiir{background-color:#8e8ffa;border-color:#fff;font-family:inherit;font-size:14px;font-weight:bold;text-align:center;
+  vertical-align:top}
+.tg .tg-rdv1{border-color:#c1bebe;color:$dark-gray;font-family:inherit;font-size:12px;text-align:center;vertical-align:top}
+    .tg .tg-y9zo{background-color:#8e8ffa;border-color:#fff;font-family:inherit;font-size:14px;text-align:center;vertical-align:top}</center>
+</style>
+<table class="tg">
+<thead>
+  <tr>
+    <th class="tg-y9zo" rowspan="2"></th>
+    <th class="tg-oiir" colspan="2">솔리드 스테이트 드라이브(SSD)</th>
+    <th class="tg-oiir" colspan="2">하드 디스크 드라이브(HDD)</th>
+  </tr>
+  <tr>
+    <th class="tg-y9zo">범용</th>
+    <th class="tg-y9zo">프로비저닝된 IOPS</th>
+    <th class="tg-y9zo">처리량 최적화</th>
+    <th class="tg-y9zo">콜드</th>
+  </tr>
+</thead>
+<tbody>
+  <tr>
+    <td class="tg-rdv1">최대 볼륨 크기</td>
+    <td class="tg-rdv1">16테비바이트(TiB)</td>
+    <td class="tg-rdv1">16TiB</td>
+    <td class="tg-rdv1">16TiB</td>
+    <td class="tg-rdv1">16TiB</td>
+  </tr>
+  <tr>
+    <td class="tg-rdv1">볼륨당 최대 IOPS</td>
+    <td class="tg-rdv1">10,000</td>
+    <td class="tg-rdv1">32,000</td>
+    <td class="tg-rdv1">500</td>
+    <td class="tg-rdv1">250</td>
+  </tr>
+  <tr>
+    <td class="tg-rdv1">볼륨당 최대 처리량 </td>
+    <td class="tg-rdv1">초당 160메비바이트(MiB/s)</td>
+    <td class="tg-rdv1">500MiB/s</td>
+    <td class="tg-rdv1">500MiB/s</td>
+    <td class="tg-rdv1">250MiB/s</td>
+  </tr>
+</tbody>
+</table>
+
+## EBS 볼륨 유형의 용례
+
+### EBS 볼륨: 용례
+
+<style type="text/css">
+.tg  {border-collapse:collapse;border-spacing:0;}
+.tg td{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;
+  overflow:hidden;padding:9px 10px;word-break:normal;}
+.tg th{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;
+  font-weight:normal;overflow:hidden;padding:9px 10px;word-break:normal;}
+.tg .tg-9t5p{background-color:#8e8ffa;border-color:#ffffff;color:#ffffff;font-family:inherit;font-size:14px;font-weight:bold;
+  text-align:center;vertical-align:middle}
+.tg .tg-sdct{background-color:#8E8FFA;border-color:#ffffff;color:#ffffff;font-family:inherit;font-size:14px;font-weight:nomal;
+  text-align:center;vertical-align:middle}
+.tg .tg-67p5{border-color:#c1bebe;color:$dark-gray;font-family:inherit;font-size:12px;text-align:left;vertical-align:middle}
+</style>
+<table class="tg">
+<thead>
+  <tr>
+    <th class="tg-9t5p" colspan="2">솔리드 스테이트 드라이브(SSD)</th>
+    <th class="tg-9t5p" colspan="2">하드 디스크 드라이브(HDD)</th>
+  </tr>
+</thead>
+<tbody>
+  <tr>
+    <td class="tg-sdct">범용</td>
+    <td class="tg-sdct">프로비저닝된 IOPS</td>
+    <td class="tg-sdct">처리량 최적화</td>
+    <td class="tg-9t5p">콜드</td>
+  </tr>
+  <tr>
+    <td class="tg-67p5">- 대부분의 워크로드에 권장됨<br>- 시스템 부트 볼륨<br>- 기상 데스크톱<br>- 대기 시간이 짧은 대화형 앱<br>- 개발 및 테스트 환경</td>
+    <td class="tg-67p5">- I/O 집약적 워크로드<br>- 관계형 데이터베이스<br>- NoSQL 데이터베이스</td>
+    <td class="tg-67p5">- 저렴한 가격에 일관되고 빠른 처리량이 <br>&nbsp;&nbsp;요구되는 스트리밍 워크로드<br>- 빅 데이터<br>- 데이터 웨어하우스<br>- 로그처리<br>- 부트 볼륨이 될 수 없음</td>
+    <td class="tg-67p5">- 자주 액세스하지 않는 대량의 데이터 <br>&nbsp;&nbsp;볼륨을 처리량 중심으로 저장<br>- 스토리지 비용이 최대한 낮아야지 하는 시나리오<br>- 부트 볼륨이 될 수 없음</td>
+  </tr>
+</tbody>
+</table>
 
