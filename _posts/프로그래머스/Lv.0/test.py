@@ -314,6 +314,7 @@
 
 
 # n_str = "0010"
+<<<<<<< Updated upstream
 # print(solution(n_str)[)
 # 이익 = 매매가*(i - 1) - sum(매매가[:i])
 # 6- 2 = 4
@@ -328,3 +329,13 @@
 T = int(int(input()))
 for i in  range(1, T + 1):
     print("#" * int(input()) )
+=======
+# print(solution(n_str))
+
+test = 0
+for test_case in range(1, 6 + 1):
+    if test_case % 2 == 1:
+        test += test_case
+
+print(test)
+>>>>>>> Stashed changes
