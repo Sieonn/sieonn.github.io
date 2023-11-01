@@ -1,8 +1,8 @@
 ---
-title: "🌴프로그래머스"
+title: "🌴SW Expert Academy"
 layout: archive
-permalink: /python/programmers/
+permalink: /python/SWEA/
 ---
 
-{% assign posts = site.categories.programmers %}
+{% assign posts = site.categories.swea %}
 {% for post in posts %} {% include archive-single.html type=page.entries_layout %} {% endfor %}

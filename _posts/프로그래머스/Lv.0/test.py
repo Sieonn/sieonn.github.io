@@ -314,7 +314,7 @@
 
 
 # n_str = "0010"
-<<<<<<< Updated upstream
+
 # print(solution(n_str)[)
 # 이익 = 매매가*(i - 1) - sum(매매가[:i])
 # 6- 2 = 4
@@ -326,16 +326,18 @@
 #     price = list(map(int, input().split))
 #     benefit = 0
 #     while len(prince) != 0:
-T = int(int(input()))
-for i in  range(1, T + 1):
-    print("#" * int(input()) )
-=======
-# print(solution(n_str))
+# T = int(int(input()))
+# for i in  range(1, T + 1):
+#     print("#" * int(input()) )
 
-test = 0
-for test_case in range(1, 6 + 1):
-    if test_case % 2 == 1:
-        test += test_case
+# # print(solution(n_str))
 
-print(test)
->>>>>>> Stashed changes
+# test = 0
+# for test_case in range(1, 6 + 1):
+#     if test_case % 2 == 1:
+#         test += test_case
+
+# print(test)
+
+a = 5
+print(a**2)
