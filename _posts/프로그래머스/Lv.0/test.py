@@ -338,6 +338,110 @@
 #         test += test_case
 
 # print(test)
+# import math
 
-a = 5
-print(a**2)
+# a = 5.54
+# print(round(a))
+# n = list(map(int, input().split()))
+# an = sum(n) / 10
+# print(n, type(n), sum(n), round(an), an)
+
+# T = int(input())
+# # 여러개의 테스트 케이스가 주어지므로, 각각을 처리합니다.
+# for test_case in range(1, T + 1):
+#     # ///////////////////////////////////////////////////////////////////////////////////
+#     b, c = map(int, input().split())
+#     if b < c:
+#         print(f'#{test_case} {"<"}')
+#     elif b == c:
+#         print(f'#{test_case} {"="}')
+#     else:
+#         print(f'#{test_case} {">"}')
+# T = int(input())
+# # 여러개의 테스트 케이스가 주어지므로, 각각을 처리합니다.
+# for test_case in range(1, T + 1):
+#     new = []
+#     for i in list(map(int, input().split())):
+#         new.append(i)
+#     print(f'#{test_case} {max(new)}')
+
+# T = int(input())
+# # 여러개의 테스트 케이스가 주어지므로, 각각을 처리합니다.
+# for test_case in range(1, T + 1):
+
+#     new = sort(new)
+#     print(f'#{test_case} {new[len(new) // 2 + 1]}')
+
+# N = int(input())
+# new = []
+# for i in list(map(int, input().split())):
+#     new.append(i)
+#     nnew = sorted(new)
+# print(nnew[N // 2])
+# # 3 4 12 13 26 32 43 52 65
+# sum = 0
+# for i in str(input()):
+#     sum += int(i)
+# print(sum)
+# 20231101
+# T = int(input())
+# for i in range(1, T+1):
+#     date = input()
+#     if int(date[4:6]) in [4, 6, 9, 11]:
+#         if int(date[6:]) in range(1, 31):
+#             print(f'#{i} {date[:4]}{"/"}{date[4:6]}{"/"}{date[6:] }')
+#         else:
+#             print(f'#{i} {-1}')
+#     elif int(date[4:6]) == 2:
+#         if int(date[6:]) in range(1, 29):
+#             print(f'#{i} {date[:4]}{"/"}{date[4:6]}{"/"}{date[6:] }')
+#         else:
+#             print(f'#{i} {-1}')
+#     elif int(date[4:6]) in [1, 3, 5, 7, 8, 10, 12]:
+#         if int(date[6:]) in range(1, 32):
+#             print(f'#{i} {date[:4]}{"/"}{date[4:6]}{"/"}{date[6:] }')
+#         else:
+#             print(f'#{i} {-1}')
+#     else:
+#         print(f'#{i} {-1}')
+# N = input()
+# print(' '.join([str(ord(i)-64) for i in N]))
+
+# print(input().upper())
+
+# P, K = map(int, input().split())
+# print(P - K + 1)
+
+# print(9//2)
+
+# print("#++++",
+#       "+#+++",
+#       "++#++",
+#       "+++#+",
+#       "++++#", end="\n")
+
+# a, b = map(int, input().split())
+# print(f'{a + b} {a - b} {a *b} {a // b)
+# N = int(input())
+# su = []
+# for i in range(1, N + 1):
+#     if N % i == 0:
+#         su.append(str(i))
+# print(' '.join(su))
+
+
+# A, B = map(int, input().split())
+# if A < B and B != 3:
+#     print("B")
+#     if B == 3:
+#         if A == 1:
+#             print("A")
+#         else:
+#             print("B")
+# elif A > B and A != 3:
+#     print("A")
+#     if A == 3:
+#         if B == 1:
+#             print("B")
+#         else:
+#             print("A")
