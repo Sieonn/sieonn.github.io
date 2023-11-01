@@ -305,13 +305,26 @@
 
 # str = "001234"
 # print(str[3:])
-def solution(n_str):
-    for i in range(len(n_str)):
-        if n_str[i] != "0":
-            return n_str[i:]
-        else:
-            pass
+# def solution(n_str):
+#     for i in range(len(n_str)):
+#         if n_str[i] != "0":
+#             return n_str[i:]
+#         else:
+#             pass
 
 
-n_str = "0010"
-print(solution(n_str))
+# n_str = "0010"
+# print(solution(n_str)[)
+# 이익 = 매매가*(i - 1) - sum(매매가[:i])
+# 6- 2 = 4
+# 8 - 6 =2
+# T = int(input())
+
+# for i in range(T):
+#     N = int(input())
+#     price = list(map(int, input().split))
+#     benefit = 0
+#     while len(prince) != 0:
+T = int(int(input()))
+for i in  range(1, T + 1):
+    print("#" * int(input()) )
