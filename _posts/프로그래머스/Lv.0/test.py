@@ -284,5 +284,34 @@
 #     sum = sum + int(i)
 # print(sum)
 
-a = "1234"
-print(sum(map(int, a)))
+# a = "1234"
+# print(sum(map(int, a)))
+
+# def eveswitch(str):
+#     new = ''
+#     for i in range(len(str)):
+#         if i % 2 == 0:
+#             new += str[i].swapcase()
+
+#         else:
+#             new += str[i]
+
+#     return new
+
+
+# str = 'Divide and conquer algorithm'
+
+# print(eveswitch(str))
+
+# str = "001234"
+# print(str[3:])
+def solution(n_str):
+    for i in range(len(n_str)):
+        if n_str[i] != "0":
+            return n_str[i:]
+        else:
+            pass
+
+
+n_str = "0010"
+print(solution(n_str))
