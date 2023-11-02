@@ -497,16 +497,31 @@
 #         print(f'#{i} {N[M]*M - sum(N[:M])}')
 #     else:
 #         print(f'#{i} {0}')
-T = int(input())
-for i in range(1, 1+T):
-    Num = int(input())
-    N = list(map(int, input().split()))
-    new = 0
-    answer = 0
+# T = int(input())
+# for i in range(1, 1+T):
+#     Num = int(input())
+#     N = list(map(int, input().split()))
+#     new = 0
+#     answer = 0
 
-    for val in N[::-1]:
-        if val >= new:
-            new = val
-        else:
-            answer += new - val
-    print("#", i, " ", answer, sep="")
+#     for val in N[::-1]:
+#         if val >= new:
+#             new = val
+#         else:
+#             answer += new - val
+#     print("#", i, " ", answer, sep="")
+
+N = int(input())
+new = []
+# rule = ("3", "6", "9")
+for i in range(1, N+1):
+    i = str(i)
+    clap = i.count('3') + i.count('6') + i.count('9')
+
+    if clap == 0:
+        print(i, end=' ')
+    else:
+        print("-" * clap, end=' ')
+
+# new = new.replace("3", '-').replace("6", '-').replace("9", '-')
+# print(new)
