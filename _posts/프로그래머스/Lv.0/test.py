@@ -429,19 +429,84 @@
 #         su.append(str(i))
 # print(' '.join(su))
 
-
+# 가위 : 1 바위 : 2 보 : 3
 # A, B = map(int, input().split())
-# if A < B and B != 3:
+# if (A - B) == -1 or (A-B) == 2:
 #     print("B")
-#     if B == 3:
-#         if A == 1:
-#             print("A")
-#         else:
-#             print("B")
-# elif A > B and A != 3:
+# elif (A -B) == 1 or (A - B) == -2:
 #     print("A")
-#     if A == 3:
-#         if B == 1:
-#             print("B")
-#         else:
-#             print("A")
+# new = []
+# for i in range(0, int(input()) + 1):
+#     new.append(str(2**i))
+# print(' '.join(new))
+
+# new = []
+# for i in range(0, int(input())+1):
+#     new.append(str(i))
+# print(' '.join(reversed(new)))
+
+# 1 1 3 1 2
+# 0 2 -2 1
+# 10 7 6
+# -3 -1
+# 3 5 9
+
+# 2 4
+# 3 5 8
+# 16[2] - (3*1 + 5*1) = 8
+# len(N)
+# index(max(n))
+
+
+# T = int(input())
+# for i in range(1, T+1):
+#     N = list(map(int, input().split()))
+# # print(max(N), N.index(max(N)))
+#     M = N.index(max(N))
+# # O, M = N[:M+1], N[M+1:]
+# # print(O, M)
+#     A = 0
+#     B = 0
+#     if max(N) != N[-1] and max(N) != N[0]:
+#         O, P = N[:M+1], N[M+1:]
+#         A = O[-1]*(len(O)-1) - sum(O[:len(O)-1])
+#         B = P[-1]*(len(P)-1) - sum(P[:len(P)-1])
+#         print(f'#{i} {A+B}')
+#     elif max(N) == N[-1]:
+#         print(f'#{i} {N[M]*M - sum(N[:M])}')
+#     else:
+#         print(F'#{i} {0}')
+
+
+# T = int(input())
+# for i in range(1, T+1):
+#     Num = int(input())
+#     N = list(map(int, input().split()))
+#     M = N.index(max(N))
+#     A = 0
+#     if M not in [0, Num-1]:
+#         O, P = N[:M+1], N[M+1:]
+#         if len(P) >= 2:
+#             A = O[-1]*(len(O)-1) - sum(O[:len(O)-1])
+#             A = A + P[-1]*(len(P)-1) - sum(P[:len(P)-1])
+#             print(f'#{i} {A}')
+#         elif len(P) < 2:
+#             A = O[-1]*(len(O)-1) - sum(O[:len(O)-1])
+#             print(f'#{i} {A}')
+#     elif max(N) == N[-1]:
+#         print(f'#{i} {N[M]*M - sum(N[:M])}')
+#     else:
+#         print(f'#{i} {0}')
+T = int(input())
+for i in range(1, 1+T):
+    Num = int(input())
+    N = list(map(int, input().split()))
+    new = 0
+    answer = 0
+
+    for val in N[::-1]:
+        if val >= new:
+            new = val
+        else:
+            answer += new - val
+    print("#", i, " ", answer, sep="")
