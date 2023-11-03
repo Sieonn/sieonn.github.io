@@ -511,17 +511,87 @@
 #             answer += new - val
 #     print("#", i, " ", answer, sep="")
 
-N = int(input())
-new = []
-# rule = ("3", "6", "9")
-for i in range(1, N+1):
-    i = str(i)
-    clap = i.count('3') + i.count('6') + i.count('9')
+# N = int(input())
+# new = []
+# # rule = ("3", "6", "9")
+# for i in range(1, N+1):
+#     i = str(i)
+#     clap = i.count('3') + i.count('6') + i.count('9')
 
-    if clap == 0:
-        print(i, end=' ')
-    else:
-        print("-" * clap, end=' ')
+#     if clap == 0:
+#         print(i, end=' ')
+#     else:
+#         print("-" * clap, end=' ')
 
 # new = new.replace("3", '-').replace("6", '-').replace("9", '-')
 # print(new)
+
+# def solution(order):
+#     A = 0
+#     B = 0
+#     for i in order:
+#         A += i.count("americano") + i.count("anything")
+#         B += i.count("cafelatte")
+#     print(A, B)
+#     return 4500*A + 5000*B
+
+
+# order = ["cafelatte", "americanoice", "hotcafelatte", "anything"]
+# print(solution(order))
+
+# def solution(picture, k):
+#     new = []
+#     new2 = []
+#     for i in picture:
+#         a = 0
+#         while a < k:
+#             new.append(i)
+#             a += 1
+#     new = new
+#     for i in new:
+#         news = ''
+#         for b in i:
+#             news += b*k
+#         new2.append(news)
+#     return new2
+
+
+# picture = ["x.x", ".x.", "x.x"]
+# k = 3
+# print(solution(picture, k))
+# new = ''
+# for i in "abcde":
+#     if i < "d":
+#         new += 'l'
+#     else:
+#         new += i
+# print(new)
+
+# def solution(n):
+#     new = []
+#     for i in range(n):
+#         news = []
+#         for j in range(n):
+#             if i == j:
+#                 news.append(1)
+#             else:
+#                 news.append(0)
+#         new.append(news)
+
+#     return new
+
+
+# # d = [1]
+# n = 3
+# print(solution(6))
+
+T = int(input())
+for i in (1, T+1):
+    Str = input()
+    new = ''
+    for a in Str:
+        new += a
+        l = len(new)
+        if new == Str[l:l+l]:
+            break
+    print(f'#{i} {len(new)}')
