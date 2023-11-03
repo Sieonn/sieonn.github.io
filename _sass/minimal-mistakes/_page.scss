@@ -4,8 +4,8 @@
 
 #main {
   @include clearfix;
-  // margin-left: auto;
-  // margin-right: auto;
+  // margin-left: 1em;
+  // margin-right: 1em;
   padding-left: 1em;
   padding-right: 1em;
   -webkit-animation: $intro-transition;
@@ -15,7 +15,7 @@
   animation-delay: 0.15s;
 
   @include breakpoint($x-large) {
-    max-width: 1400px; //$x-large;
+    max-width: 1400; //$x-large;;
   }
 }
 
@@ -44,7 +44,7 @@ body {
 
   @include breakpoint($x-large) {
     width: calc(100% - #{$right-sidebar-width});
-    padding-right: 20%; //$right-sidebar-width;
+    padding-right: $right-sidebar-width;
   }
 
   .page__inner-wrap {
@@ -76,7 +76,7 @@ body {
   margin-top: 0;
   line-height: 1.4;
   color: $text-color;
-  font-weight: 900;
+  // font-weight: 900;
 
   a {
     color: $text-color;
@@ -218,6 +218,7 @@ body {
   animation: $intro-transition;
   -webkit-animation-delay: 0.25s;
   animation-delay: 0.25s;
+  width: 20%;
 
   &--overlay {
     position: relative;
@@ -269,7 +270,7 @@ body {
 
 .page__hero-image {
   width: 80%;
-  height: auto;
+  // height: auto;
   -ms-interpolation-mode: bicubic;
 }
 
