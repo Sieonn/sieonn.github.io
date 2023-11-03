@@ -585,13 +585,60 @@
 # n = 3
 # print(solution(6))
 
-T = int(input())
-for i in (1, T+1):
-    Str = input()
-    new = ''
-    for a in Str:
-        new += a
-        l = len(new)
-        if new == Str[l:l+l]:
+# T = int(input())
+# for i in (1, T+1):
+#     Str = input()
+#     new = ''
+#     for a in Str:
+#         new += a
+#         l = len(new)
+#         if new == Str[l:l+l]:
+#             break
+#     print(f'#{i} {len(new)}')
+
+
+# for i in range(1, case_count + 1):
+#     string = input()
+#     word = ''
+#     for char in string:
+#         word += char
+#         length = len(word)
+#         if word == string[length:length+length]:
+#             rest_string = string[length:]
+#             rest_string = rest_string.replace(word, '')
+#             if len(rest_string) < len(word):
+#                 break
+#     print('#{} {}'.format(i, len(word)))
+
+s = input()
+str = ''
+for i in s:
+    str += i
+    l = len(str)
+    if str == s[l:l+l]:
+        news = s[l:].replace(str, "")  # PI-APIAPIAPIAPIA
+        if len(news) == False:
             break
-    print(f'#{i} {len(new)}')
+print(str)
+
+#         if len(news) < len(str):
+#             break
+# print(l)
+
+# s = input()
+# str = ''
+# for i in s:
+#     str += i
+#     l = len(str)
+#     if str == s[l:l+l]:
+#         print(str)
+s = input()
+str = ''
+for i in s:
+    str += i
+    l = len(str)
+    if str == s[l:l+l]:
+        news = s[l:].replace(str, "")  # PI-APIAPIAPIAPIA
+        if len(news) < s.count(str):
+            break
+print(str)
