@@ -610,16 +610,17 @@
 #                 break
 #     print('#{} {}'.format(i, len(word)))
 
-s = input()
-str = ''
-for i in s:
-    str += i
-    l = len(str)
-    if str == s[l:l+l]:
-        news = s[l:].replace(str, "")  # PI-APIAPIAPIAPIA
-        if len(news) == False:
-            break
-print(str)
+# s = input()
+# str = ''
+# for i in s:
+#     str += i
+#     l = len(str)
+#     if str == s[l:l+l]:
+#         news = s[l:].replace(str, "")  # PI-APIAPIAPIAPIA
+#         if len(news) == False:
+#             # print(news)
+#             break
+# print(str)
 
 #         if len(news) < len(str):
 #             break
@@ -632,13 +633,103 @@ print(str)
 #     l = len(str)
 #     if str == s[l:l+l]:
 #         print(str)
-s = input()
-str = ''
-for i in s:
-    str += i
-    l = len(str)
-    if str == s[l:l+l]:
-        news = s[l:].replace(str, "")  # PI-APIAPIAPIAPIA
-        if len(news) < s.count(str):
-            break
-print(str)
+# T = int(input())
+# for i in range(1, T+1):
+#     N = int(input())
+#     for a in range(1, N+1):
+#         new = ''
+#         for b in range(1, N+1):
+#             if b <= a:
+#                 if a == b:
+#                     new += "1 "
+#                 elif b == 1:
+#                     new += "1 "
+#                 else:
+#                     new += str(a - 1) + " "
+#         print(new)
+# T = int(input())
+# for i in range(1, T+1):
+#     N = int(input())
+#     print(f'#{i}')
+#     for a in range(1, N+1):
+#         new = ''
+#         for b in range(1, N+1):
+#             if b <= a:
+#                 if a == b:
+#                     new += "1 "
+#                 elif b == 1:
+#                     new += "1 "
+#                 else:
+#                     new += str(a - 1) + " "
+
+#         print(new)
+
+# N = [k for k in range(1, int(input())+1)]
+# new = []
+# new2 = []
+# for i in N:
+#     new2 += new
+#     new.clear()
+#     for j in N:
+#         if j <= i:
+#             if i == j or j == 1:
+#                 new.append(1)
+#             else:
+#                 new.append(new2[j-2] + new2[j-1])
+#     new2.clear()
+#     print(' '.join(list(map(str, new))))
+
+# print(new)
+
+
+# (3,2) ==> (2, 1), (2, 2)
+# (4,3)==> (3, 2)(3, 3)
+
+# N = [k for k in range(1, int(input())+1)]
+# for i in N:
+#     new = []
+#     for j in N:
+#         if j <= i:
+#             if i == j or j == 1:
+#                 new.append(1)
+#             else:
+#                 new.append(new2[j-2] + new2[j-1])
+#     new2 = []
+#     new2 += new
+#     print(' '.join(list(map(str, new))))
+T = int(input())
+for q in range(1, 1 + T):
+    N = [k for k in range(int(input()))]
+    print(f'#{q}')
+    for i in N:
+        now = []
+        for j in N:
+            if j <= i:
+                if i == j or j == 0:
+                    now.append(1)
+                else:
+                    now.append(save[j-1] + save[j])
+        save = []
+        save += now
+        print(' '.join(list(map(str, now))))
+
+
+# 내가 통과한 코드
+
+# T = int(input())
+# for i in range(1, T+1):
+#     N = [k for k in range(1, int(input())+1)]
+#     print(f'#{i}')
+#     new = []
+#     new2 = []
+#     for i in N:
+#         new2 += new
+#         new.clear()
+#         for j in N:
+#             if j <= i:
+#                 if i == j or j == 1:
+#                     new.append(1)
+#                 else:
+#                     new.append(new2[j-2] + new2[j-1])
+#         new2.clear()
+#         print(' '.join(list(map(str, new))))
