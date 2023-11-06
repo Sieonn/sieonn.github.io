@@ -697,21 +697,21 @@
 #     new2 = []
 #     new2 += new
 #     print(' '.join(list(map(str, new))))
-T = int(input())
-for q in range(1, 1 + T):
-    N = [k for k in range(int(input()))]
-    print(f'#{q}')
-    for i in N:
-        now = []
-        for j in N:
-            if j <= i:
-                if i == j or j == 0:
-                    now.append(1)
-                else:
-                    now.append(save[j-1] + save[j])
-        save = []
-        save += now
-        print(' '.join(list(map(str, now))))
+# T = int(input())
+# for q in range(1, 1 + T):
+#     N = [k for k in range(int(input()))]
+#     print(f'#{q}')
+#     for i in N:
+#         now = []
+#         for j in N:
+#             if j <= i:
+#                 if i == j or j == 0:
+#                     now.append(1)
+#                 else:
+#                     now.append(save[j-1] + save[j])
+#         save = []
+#         save += now
+#         print(' '.join(list(map(str, now))))
 
 
 # 내가 통과한 코드
@@ -733,3 +733,38 @@ for q in range(1, 1 + T):
 #                     new.append(new2[j-2] + new2[j-1])
 #         new2.clear()
 #         print(' '.join(list(map(str, new))))
+# def solution(arr):
+#     for i in range(len(arr)):
+#         for j in range(len(arr)):
+#             if arr[i][j] != arr[j][i]:
+#                 return 0
+#     return 1
+
+
+# arr = [[19, 498, 258, 587], [63, 93, 7, 754],
+#        [258, 7, 1000, 723], [587, 754, 723, 81]]
+# print(solution(arr))
+
+
+# def solution(board, k):
+#     sum = 0
+#     for i in range(len(board)):
+#         for j in range(len(i)):
+#             if i + j <= k:
+#                 sum += board[i][j]
+#     return sum
+
+
+# board = [[0, 1, 2], [1, 2, 3], [2, 3, 4], [3, 4, 5]]
+# k = 2
+# print(solution(board, k))
+
+from fractions import Fraction
+
+
+def solution(numer1, denom1, numer2, denom2):
+    F = Fraction(numer1, denom1) + Fraction(numer2, denom2)
+    return [F.numerator, F.denominator]
+
+
+print(solution(1, 2, 3, 4))
