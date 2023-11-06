@@ -759,12 +759,23 @@
 # k = 2
 # print(solution(board, k))
 
-from fractions import Fraction
-
-
-def solution(numer1, denom1, numer2, denom2):
-    F = Fraction(numer1, denom1) + Fraction(numer2, denom2)
-    return [F.numerator, F.denominator]
-
-
-print(solution(1, 2, 3, 4))
+T = int(input())
+for i in range(1, T+1):
+    n, m = map(int, input().split())
+    space = []
+    for _ in range(n):
+        a = list(map(int, input().split()))
+        space.append(a)
+    hap = 0
+    for j in range(n - m-1):  # 012 (1)
+        for k in range(n-m-1):  # 012 (1)()
+            temp = 0
+            # print(j, k)1
+            for l in range(j, j+m):  # (0, 2) /
+                for o in range(k, k+m):  # (0, 2) (1, 3)/
+                    # (0,0)(0, 1)(1, 0)(1, 1) #(0, 1)(0, 2)(2, 1)(2, 2)
+                    print(i, k, l, o)
+                    temp += space[l][o]
+                    if temp > hap:
+                        hap = temp
+    print(f'#{i} {hap}')
