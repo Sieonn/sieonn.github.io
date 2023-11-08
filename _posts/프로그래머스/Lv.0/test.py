@@ -759,23 +759,61 @@
 # k = 2
 # print(solution(board, k))
 
-T = int(input())
-for i in range(1, T+1):
-    n, m = map(int, input().split())
-    space = []
-    for _ in range(n):
-        a = list(map(int, input().split()))
-        space.append(a)
-    hap = 0
-    for j in range(n - m-1):  # 012 (1)
-        for k in range(n-m-1):  # 012 (1)()
-            temp = 0
-            # print(j, k)1
-            for l in range(j, j+m):  # (0, 2) /
-                for o in range(k, k+m):  # (0, 2) (1, 3)/
-                    # (0,0)(0, 1)(1, 0)(1, 1) #(0, 1)(0, 2)(2, 1)(2, 2)
-                    print(i, k, l, o)
-                    temp += space[l][o]
-                    if temp > hap:
-                        hap = temp
-    print(f'#{i} {hap}')
+# T = int(input())
+# for i in range(1, T+1):
+#     n, m = map(int, input().split())
+#     space = []
+#     for _ in range(n):
+#         a = list(map(int, input().split()))
+#         space.append(a)
+#     hap = 0
+#     for j in range(n - m-1):  # 012 (1)
+#         for k in range(n-m-1):  # 012 (1)()
+#             temp = 0
+#             # print(j, k)1
+#             for l in range(j, j+m):  # (0, 2) /
+#                 for o in range(k, k+m):  # (0, 2) (1, 3)/
+#                     # (0,0)(0, 1)(1, 0)(1, 1) #(0, 1)(0, 2)(2, 1)(2, 2)
+#                     # print(i, k, l, o)
+#                     temp += space[l][o]
+#                     if temp > hap:
+#                         hap = temp
+#     print(f'#{i} {hap}')
+
+
+# T = int(input())
+# for test_case in (1, T+1):
+#     n, m = map(int, input().split())
+#     space = []
+#     for i in range(n):
+#         v = list(map(int, input().split()))
+#         space.append(v)
+#     hap = 0
+#     for z in range(n-1):
+#         for x in range(n-1):
+#             temp = 0
+#             for a in range(z, z+m):  # (0,)(0, 1)(1, 0)(1, 1)
+#                 for b in range(x, x+m):
+#                     temp += space[a][b]
+#                     if temp > hap:
+#                         hap = temp
+#     print(f'#{test_case} {hap}')
+
+
+# 2005파리잡기 해답
+# T = int(input())
+# for test_case in (1, T+1):
+#     n, m = map(int, input().split())
+#     arr = [list(map(int, input().split())) for _ in range(n)]
+
+#     max = 0
+#     for i in range(n-m+1):
+#         for j in range(n-m+1):
+#             hap = 0
+#             for k in range(m):
+#                 for l in range(m):
+#                     hap += arr[i+k][j + l]
+#                     if hap > max:
+#                         max = hap
+
+#     print(f'#{test_case} {max}')
