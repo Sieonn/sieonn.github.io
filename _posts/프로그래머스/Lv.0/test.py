@@ -864,4 +864,48 @@
 # array = [1, 2, 3, 3, 3, 4]
 # print(solution([1, 1, 2, 2]))
 
-print(max([1]))
+
+# def solution(array):
+#     n = []
+#     n2 = 0
+#     for i in array:
+#         if len(array) == 1:
+#             return i
+#         elif len(array) != 1:
+#             new = array.count(i)
+#             n.append(new)
+#             n2 = n.index(max(n))
+#         if n2 != 0:
+#             return array[n2]
+#         else:
+#             return -1
+# def solution(array):
+#     n = []
+#     if len(array) > 1:
+#         for i in array:
+#             n.append(array.count(i))
+
+#         if len(set(n)) != 1:
+#             new = n.index(max(n))
+#             return array[new]
+#         else:
+#             return -1
+#     else:
+#         return array[0]
+
+
+# print(solution([1, 1, 2, 2]))
+
+def solution(array):
+    while len(array) != 0:
+        for i, a in enumerate(set(array)):
+            array.remove(a)
+        print(array, i)
+        if i == 0:
+            return a
+    return -1
+
+
+array = [1, 2, 3, 3, 3, 4]
+print(set(array))
+print(solution(array))
