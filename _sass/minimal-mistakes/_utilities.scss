@@ -594,7 +594,7 @@ a.reversefootnote {
 
 //형광펜
 .hlm {
-  background: #8be8e5;//linear-gradient(to top, #8be8e5 60%, transparent 40%);
+  background: #8be8e5; //linear-gradient(to top, #8be8e5 60%, transparent 40%);
   font-weight: 500;
 } //highlight mint
 .hlm_h {
@@ -602,6 +602,10 @@ a.reversefootnote {
   font-weight: 500;
 } //hightlight mint halfs
 
+.hly {
+  background: #ffd77f;
+  font-weight: 600;
+}
 //형광펜 색 모음
 $jamong: #ffc4b3;
 $ygreen: #caee12;
