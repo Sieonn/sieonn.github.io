@@ -817,3 +817,51 @@
 #                         max = hap
 
 #     print(f'#{test_case} {max}')
+# T = int(input())
+
+# for i in range(1, T+1):
+#     for j in list(map(str, input().split())):
+#         sum = 0
+#         for k in range(len(j)//2):
+#             # print(j[k], j[-k-1])
+#             if j[k] == j[-k-1]:
+#                 sum += 1
+#             else:
+#                 break
+#     print(f'#{i} {int(sum == len(j)//2)}')
+
+
+# T = int(input())
+
+# for i in range(1, T+1):
+#     j = list(map(str, input().split()))
+#     sum = 0
+#     for l in j:
+#         for k in range(len(l)//2):
+#             # print(j[k], j[-k-1])
+#             if l[k] == l[-k-1]:
+#                 sum += 1
+#             else:
+#                 break
+#     print(f'#{i} {int(sum == len(l)//2)}')
+
+# array = [1, 2, 3, 3, 3, 4]
+
+
+# def solution(array):
+#     n = []
+#     n2 = 0
+#     for i in array:
+#         new = array.count(i)
+#         n.append(new)
+#     n2 = n.index(max(n))
+#     if n2 != 0:
+#         return array[n2]
+#     else:
+#         return -1
+
+
+# array = [1, 2, 3, 3, 3, 4]
+# print(solution([1, 1, 2, 2]))
+
+print(max([1]))
