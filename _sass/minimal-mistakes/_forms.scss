@@ -108,12 +108,14 @@ input[type="radio"] {
   border-radius: 0;
   border: 0 \9;
   box-shadow: none;
-  background-color: $vine-color;
+
+  // background-color: #5b6dcd;
 }
 
 input[type="checkbox"],
 input[type="radio"] {
   box-sizing: border-box;
+  background-color: #5b6dcd;
   padding: 0;
   *width: 13px;
   *height: 13px;
