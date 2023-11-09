@@ -910,4 +910,15 @@
 # print(set(array))
 # print(solution(array))
 
-print(round(15//7))
+def solution(price):
+    if price >= 100000:
+        if price >= 500000:
+            return int(price * 0.8)
+        elif price >= 300000:
+            return int(price * 0.9)
+        return int(price * 0.95)
+    else:
+        return int(price)
+
+
+print(solution(580000))
