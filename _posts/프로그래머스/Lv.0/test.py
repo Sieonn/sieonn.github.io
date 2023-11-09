@@ -910,15 +910,24 @@
 # print(set(array))
 # print(solution(array))
 
-def solution(price):
-    if price >= 100000:
-        if price >= 500000:
-            return int(price * 0.8)
-        elif price >= 300000:
-            return int(price * 0.9)
-        return int(price * 0.95)
-    else:
-        return int(price)
+# def solution(price):
+#     if price >= 100000:
+#         if price >= 500000:
+#             return int(price * 0.8)
+#         elif price >= 300000:
+#             return int(price * 0.9)
+#         return int(price * 0.95)
+#     else:
+#         return int(price)
 
 
-print(solution(580000))
+# print(solution(580000))
+
+T = int(input())
+for i in range(1, T+1):
+    N = [list(map(int, input().split()))]
+    for j in N:
+        j.remove(max(j))
+        j.remove(min(j))
+    print(f'#{i} {round(sum(j)/len(j))}')
+# print((3+17+39+8+41+2+32+2)/8)
