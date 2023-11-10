@@ -10,8 +10,8 @@
   @include clearfix;
   margin: 0 auto;
   max-width: 100%;
-  // padding-left: 1em;
-  // padding-right: 1em;
+  padding-left: 1em;
+  // padding-right: 300px;
   font-family: $sans-serif;
   -webkit-animation: $intro-transition;
   animation: $intro-transition;
@@ -19,7 +19,7 @@
   animation-delay: 0.3s;
 
   @include breakpoint($x-large) {
-    max-width: 1400px; //$x-large;
+    max-width: $x-large;//1400px; //$x-large;
   }
 
   ol {
@@ -28,7 +28,7 @@
     font-size: $type-size-6;
     // margin-bottom: 2px;
     // margin-top: 2px;
-    padding-left: 1em;
+    // padding-left: auto;
     padding-top: 1em;
     color: #8c8da1;
 
@@ -38,7 +38,7 @@
     }
 
     @include breakpoint($x-large) {
-      width: calc(100% - #{$right-sidebar-width});
+      width: calc(100%);//calc(100% - #{$right-sidebar-width});
     }
   }
 
