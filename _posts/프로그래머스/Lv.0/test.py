@@ -969,35 +969,69 @@
 # print(new)
 
 
-T = int(input())
-for i in range(1, T+1):
-    N, K = map(int, input().split())
-    space = []
-    for _ in range(N):
-        Nn = list(map(str, input().split()))
-        space.append(Nn)
-    print(space)
-    ns = []
-    ns2 = []
-    for a in range(N):
-        s = ""
-        s2 = ""
-        for b in range(N):
-            s += space[a][b]
-            s2 += space[b][a]            
-        new = s.replace('1', '_',K)
-        new2 = s2.replace('1','_',K)
-        ns.append(new)
-        ns2.append(new2)
-    count = 0
-    print(ns, ns2)
-    for c in ns:
-        if '_1' not in c and '_'*K in c:
-            count += 1
-    for d in ns2:
-        if '_1' not in d and '_'*K in d:
-            count += 1
-    print(count)
+# T = int(input())
+# for i in range(1, T+1):
+#     N, K = map(int, input().split())
+#     space = []
+#     for _ in range(N):
+#         Nn = list(map(int, input().split()))
+#         space.append(Nn)
+#     print(space)
+#     rcount = 0
+#     for a in range(N):
+#         count = 0
+#         count2 = 0
+#         for b in range(N):
+#             if space[a][b] == 1:
+#                 count += 1
+#                 # print(f'({a}, {b}) {count} {rcount}')
+#                 if count == K:
+#                     rcount += 1
+#                 elif count > K:
+#                     rcount -= 1
+#                     count = 0
+#             else:
+#                 count = 0
+#         # print(rcount)        
+#             if space[b][a] == 1:
+#                 count2 += 1
+#                 if count2 == 3:
+#                     rcount += 1
+#                 elif count2 > K:
+#                     rcount -= 1
+#                     count2 = 0
+#             else:
+#                 count2 = 0
+#         # print(rcount)
+            
+#     print(f'#{i} {rcount}')
+            
+    
+   
+
+    
+    # ns = []
+    # ns2 = []
+    # for a in range(N):
+    #     s = ""
+    #     s2 = ""
+    #     for b in range(N):
+    #         s += space[a][b]
+    #         s2 += space[b][a]            
+    #     new = s.replace('1', '')
+    #     new
+    #     new2 = s2.replace('1','')
+    #     ns.append(new)
+    #     ns2.append(new2)
+    # count = 0
+    # print(ns, ns2)
+    # for c in ns:
+    #     if '_'*K in c:
+    #         count += 1
+    # for d in ns2:
+    #     if '_1' not in d and '_'*K in d:
+    #         count += 1
+    # print(count)
     # for k in space:
     #     s = "".join(k)
     #     W = s.replace('1', '_',K)
@@ -1037,5 +1071,33 @@ for i in range(1, T+1):
     #         space[j][l]
             
             
+T = int(input())
+for i in range(1, T+1):
+    N, K = map(int, input().split())
+    space = []
+    for _ in range(N):
+        Nn = list(map(int, input().split()))
+        space.append(Nn)
+    new = 0
+    for a in range(N):
+        n = 0
+        for b in range(N):
+            if space[a][b] == 1:
+                if n <= N:
+                    n += 1
+                    if n == N:
+                        new += 1
+                        n += 1
+                elif n > N:
+                    new -= 1
+                    n = 0
+            else:
+                n = 0
+        print(new)
+                    
             
-        
+            
+            
+
+
+    # print(rh) 
