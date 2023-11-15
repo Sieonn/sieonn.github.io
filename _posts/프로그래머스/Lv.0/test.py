@@ -932,23 +932,23 @@
 #     print(f'#{i} {round(sum(j)/len(j))}')
 # print((3+17+39+8+41+2+32+2)/8)
 
-T = int(input())
-for i in range(1, T+1):
-    N, K = map(int, input().split())
-    space = []
-    score = []
-    for j in range(N):
-        space.append(list(map(int,input().split())))
+# T = int(input())
+# for i in range(1, T+1):
+#     N, K = map(int, input().split())
+#     space = []
+#     score = []
+#     for j in range(N):
+#         space.append(list(map(int,input().split())))
         
-        score.append(space[j][0]*0.35 + space[j][1]*0.45 + space[j][2] * 0.2)   
-    NK = score[K-1]
-    score.sort(reverse=True)
-    KI = score.index(NK)
-    G = N//10
-    NewG = []
-    for o in ["A+", "A0", "A-", "B+", "B0", "B-", "C+", "C0", "C-", "D0"]:
-        NewG += [o]*G
-    print(f'#{i} {NewG[KI]}')
+#         score.append(space[j][0]*0.35 + space[j][1]*0.45 + space[j][2] * 0.2)   
+#     NK = score[K-1]
+#     score.sort(reverse=True)
+#     KI = score.index(NK)
+#     G = N//10
+#     NewG = []
+#     for o in ["A+", "A0", "A-", "B+", "B0", "B-", "C+", "C0", "C-", "D0"]:
+#         NewG += [o]*G
+#     print(f'#{i} {NewG[KI]}')
     
     # score[K]
         # for k in range(3):
@@ -967,3 +967,32 @@ for i in range(1, T+1):
 # for i in ["A", "B", "C"]:
 #     new += [i] * 2
 # print(new)
+
+
+T = int(input())
+for i in range(1, T+1):
+    N, K = map(int, input().split())
+    space = []
+    for _ in range(N):
+        Nn = list(map(int, input().split()))
+        space.append(Nn)
+    print(space)
+    sol = 0
+    for v in space:
+        s = ""
+        for x in v:
+            s += str(x)
+            if "1"*K in s:
+                sol += 1
+        print(s)        
+            
+                
+    print(s, sol)
+    # for j in range(N):
+    #     s = []
+    #     for l in range(N):
+    #         space[j][l]
+            
+            
+            
+        
