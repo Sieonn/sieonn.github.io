@@ -974,20 +974,63 @@ for i in range(1, T+1):
     N, K = map(int, input().split())
     space = []
     for _ in range(N):
-        Nn = list(map(int, input().split()))
+        Nn = list(map(str, input().split()))
         space.append(Nn)
     print(space)
-    sol = 0
-    for v in space:
+    ns = []
+    ns2 = []
+    for a in range(N):
         s = ""
-        for x in v:
-            s += str(x)
-            if "1"*K in s:
-                sol += 1
-        print(s)        
+        s2 = ""
+        for b in range(N):
+            s += space[a][b]
+            s2 += space[b][a]            
+        new = s.replace('1', '_',K)
+        new2 = s2.replace('1','_',K)
+        ns.append(new)
+        ns2.append(new2)
+    count = 0
+    print(ns, ns2)
+    for c in ns:
+        if '_1' not in c and '_'*K in c:
+            count += 1
+    for d in ns2:
+        if '_1' not in d and '_'*K in d:
+            count += 1
+    print(count)
+    # for k in space:
+    #     s = "".join(k)
+    #     W = s.replace('1', '_',K)
+    #     s2.append(W)
+    # count = 0
+    # for a,j in enumerate(s2):
+    #     if '_1' not in j and '_'*K in j:
+    #         count += 1
+    #     s3 = ""
+    #     for b in range(N):
+    #         s3 += space[b][a]
+    #      s3.replace('_','*',3)
+    #     if '_1' not in s3 and '_'*K in s3:
+    #         count += 1
+            
+            
+
+    # print(count)
+    # sol = 0
+    # s2 = ""
+    # for v in space:
+    #     s = ""
+    #     for z , x in enumerate(v):
+    #         s += str(x)
+    #         if "1"*K in s and v.count("1") == 3:
+    #             s2 += s
+    #         elif x    
+    #             sol += 1
+                
+    #     print(s)        
             
                 
-    print(s, sol)
+    # print(s, sol)
     # for j in range(N):
     #     s = []
     #     for l in range(N):
