@@ -1085,27 +1085,64 @@
 #         print(new)
 
 
+# T = int(input())
+# for tc in range(1, T+1):
+#     N, K = map(int, input().split())
+#     puzzle = [list(map(int, input().split())) for _ in range(N)]
+#     answer = 0
+#     for i in range(N):
+#         count = 0
+#         for j in range(N):
+#             if puzzle[i][j] == 1:
+#                 count += 1
+#             if puzzle[i][j] == 0 or j == N - 1:
+#                 if count == K:
+#                     answer += 1
+#                 count = 0
+#         for j in range(N):
+#             if puzzle[j][i] == 1:
+#                 count += 1
+#             if puzzle[j][i] == 0 or j == N - 1:
+#                 if count == K:
+#                     answer += 1
+#                 count = 0
+#     print(f'#{tc} {answer}')
+
+# print(rh)
+
 T = int(input())
 for tc in range(1, T+1):
-    N, K = map(int, input().split())
-    puzzle = [list(map(int, input().split())) for _ in range(N)]
-    answer = 0
-    for i in range(N):
-        count = 0
-        for j in range(N):
-            if puzzle[i][j] == 1:
-                count += 1
-            if puzzle[i][j] == 0 or j == N - 1:
-                if count == K:
-                    answer += 1
-                count = 0
-        for j in range(N):
-            if puzzle[j][i] == 1:
-                count += 1
-            if puzzle[j][i] == 0 or j == N - 1:
-                if count == K:
-                    answer += 1
-                count = 0
-    print(f'#{tc} {answer}')
+    sdoku = [list(map(int, input().split()))]
+    count = 0
+    for i in range(9):
+        for j in range(9):
+            if sdoku[i][j] != count:
+                count = sdoku[i][j]
+            elif sdoku[i][j] == count:
+                break
 
-    # print(rh)
+        for r in range(9):
+            if sdoku[r][i] != count:
+                count = sdoku[r][i]
+            elif sdoku[r][i] == count:
+                count = 0
+                break
+
+    check = [0, 3, 6]
+    for k in check:
+        sol = 0
+        for l in range(k, k+3):
+            for m in range(l, l+3):
+                if sdoku[l][m] != sol:
+                    sol = sdoku[l][m]
+                elif sdoku[l][m] == sol:
+                    sol = 0
+                    break
+    print(f'#{tc} {int(count != 0)*int(sol != 0)}')
+
+
+# ch = [0, 3, 6]
+# for i in ch:
+#     for j in ch:
+#         for k in range(j, j+3):
+#             print(k)
