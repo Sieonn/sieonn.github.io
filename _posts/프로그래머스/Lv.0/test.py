@@ -1110,35 +1110,41 @@
 
 # print(rh)
 
-T = int(input())
-for tc in range(1, T+1):
-    sdoku = [list(map(int, input().split()))]
-    count = 0
-    for i in range(9):
-        for j in range(9):
-            if sdoku[i][j] != count:
-                count = sdoku[i][j]
-            elif sdoku[i][j] == count:
-                break
+# T = int(input())
+# for tc in range(1, T+1):
+#     sdoku = [list(map(int, input().split())) for _ in range(9)]
+#     for i in range(9):
+#         count = 0
+#         for j in range(9):
+#             if sdoku[i][j] != count:
+#                 count = sdoku[i][j]
+#             elif sdoku[i][j] == count:
+#                 break
+#             print(count)
+    
+#     for i in range(9):
+#         for j in range(9):
+#             if sdoku[j][i] != count:
+#                 count = sdoku[j][i]
+#             elif sdoku[j][i] == count:
+#                 count = 0
+#                 break
+#             print(count)
 
-        for r in range(9):
-            if sdoku[r][i] != count:
-                count = sdoku[r][i]
-            elif sdoku[r][i] == count:
-                count = 0
-                break
-
-    check = [0, 3, 6]
-    for k in check:
-        sol = 0
-        for l in range(k, k+3):
-            for m in range(l, l+3):
-                if sdoku[l][m] != sol:
-                    sol = sdoku[l][m]
-                elif sdoku[l][m] == sol:
-                    sol = 0
-                    break
-    print(f'#{tc} {int(count != 0)*int(sol != 0)}')
+#     check = [0, 3, 6]
+#     for k in check:
+#         for l in range(k, k+3):
+#             sol = 0
+#             for n in check:
+#                 for m in range(n, n+3):
+#                     # print("k", k, "l",l, "m", m)
+#                     if sdoku[l][m] != sol:
+#                         sol = sdoku[l][m]
+#                     elif sdoku[l][m] == sol:
+#                         sol = 0
+#                         break
+            
+    # print(f'#{tc} {int(count != 0)*int(sol != 0)}')
 
 
 # ch = [0, 3, 6]
@@ -1146,3 +1152,78 @@ for tc in range(1, T+1):
 #     for j in ch:
 #         for k in range(j, j+3):
 #             print(k)
+
+# for i in range(9):
+#     print(i)
+
+
+# T = int(input())
+# for tc in range(1, T+1):
+#     sdoku = [list(map(int, input().split())) for _ in range(9)]
+#     anwser = 0
+#     for i in range(9):
+#         count = []
+#         count2 = []
+#         for j in range(9):
+#             if sdoku[i][j] not in count and sdoku[j][i] not in count2:
+#                 count.append(sdoku[i][j])
+#                 count2.append(sdoku[j][i])
+#             else:
+#                 count.append(str(sdoku[i][j]))
+#                 count2.append(str(sdoku[j][i]))
+#                 anwser += 1 
+#         print(count, count2, anwser)
+                
+#     check = [0, 3, 6]
+#     anwser2 = 0
+#     for k in check:
+#         for n in check:
+#             sol = []
+#             for l in range(k, k+3):
+#                 for m in range(n, n+3):
+#                     if sdoku[l][m] not in sol:
+#                         sol.append(sdoku[l][m])
+#                     elif sdoku[l][m] in sol:
+#                         sol.append(str(sdoku[l][m]))
+#                         anwser2 += 1
+#             print(anwser2,sol)
+#     print(f'#{tc} {int(anwser == 0)*int(anwser2 == 0)}')
+
+
+# T = int(input())
+# for tc in range(1, T+1):
+#     sdoku = [list(map(int, input().split())) for _ in range(9)]
+#     for k in range(0,9,3):
+#         an = []
+#         for n in range(0,9,3):
+#             an = sdoku[k][n:n+3] + sdoku[k+1][n:n+3] + sdoku[k+2][n:n+3]
+#             print(an)
+
+
+T = int(input())
+for tc in range(1, T+1):
+    sdoku = [list(map(int, input().split())) for _ in range(9)]
+    anwser = 0
+    for i in range(9):
+        count = []
+        count2 = []
+        for j in range(9):
+            if sdoku[i][j] not in count and sdoku[j][i] not in count2:
+                count.append(sdoku[i][j])
+                count2.append(sdoku[j][i])
+            else:
+                count.append(str(sdoku[i][j]))
+                count2.append(str(sdoku[j][i]))
+                anwser += 1 
+    answer2 = 0
+    for k in range(0,9,3):
+        for n in range(0,9,3):
+            sam = sdoku[k][n:n+3] + sdoku[k+1][n:n+3] + sdoku[k+2][n:n+3]
+        #이렇게하면 3x3의 리스트를 담을 수 있습니다. 이를 다시 for문을 통해 검사해도 됩니다.
+            new = []
+            for h in sam:
+                if h not in new:
+                    new.append(h)
+                else:
+                    answer2 += 1
+    print(f'#{tc} {int(anwser == 0)*int(answer2 == 0)}')
