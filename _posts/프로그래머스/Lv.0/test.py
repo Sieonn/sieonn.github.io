@@ -939,8 +939,8 @@
 #     score = []
 #     for j in range(N):
 #         space.append(list(map(int,input().split())))
-        
-#         score.append(space[j][0]*0.35 + space[j][1]*0.45 + space[j][2] * 0.2)   
+
+#         score.append(space[j][0]*0.35 + space[j][1]*0.45 + space[j][2] * 0.2)
 #     NK = score[K-1]
 #     score.sort(reverse=True)
 #     KI = score.index(NK)
@@ -949,20 +949,16 @@
 #     for o in ["A+", "A0", "A-", "B+", "B0", "B-", "C+", "C0", "C-", "D0"]:
 #         NewG += [o]*G
 #     print(f'#{i} {NewG[KI]}')
-    
-    # score[K]
-        # for k in range(3):
-        #     score.append(space[0]*0.35 + space[1]*0.45 + space[2]*0.2)
-        #     print(score)
-    # print(score)
-    # for l in score:
-    #     if N/10
-    
-    
-    
-    
-    
-    
+
+# score[K]
+# for k in range(3):
+#     score.append(space[0]*0.35 + space[1]*0.45 + space[2]*0.2)
+#     print(score)
+# print(score)
+# for l in score:
+#     if N/10
+
+
 # new = []
 # for i in ["A", "B", "C"]:
 #     new += [i] * 2
@@ -992,7 +988,7 @@
 #                     count = 0
 #             else:
 #                 count = 0
-#         # print(rcount)        
+#         # print(rcount)
 #             if space[b][a] == 1:
 #                 count2 += 1
 #                 if count2 == 3:
@@ -1003,101 +999,113 @@
 #             else:
 #                 count2 = 0
 #         # print(rcount)
-            
+
 #     print(f'#{i} {rcount}')
-            
-    
-   
 
-    
-    # ns = []
-    # ns2 = []
-    # for a in range(N):
-    #     s = ""
-    #     s2 = ""
-    #     for b in range(N):
-    #         s += space[a][b]
-    #         s2 += space[b][a]            
-    #     new = s.replace('1', '')
-    #     new
-    #     new2 = s2.replace('1','')
-    #     ns.append(new)
-    #     ns2.append(new2)
-    # count = 0
-    # print(ns, ns2)
-    # for c in ns:
-    #     if '_'*K in c:
-    #         count += 1
-    # for d in ns2:
-    #     if '_1' not in d and '_'*K in d:
-    #         count += 1
-    # print(count)
-    # for k in space:
-    #     s = "".join(k)
-    #     W = s.replace('1', '_',K)
-    #     s2.append(W)
-    # count = 0
-    # for a,j in enumerate(s2):
-    #     if '_1' not in j and '_'*K in j:
-    #         count += 1
-    #     s3 = ""
-    #     for b in range(N):
-    #         s3 += space[b][a]
-    #      s3.replace('_','*',3)
-    #     if '_1' not in s3 and '_'*K in s3:
-    #         count += 1
-            
-            
+# ns = []
+# ns2 = []
+# for a in range(N):
+#     s = ""
+#     s2 = ""
+#     for b in range(N):
+#         s += space[a][b]
+#         s2 += space[b][a]
+#     new = s.replace('1', '')
+#     new
+#     new2 = s2.replace('1','')
+#     ns.append(new)
+#     ns2.append(new2)
+# count = 0
+# print(ns, ns2)
+# for c in ns:
+#     if '_'*K in c:
+#         count += 1
+# for d in ns2:
+#     if '_1' not in d and '_'*K in d:
+#         count += 1
+# print(count)
+# for k in space:
+#     s = "".join(k)
+#     W = s.replace('1', '_',K)
+#     s2.append(W)
+# count = 0
+# for a,j in enumerate(s2):
+#     if '_1' not in j and '_'*K in j:
+#         count += 1
+#     s3 = ""
+#     for b in range(N):
+#         s3 += space[b][a]
+#      s3.replace('_','*',3)
+#     if '_1' not in s3 and '_'*K in s3:
+#         count += 1
 
-    # print(count)
-    # sol = 0
-    # s2 = ""
-    # for v in space:
-    #     s = ""
-    #     for z , x in enumerate(v):
-    #         s += str(x)
-    #         if "1"*K in s and v.count("1") == 3:
-    #             s2 += s
-    #         elif x    
-    #             sol += 1
-                
-    #     print(s)        
-            
-                
-    # print(s, sol)
-    # for j in range(N):
-    #     s = []
-    #     for l in range(N):
-    #         space[j][l]
-            
-            
+# print(count)
+# sol = 0
+# s2 = ""
+# for v in space:
+#     s = ""
+#     for z , x in enumerate(v):
+#         s += str(x)
+#         if "1"*K in s and v.count("1") == 3:
+#             s2 += s
+#         elif x
+#             sol += 1
+
+#     print(s)
+
+# print(s, sol)
+# for j in range(N):
+#     s = []
+#     for l in range(N):
+#         space[j][l]
+
+
+# T = int(input())
+# for i in range(1, T+1):
+#     N, K = map(int, input().split())
+#     space = []
+#     for _ in range(N):
+#         Nn = list(map(int, input().split()))
+#         space.append(Nn)
+#     new = 0
+#     for a in range(N):
+#         n = 0
+#         for b in range(N):
+#             if space[a][b] == 1:
+#                 if n <= N:
+#                     n += 1
+#                     if n == N:
+#                         new += 1
+#                         n += 1
+#                 elif n > N:
+#                     new -= 1
+#                     n = 0
+#             else:
+#                 n = 0
+#         print(new)
+
+
 T = int(input())
-for i in range(1, T+1):
+for tc in range(1, T+1):
     N, K = map(int, input().split())
-    space = []
-    for _ in range(N):
-        Nn = list(map(int, input().split()))
-        space.append(Nn)
-    new = 0
-    for a in range(N):
-        n = 0
-        for b in range(N):
-            if space[a][b] == 1:
-                if n <= N:
-                    n += 1
-                    if n == N:
-                        new += 1
-                        n += 1
-                elif n > N:
-                    new -= 1
-                    n = 0
-            else:
-                n = 0
-        print(new)
-                    
-            
-            
-            
+    puzzle = [list(map(int, input().split())) for _ in range(N)]
+    answer = 0
+    for i in range(N):
+        count = 0
+        for j in range(N):
+            if puzzle[i][j] == 1:
+                count += 1
+            if puzzle[i][j] == 0 or j == N - 1:
+                if count == K:
+                    answer += 1
+                count = 0
+        for j in range(N):
+            if puzzle[j][i] == 1:
+                count += 1
+            if puzzle[j][i] == 0 or j == N - 1:
+                if count == K:
+                    answer += 1
+                count = 0
+    print(f'#{tc} {answer}')
 
-
-    # print(rh) 
+    # print(rh)
