@@ -1239,8 +1239,26 @@
 #         N = N - (N//i)*i
 #     print(f"#{tc}\n{' '.join(rest)}")
 
+# T = int(input())
+# for tc in range(1, T+1):
+#     n = int(input())
+#     new = list(map(int, input().split()))
+#     print(f'#{tc}', *sorted(new))
+
 T = int(input())
 for tc in range(1, T+1):
-    n = int(input())
-    new = list(map(int, input().split()))
-    print(f'#{tc}', *sorted(new))
+    N = int(input())
+    Nlist = [i for i in range(N)]
+    arr = [list(map(int, input().split())) for _ in range(N)]
+    print(arr)
+    for a in N:
+        for b in N[::-1]:
+            print(arr[b][a])
+
+    for c in range(0, N, -1):
+        for d in range(0, N, -1):
+            arr[c][d]
+
+    for e in range(N):
+        for f in range(0, N, -1):
+            arr[e][f]
