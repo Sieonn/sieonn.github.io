@@ -1249,15 +1249,22 @@ T = int(input())
 for tc in range(1, T+1):
     N = int(input())
     Nlist = [i for i in range(N)]
+    case = [ Nlist for j in range(N)]
     arr = [list(map(int, input().split())) for _ in range(N)]
-    print(arr)
-    for a in N:
-        for b in N[::-1]:
-            print(arr[b][a])
-
-    for c in range(0, N, -1):
-        for d in range(0, N, -1):
-            arr[c][d]
+    print(arr, case)
+    B = []
+    C = []
+    for a in Nlist:
+        A = ''
+        for b in Nlist[::-1]:
+            A += str(arr[b][a])
+        B.append(A)
+    C.append(B)        
+        
+    print(A)
+    for c in Nlist[::-1]:
+        for d in Nlist[::-1]:
+            str(arr[c][d])
 
     for e in range(N):
         for f in range(0, N, -1):
