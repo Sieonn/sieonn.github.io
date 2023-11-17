@@ -1229,12 +1229,18 @@
 #     print(f'#{tc} {int(anwser == 0)*int(answer2 == 0)}')
 
 
+# T = int(input())
+# for tc in range(1, T+1):
+#     N = int(input())
+#     won = [50000, 10000, 5000, 1000, 500, 100, 50, 10]
+#     rest = []
+#     for i in won:
+#         rest.append(str(N//i))
+#         N = N - (N//i)*i
+#     print(f"#{tc}\n{' '.join(rest)}")
+
 T = int(input())
 for tc in range(1, T+1):
-    N = int(input())
-    won = [50000, 10000, 5000, 1000, 500, 100, 50, 10]
-    rest = []
-    for i in won:
-        rest.append(str(N//i))
-        N = N - (N//i)*i
-    print(f"#{tc}\n{' '.join(rest)}")
+    n = int(input())
+    new = list(map(int, input().split()))
+    print(f'#{tc}', *sorted(new))
