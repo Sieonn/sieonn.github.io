@@ -1121,7 +1121,7 @@
 #             elif sdoku[i][j] == count:
 #                 break
 #             print(count)
-    
+
 #     for i in range(9):
 #         for j in range(9):
 #             if sdoku[j][i] != count:
@@ -1143,8 +1143,8 @@
 #                     elif sdoku[l][m] == sol:
 #                         sol = 0
 #                         break
-            
-    # print(f'#{tc} {int(count != 0)*int(sol != 0)}')
+
+# print(f'#{tc} {int(count != 0)*int(sol != 0)}')
 
 
 # ch = [0, 3, 6]
@@ -1171,9 +1171,9 @@
 #             else:
 #                 count.append(str(sdoku[i][j]))
 #                 count2.append(str(sdoku[j][i]))
-#                 anwser += 1 
+#                 anwser += 1
 #         print(count, count2, anwser)
-                
+
 #     check = [0, 3, 6]
 #     anwser2 = 0
 #     for k in check:
@@ -1200,30 +1200,41 @@
 #             print(an)
 
 
+# T = int(input())
+# for tc in range(1, T+1):
+#     sdoku = [list(map(int, input().split())) for _ in range(9)]
+#     anwser = 0
+#     for i in range(9):
+#         count = []
+#         count2 = []
+#         for j in range(9):
+#             if sdoku[i][j] not in count and sdoku[j][i] not in count2:
+#                 count.append(sdoku[i][j])
+#                 count2.append(sdoku[j][i])
+#             else:
+#                 count.append(str(sdoku[i][j]))
+#                 count2.append(str(sdoku[j][i]))
+#                 anwser += 1
+#     answer2 = 0
+#     for k in range(0,9,3):
+#         for n in range(0,9,3):
+#             sam = sdoku[k][n:n+3] + sdoku[k+1][n:n+3] + sdoku[k+2][n:n+3]
+#         #이렇게하면 3x3의 리스트를 담을 수 있습니다. 이를 다시 for문을 통해 검사해도 됩니다.
+#             new = []
+#             for h in sam:
+#                 if h not in new:
+#                     new.append(h)
+#                 else:
+#                     answer2 += 1
+#     print(f'#{tc} {int(anwser == 0)*int(answer2 == 0)}')
+
+
 T = int(input())
 for tc in range(1, T+1):
-    sdoku = [list(map(int, input().split())) for _ in range(9)]
-    anwser = 0
-    for i in range(9):
-        count = []
-        count2 = []
-        for j in range(9):
-            if sdoku[i][j] not in count and sdoku[j][i] not in count2:
-                count.append(sdoku[i][j])
-                count2.append(sdoku[j][i])
-            else:
-                count.append(str(sdoku[i][j]))
-                count2.append(str(sdoku[j][i]))
-                anwser += 1 
-    answer2 = 0
-    for k in range(0,9,3):
-        for n in range(0,9,3):
-            sam = sdoku[k][n:n+3] + sdoku[k+1][n:n+3] + sdoku[k+2][n:n+3]
-        #이렇게하면 3x3의 리스트를 담을 수 있습니다. 이를 다시 for문을 통해 검사해도 됩니다.
-            new = []
-            for h in sam:
-                if h not in new:
-                    new.append(h)
-                else:
-                    answer2 += 1
-    print(f'#{tc} {int(anwser == 0)*int(answer2 == 0)}')
+    N = int(input())
+    won = [50000, 10000, 5000, 1000, 500, 100, 50, 10]
+    rest = []
+    for i in won:
+        rest.append(str(N//i))
+        N = N - (N//i)*i
+    print(f"#{tc}\n{' '.join(rest)}")
