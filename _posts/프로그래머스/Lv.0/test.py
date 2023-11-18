@@ -1245,38 +1245,54 @@
 #     new = list(map(int, input().split()))
 #     print(f'#{tc}', *sorted(new))
 
+# T = int(input())
+# for tc in range(1, T+1):
+#     N = int(input())
+#     Nlist = [i for i in range(N)]
+#     case = [ Nlist for j in range(N)]
+#     arr = [list(map(int, input().split())) for _ in range(N)]
+#     B = []
+#     C = []
+#     for a in Nlist:
+#         A = ''
+#         for b in Nlist[::-1]:
+#             A += str(arr[b][a])
+#         B.append(A)
+#     C.append(B)
+
+#     B = []
+#     for c in Nlist[::-1]:
+#         A = ''
+#         for d in Nlist[::-1]:
+#             A += str(arr[c][d])
+#         B.append(A)
+#     C.append(B)
+
+#     B = []
+#     for e in Nlist[::-1]:
+#         A = ''
+#         for f in Nlist:
+#             A += str(arr[f][e])
+#         B.append(A)
+#     C.append(B)
+
+#     print(f'#{tc}')
+#     for l in range(N):
+#         print(C[0][l], C[1][l], C[2][l])
+
+
 T = int(input())
 for tc in range(1, T+1):
-    N = int(input())
-    Nlist = [i for i in range(N)]
-    case = [ Nlist for j in range(N)]
-    arr = [list(map(int, input().split())) for _ in range(N)]
-    B = []
-    C = []
-    for a in Nlist:
-        A = ''
-        for b in Nlist[::-1]:
-            A += str(arr[b][a])
-        B.append(A)
-    C.append(B)        
-    
-    B = []    
-    for c in Nlist[::-1]:
-        A = ''
-        for d in Nlist[::-1]:
-            A += str(arr[c][d])
-        B.append(A)
-    C.append(B)
-
-    B = []
-    for e in Nlist[::-1]:
-        A = ''
-        for f in Nlist:
-            A += str(arr[f][e])
-        B.append(A)
-    C.append(B)
-    
-    print(f'#{tc}')
-    for l in range(N):
-        print(C[0][l], C[1][l], C[2][l])
-            
+    N, M = map(int, input().split())
+    Nlist = list(map(int, input().split()))
+    Mlist = list(map(int, input().split()))
+    while N < M:
+        if len(Nlist) <= len(Mlist):
+            sum = 0
+            Slist = []
+            for i in range(N):
+                sum += Nlist[i] * Mlist[i]
+                print(Nlist[i], Mlist[i])
+            Slist.append(sum)
+            del Mlist[0]
+            print(Slist)
