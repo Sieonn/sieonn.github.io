@@ -1284,15 +1284,21 @@
 T = int(input())
 for tc in range(1, T+1):
     N, M = map(int, input().split())
-    Nlist = list(map(int, input().split()))
-    Mlist = list(map(int, input().split()))
-    while N < M:
-        if len(Nlist) <= len(Mlist):
-            sum = 0
-            Slist = []
-            for i in range(N):
-                sum += Nlist[i] * Mlist[i]
-                print(Nlist[i], Mlist[i])
-            Slist.append(sum)
-            del Mlist[0]
-            print(Slist)
+    A = list(map(int, input().split()))
+    B = list(map(int, input().split()))
+    if len(B) < len(A):
+        As = B
+        Bs = A
+    else:
+        As = A
+        Bs = B
+    
+    Slist = []
+    while len(As) <= len(Bs):
+        sum = 0
+        for i in range(len(As)):
+            sum += As[i] * Bs[i]
+        Slist.append(sum)
+        del Bs[0]
+                  
+    print(f'#{tc}',max(Slist))
