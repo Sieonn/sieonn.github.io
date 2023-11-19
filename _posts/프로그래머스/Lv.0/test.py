@@ -1281,24 +1281,43 @@
 #         print(C[0][l], C[1][l], C[2][l])
 
 
-T = int(input())
-for tc in range(1, T+1):
-    N, M = map(int, input().split())
-    A = list(map(int, input().split()))
-    B = list(map(int, input().split()))
-    if len(B) < len(A):
-        As = B
-        Bs = A
-    else:
-        As = A
-        Bs = B
+# T = int(input())
+# for tc in range(1, T+1):
+#     N, M = map(int, input().split())
+#     A = list(map(int, input().split()))
+#     B = list(map(int, input().split()))
+#     if len(B) < len(A):
+#         As = B
+#         Bs = A
+#     else:
+#         As = A
+#         Bs = B
     
-    Slist = []
-    while len(As) <= len(Bs):
-        sum = 0
-        for i in range(len(As)):
-            sum += As[i] * Bs[i]
-        Slist.append(sum)
-        del Bs[0]
+#     Slist = []
+#     while len(As) <= len(Bs):
+#         sum = 0
+#         for i in range(len(As)):
+#             sum += As[i] * Bs[i]
+#         Slist.append(sum)
+#         del Bs[0]
                   
-    print(f'#{tc}',max(Slist))
+#     print(f'#{tc}',max(Slist))
+
+# age = 23
+# def solution(age):
+#     s = ""
+#     for i in str(age):
+#         s += chr(int(i)+97)
+#     return s
+# print(solution(age))    
+             
+         
+def solution(emergency):
+    New = sorted(emergency, reverse = True)
+    s = []
+    print(New)
+    for v in emergency:
+        s.append(New.index(v)+1)
+    return s
+print(solution([3, 76, 24]))
+
