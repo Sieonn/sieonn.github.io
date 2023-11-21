@@ -1322,23 +1322,45 @@
 # print(solution([3, 76, 24]))
 
 
-morse = {
-    '.-': 'a', '-...': 'b', '-.-.': 'c', '-..': 'd', '.': 'e', '..-.': 'f',
-    '--.': 'g', '....': 'h', '..': 'i', '.---': 'j', '-.-': 'k', '.-..': 'l',
-    '--': 'm', '-.': 'n', '---': 'o', '.--.': 'p', '--.-': 'q', '.-.': 'r',
-    '...': 's', '-': 't', '..-': 'u', '...-': 'v', '.--': 'w', '-..-': 'x',
-    '-.--': 'y', '--..': 'z'
-}
+# morse = {
+#     '.-': 'a', '-...': 'b', '-.-.': 'c', '-..': 'd', '.': 'e', '..-.': 'f',
+#     '--.': 'g', '....': 'h', '..': 'i', '.---': 'j', '-.-': 'k', '.-..': 'l',
+#     '--': 'm', '-.': 'n', '---': 'o', '.--.': 'p', '--.-': 'q', '.-.': 'r',
+#     '...': 's', '-': 't', '..-': 'u', '...-': 'v', '.--': 'w', '-..-': 'x',
+#     '-.--': 'y', '--..': 'z'
+# }
 
 
-# def solution(letter):
-#     letter = list(letter.split())
-#     print(letter)
-#     mos = ""
-#     for i in letter:
-#         mos += morse.keys(i)
-#     return mos
+# # def solution(letter):
+# #     letter = list(letter.split())
+# #     print(letter)
+# #     mos = ""
+# #     for i in letter:
+# #         mos += morse.keys(i)
+# #     return mos
 
 
-print(morse.keys('.-'))
-# print(solution(".... . .-.. .-.. ---"))
+# print(morse.keys('.-'))
+# # print(solution(".... . .-.. .-.. ---"))
+T = int(input())
+for tc in range(1, T+1):
+    N = int(input())
+    dal = [[]*N for _ in range(N)]
+    val = 1
+    a, b = 0, 0
+    # for n in range(1, N+1,-1):
+    #     [1]
+    # [1, 1, 1, 1, -1, -1]
+    # for i in range(1, N*N+1):
+    #     if b != (N-1):
+    #         dal[a][b] = i
+    #         b += 1
+    #     if b == N:
+    #         dal[a][b] = i
+    #         a += 1
+    #         if a == N:
+    #             b -= 1
+    #             dal[a][b] = i
+    key = [1, 1, -1, -1]
+    for i in range(N-1, 0, -1):
+        []
