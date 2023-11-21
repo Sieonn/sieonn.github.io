@@ -1292,7 +1292,7 @@
 #     else:
 #         As = A
 #         Bs = B
-
+    
 #     Slist = []
 #     while len(As) <= len(Bs):
 #         sum = 0
@@ -1300,7 +1300,7 @@
 #             sum += As[i] * Bs[i]
 #         Slist.append(sum)
 #         del Bs[0]
-
+                  
 #     print(f'#{tc}',max(Slist))
 
 # age = 23
@@ -1342,12 +1342,12 @@
 
 # print(morse.keys('.-'))
 # # print(solution(".... . .-.. .-.. ---"))
-T = int(input())
-for tc in range(1, T+1):
-    N = int(input())
-    dal = [[]*N for _ in range(N)]
-    val = 1
-    a, b = 0, 0
+# T = int(input())
+# for tc in range(1, T+1):
+#     N = int(input())
+#     dal = [[]*N for _ in range(N)]
+#     val = 1
+#     a, b = 0, 0
     # for n in range(1, N+1,-1):
     #     [1]
     # [1, 1, 1, 1, -1, -1]
@@ -1361,6 +1361,35 @@ for tc in range(1, T+1):
     #         if a == N:
     #             b -= 1
     #             dal[a][b] = i
-    key = [1, 1, -1, -1]
-    for i in range(N-1, 0, -1):
-        []
+    # key = [1, 1, -1, -1]
+    # for i in range(N-1, 0, -1):
+    #     []
+T = int(input())
+for tc in range(1, T+1):
+    N = int(input())
+    dal = [[0]*N for _ in range(N)]
+    print(dal)
+    x, y, c = 0, 0, 0
+    dir = 'right'
+    for i in range(1, (N*N)+1):
+        dal[x][y] = i
+        if dir == 'right':
+            y += 1
+            if y == N-1 or dal[x][y+1] != 0:
+                dir = 'down'
+                c +=1
+        elif dir == 'down':
+            x += 1
+            if x == N-1 or dal[x+1][y] != 0:
+                dir = 'left'
+        elif dir == 'left':
+            y -= 1
+            if y == 0 or dal[x][y-1] != 0:
+                dir = 'up'
+        elif dir == 'up':
+            x -= 1
+            if x == N - 1 or dal[x-1][y] != 0:
+                dir = 'right'
+    print(f'#{tc}')            
+    for v in range(N):
+        print(*dal[v])
