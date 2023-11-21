@@ -1292,7 +1292,7 @@
 #     else:
 #         As = A
 #         Bs = B
-    
+
 #     Slist = []
 #     while len(As) <= len(Bs):
 #         sum = 0
@@ -1300,7 +1300,7 @@
 #             sum += As[i] * Bs[i]
 #         Slist.append(sum)
 #         del Bs[0]
-                  
+
 #     print(f'#{tc}',max(Slist))
 
 # age = 23
@@ -1309,15 +1309,36 @@
 #     for i in str(age):
 #         s += chr(int(i)+97)
 #     return s
-# print(solution(age))    
-             
-         
-def solution(emergency):
-    New = sorted(emergency, reverse = True)
-    s = []
-    print(New)
-    for v in emergency:
-        s.append(New.index(v)+1)
-    return s
-print(solution([3, 76, 24]))
+# print(solution(age))
 
+
+# def solution(emergency):
+#     New = sorted(emergency, reverse = True)
+#     s = []
+#     print(New)
+#     for v in emergency:
+#         s.append(New.index(v)+1)
+#     return s
+# print(solution([3, 76, 24]))
+
+
+morse = {
+    '.-': 'a', '-...': 'b', '-.-.': 'c', '-..': 'd', '.': 'e', '..-.': 'f',
+    '--.': 'g', '....': 'h', '..': 'i', '.---': 'j', '-.-': 'k', '.-..': 'l',
+    '--': 'm', '-.': 'n', '---': 'o', '.--.': 'p', '--.-': 'q', '.-.': 'r',
+    '...': 's', '-': 't', '..-': 'u', '...-': 'v', '.--': 'w', '-..-': 'x',
+    '-.--': 'y', '--..': 'z'
+}
+
+
+# def solution(letter):
+#     letter = list(letter.split())
+#     print(letter)
+#     mos = ""
+#     for i in letter:
+#         mos += morse.keys(i)
+#     return mos
+
+
+print(morse.keys('.-'))
+# print(solution(".... . .-.. .-.. ---"))
