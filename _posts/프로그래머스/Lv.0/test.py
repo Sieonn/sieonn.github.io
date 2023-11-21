@@ -1364,11 +1364,14 @@
     # key = [1, 1, -1, -1]
     # for i in range(N-1, 0, -1):
     #     []
+    
+    
+    
+    
 T = int(input())
 for tc in range(1, T+1):
     N = int(input())
     dal = [[0]*N for _ in range(N)]
-    print(dal)
     x, y, c = 0, 0, 0
     dir = 'right'
     for i in range(1, (N*N)+1):
@@ -1393,3 +1396,6 @@ for tc in range(1, T+1):
     print(f'#{tc}')            
     for v in range(N):
         print(*dal[v])
+
+
+
