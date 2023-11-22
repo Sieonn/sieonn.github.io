@@ -1366,34 +1366,34 @@
 #     []
 
 
-T = int(input())
-for tc in range(1, T+1):
-    N = int(input())
-    dal = [[0]*N for _ in range(N)]
-    x, y, c = 0, 0, 0
-    dir = 'right'
-    for i in range(1, (N*N)+1):
-        dal[x][y] = i
-        if dir == 'right':
-            y += 1
-            if y == N-1 or dal[x][y+1] != 0:
-                dir = 'down'
-                c += 1
-        elif dir == 'down':
-            x += 1
-            if x == N-1 or dal[x+1][y] != 0:
-                dir = 'left'
-        elif dir == 'left':
-            y -= 1
-            if y == 0 or dal[x][y-1] != 0:
-                dir = 'up'
-        elif dir == 'up':
-            x -= 1
-            if x == N - 1 or dal[x-1][y] != 0:
-                dir = 'right'
-    print(f'#{tc}')
-    for v in range(N):
-        print(*dal[v])
+# T = int(input())
+# for tc in range(1, T+1):
+#     N = int(input())
+#     dal = [[0]*N for _ in range(N)]
+#     x, y, c = 0, 0, 0
+#     dir = 'right'
+#     for i in range(1, (N*N)+1):
+#         dal[x][y] = i
+#         if dir == 'right':
+#             y += 1
+#             if y == N-1 or dal[x][y+1] != 0:
+#                 dir = 'down'
+#                 c += 1
+#         elif dir == 'down':
+#             x += 1
+#             if x == N-1 or dal[x+1][y] != 0:
+#                 dir = 'left'
+#         elif dir == 'left':
+#             y -= 1
+#             if y == 0 or dal[x][y-1] != 0:
+#                 dir = 'up'
+#         elif dir == 'up':
+#             x -= 1
+#             if x == N - 1 or dal[x-1][y] != 0:
+#                 dir = 'right'
+#     print(f'#{tc}')
+#     for v in range(N):
+#         print(*dal[v])
 
 
 # T = int(input())
@@ -1418,3 +1418,17 @@ for tc in range(1, T+1):
 #     print(f'#{tc}')
 #     for row in snail:
 #         print(*row)
+import datetime
+
+T = int(input())
+for tc in range(1, 1 + T):
+    date = [input().split()]
+    first, second = date[:3], date[3:]
+    if first[0] == second[0]:
+        after = first + datetime.timedelta(days=(second[1]-first[1]))
+    else:
+        after = first + \
+            datetime.timedelta(
+                months=(second[0]-first[0]), days=(second[0]-first[0]))
+
+    print(after)
