@@ -1423,7 +1423,8 @@ import datetime
 T = int(input())
 for tc in range(1, 1 + T):
     date = [input().split()]
-    first, second = date[:3], date[3:]
+    print(date)
+    first, second = [date[:3]], [date[3:]]
     if first[0] == second[0]:
         after = first + datetime.timedelta(days=(second[1]-first[1]))
     else:
