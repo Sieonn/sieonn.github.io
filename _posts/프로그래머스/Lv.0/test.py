@@ -1492,24 +1492,27 @@
 #     return count
             
             
-def solution(n):
-    i = 0
-    num = 1
-    num2 = 0
-    while i < n:
-        num2 = num
-        i += 1
-        num *= i
-        if num == n:
-            return i
-        elif num > n:
-            if num-n > num2-n:
-                return i-1
-            elif num-n < n - num2:
-                return i
-            
-            
-            
-            
+# def solution(n):
+#     i = 0
+#     num = 1
+#     num2 = 0
+#     while i < n:
+#         num2 = num
+#         i += 1
+#         num *= i
+#         if num == n:
+#             return i
+#         elif num > n:
+#             if num-n > num2-n:
+#                 return i-1
+#             elif num-n < n - num2:
+#                 return i
 
-print(solution(7))
+# print(solution(7))
+
+def solution(n):
+    num, v = 1, 1
+    while num < n:
+        num *= v
+        v += 1
+        if num 
