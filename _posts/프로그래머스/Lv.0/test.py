@@ -1462,15 +1462,20 @@
         
 T = int(input())
 for tc in range(1, 1+T):
+    # date = input().split()
     date = list(map(int,input().split()))
     A = date[:2]
     B = date[2:]
-    date = {'1': 31, '2': 28, '3': 31, '4': 30, '5': 31, '6': 30, '7': 31, '8': 31, '9': 30, '10': 31, '11': 30, '12': 31}
-    cha = B[0] - A[0]
+    last = {1: 31, 2: 28, 3: 31, 4: 30, 5: 31, 6: 30, 7: 31, 8: 31, 9: 30, 10: 31, 11: 30, 12: 31}
     count = 0
-    for i in range(A[0]+1, B[0]):
-        count += date(i)
-    print(date(A[0])-A[1]+ count + B[1])
+    rest = 0
+    if B[0] > A[0]:
+        for i in range(A[0]+1, B[0]):
+            count += last[i]
+        rest = last[A[0]]-A[1] + 1+ count + B[1]
+    else:
+        rest = B[1] - A[1] + 1
+    print(f'#{tc}',rest)
         
     
     
