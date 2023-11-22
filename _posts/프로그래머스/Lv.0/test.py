@@ -1418,18 +1418,59 @@
 #     print(f'#{tc}')
 #     for row in snail:
 #         print(*row)
-import datetime
+# import datetime
 
+# T = int(input())
+# for tc in range(1, 1 + T):
+#     date = list(map(int, input().split()))
+#     print(date)
+#     first, second = date[:2], date[2:]
+#     print(first, second)
+#     if first[0] == second[0]:
+#         after = datetime.timedelta(days=(second[1]-first[1]))
+#     else:
+#         after = datetime.timedelta(months=(second[0]-first[0]), days=(second[0]-first[0]))
+
+#     print(after)
+
+
+# T = int(input())
+# for tc in range(1, 1+T):
+#     date = list(map(int,input().split()))
+#     A = date[:2]
+#     B = date[2:]
+#     print(A, B)
+#     C = [1, 3, 5, 7, 8, 10, 12]
+#     D = [4, 6, 9, 11]
+#     if A[0] in C:
+#         if A[0] == B[0]:
+#             rest = B[1] - A[1] + 1
+#         else:
+#             rest = 31- A[1] + B[1]
+#     elif A[0] in D:
+#         if A[0] == B[0]:
+#             rest = B[1] - A[1] + 1
+#         else:
+#             rest = 30- A[1] + B[1]
+#     else:
+#         if A[0] == B[0]:
+#             rest = B[1] - A[1] + 1
+#         else:
+#             rest = 28 - A[1] + B[1]
+        
+#     print(f'#{tc} {rest}')
+        
 T = int(input())
-for tc in range(1, 1 + T):
-    date = [input().split()]
-    print(date)
-    first, second = [date[:3]], [date[3:]]
-    if first[0] == second[0]:
-        after = first + datetime.timedelta(days=(second[1]-first[1]))
-    else:
-        after = first + \
-            datetime.timedelta(
-                months=(second[0]-first[0]), days=(second[0]-first[0]))
-
-    print(after)
+for tc in range(1, 1+T):
+    date = list(map(int,input().split()))
+    A = date[:2]
+    B = date[2:]
+    date = {'1': 31, '2': 28, '3': 31, '4': 30, '5': 31, '6': 30, '7': 31, '8': 31, '9': 30, '10': 31, '11': 30, '12': 31}
+    cha = B[0] - A[0]
+    count = 0
+    for i in range(A[0]+1, B[0]):
+        count += date(i)
+    print(date(A[0])-A[1]+ count + B[1])
+        
+    
+    
