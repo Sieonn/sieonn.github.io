@@ -1292,7 +1292,7 @@
 #     else:
 #         As = A
 #         Bs = B
-    
+
 #     Slist = []
 #     while len(As) <= len(Bs):
 #         sum = 0
@@ -1300,7 +1300,7 @@
 #             sum += As[i] * Bs[i]
 #         Slist.append(sum)
 #         del Bs[0]
-                  
+
 #     print(f'#{tc}',max(Slist))
 
 # age = 23
@@ -1348,26 +1348,24 @@
 #     dal = [[]*N for _ in range(N)]
 #     val = 1
 #     a, b = 0, 0
-    # for n in range(1, N+1,-1):
-    #     [1]
-    # [1, 1, 1, 1, -1, -1]
-    # for i in range(1, N*N+1):
-    #     if b != (N-1):
-    #         dal[a][b] = i
-    #         b += 1
-    #     if b == N:
-    #         dal[a][b] = i
-    #         a += 1
-    #         if a == N:
-    #             b -= 1
-    #             dal[a][b] = i
-    # key = [1, 1, -1, -1]
-    # for i in range(N-1, 0, -1):
-    #     []
-    
-    
-    
-    
+# for n in range(1, N+1,-1):
+#     [1]
+# [1, 1, 1, 1, -1, -1]
+# for i in range(1, N*N+1):
+#     if b != (N-1):
+#         dal[a][b] = i
+#         b += 1
+#     if b == N:
+#         dal[a][b] = i
+#         a += 1
+#         if a == N:
+#             b -= 1
+#             dal[a][b] = i
+# key = [1, 1, -1, -1]
+# for i in range(N-1, 0, -1):
+#     []
+
+
 T = int(input())
 for tc in range(1, T+1):
     N = int(input())
@@ -1380,7 +1378,7 @@ for tc in range(1, T+1):
             y += 1
             if y == N-1 or dal[x][y+1] != 0:
                 dir = 'down'
-                c +=1
+                c += 1
         elif dir == 'down':
             x += 1
             if x == N-1 or dal[x+1][y] != 0:
@@ -1393,9 +1391,30 @@ for tc in range(1, T+1):
             x -= 1
             if x == N - 1 or dal[x-1][y] != 0:
                 dir = 'right'
-    print(f'#{tc}')            
+    print(f'#{tc}')
     for v in range(N):
         print(*dal[v])
 
 
+# T = int(input())
+# for tc in range(1, 1+T):
+#     N = int(input())
+#     dist = [[0,1], [1,0], [0, -1], [-1, 0]] #우, 하, 좌, 상
+#     snail = [[0]*N for _ in range(N)]
+#     num = 1 #달팽이를 채울 숫자
+#     d = 0 #달팽이 이동방향
+#     x, y = 0, -1 #시작 위치
+#     while num <= (N*N):
+#         nx, ny = x + dist[d][0], y + dist[d][1]
+#         if 0 <= nx < N and 0 <= ny < N and snail[nx][ny] == 0:
+#             snail[nx][ny] = num # 숫자 넣어주기
+#             num += 1 #숫자 증가
+#             x, y = nx, ny #현재 위치 갱신
 
+#         #달팽이 크기에서 벗어났거나, 해당 위치에 이미 숫자가 부여되어 있는 경우
+#         #K값 조정을 통해 방향을 바꾼다.
+#         else:
+#             d = (d+1) % 4 #0, 1, 2, 3 으로반 움직일 수 있게 나머지를 구함
+#     print(f'#{tc}')
+#     for row in snail:
+#         print(*row)
