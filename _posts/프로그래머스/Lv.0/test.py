@@ -1460,22 +1460,37 @@
         
 #     print(f'#{tc} {rest}')
         
-T = int(input())
-for tc in range(1, 1+T):
-    # date = input().split()
-    date = list(map(int,input().split()))
-    A = date[:2]
-    B = date[2:]
-    last = {1: 31, 2: 28, 3: 31, 4: 30, 5: 31, 6: 30, 7: 31, 8: 31, 9: 30, 10: 31, 11: 30, 12: 31}
-    count = 0
-    rest = 0
-    if B[0] > A[0]:
-        for i in range(A[0]+1, B[0]):
-            count += last[i]
-        rest = last[A[0]]-A[1] + 1+ count + B[1]
-    else:
-        rest = B[1] - A[1] + 1
-    print(f'#{tc}',rest)
+# T = int(input())
+# for tc in range(1, 1+T):
+#     # date = input().split()
+#     date = list(map(int,input().split()))
+#     A = date[:2]
+#     B = date[2:]
+#     last = {1: 31, 2: 28, 3: 31, 4: 30, 5: 31, 6: 30, 7: 31, 8: 31, 9: 30, 10: 31, 11: 30, 12: 31}
+#     count = 0
+#     rest = 0
+#     if B[0] > A[0]:
+#         for i in range(A[0]+1, B[0]):
+#             count += last[i]
+#         rest = last[A[0]]-A[1] + 1+ count + B[1]
+#     else:
+#         rest = B[1] - A[1] + 1
+#     print(f'#{tc}',rest)
         
     
     
+def solution(n):
+    num, count = 1, 0
+    
+    while num <= n:
+        A = []
+        for i in range(1, 1+n):
+            if num % i == 0:
+                A.append(i)
+        num += 1
+        print(A)
+        if len(A) >= 3:
+            count += 1
+    return count
+            
+print(solution(10))
