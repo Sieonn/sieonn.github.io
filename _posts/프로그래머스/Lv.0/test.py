@@ -1479,18 +1479,37 @@
         
     
     
-def solution(n):
-    num, count = 1, 0
-    
-    while num <= n:
-        A = []
-        for i in range(1, 1+n):
-            if num % i == 0:
-                A.append(i)
-        num += 1
-        print(A)
-        if len(A) >= 3:
-            count += 1
-    return count
+# def solution(n):
+#     num, count = 1, 0   
+#     while num <= n:
+#         A = []
+#         for i in range(1, 1+n):
+#             if num % i == 0:
+#                 A.append(i)
+#         num += 1
+#         if len(A) >= 3:
+#             count += 1
+#     return count
             
-print(solution(10))
+            
+def solution(n):
+    i = 0
+    num = 1
+    num2 = 0
+    while i < n:
+        num2 = num
+        i += 1
+        num *= i
+        if num == n:
+            return i
+        elif num > n:
+            if num-n > num2-n:
+                return i-1
+            elif num-n < n - num2:
+                return i
+            
+            
+            
+            
+
+print(solution(7))
