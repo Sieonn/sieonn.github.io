@@ -20,6 +20,8 @@
 }
 
 body {
+  font-family: 'GmarketSansMedium', sans-serif; // 웹 폰트 적용
+  font-weight: 300;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -76,7 +78,7 @@ body {
   margin-top: 0;
   line-height: 1.4;
   color: $text-color;
-  // font-weight: 900;
+  font-weight: 700;
 
   a {
     color: $text-color;
@@ -132,6 +134,7 @@ body {
       -moz-transition: opacity 0.2s ease-in-out 0.1s;
       -o-transition: opacity 0.2s ease-in-out 0.1s;
       transition: opacity 0.2s ease-in-out 0.1s;
+      font-weight: 500;
     }
 
     &:hover .header-link {
@@ -142,14 +145,14 @@ body {
   p,
   li,
   dl {
+    font-family: 'JeonjuCraftGoR';//'S-CoreDream-3Light';//'JeonjuCraftGoR';
     font-size: 14px;
-    font-weight: 300;
+    font-weight: 400;
     //0.8em;
   }
 
   /* paragraph indents */
   p {
-    font-weight: 300;
     // margin-top: $indent-var;
     // margin: 0 0 $indent-var;
 
@@ -178,7 +181,7 @@ body {
     font-size: 0.95em;
     background: $code-background-color;
     // border-radius: $border-radius;
-    font-weight: 600;
+    font-weight: 500;
     color: #595959;
     overflow: auto;
 
