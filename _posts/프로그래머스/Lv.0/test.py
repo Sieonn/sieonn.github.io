@@ -1510,9 +1510,21 @@
 
 # print(solution(7))
 
-def solution(n):
-    num, v = 1, 1
-    while num < n:
-        num *= v
-        v += 1
-        if num 
+# def solution(n):
+#     num, v = 1, 1
+#     while num < n:
+#         num *= v
+#         v += 1
+#         if num 
+# def solution(my_string):
+#     answer = []
+#     for i in my_string:
+#         if i.isdigit():
+#             answer.append(int(i))
+#     return sorted(answer)
+# print(solution("hi12392"))
+
+def solution(my_string):
+    return sorted([int(c) for c in my_string if c.isdigit()])
+
+print(solution("hi12345"))
