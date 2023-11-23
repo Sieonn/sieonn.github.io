@@ -1524,7 +1524,19 @@
 #     return sorted(answer)
 # print(solution("hi12392"))
 
-def solution(my_string):
-    return sorted([int(c) for c in my_string if c.isdigit()])
+# def solution(my_string):
+#     return sorted([int(c) for c in my_string if c.isdigit()])
 
-print(solution("hi12345"))
+# print(solution("hi12345"))
+
+def solution(n):
+    answer = []
+    num = 2
+    while num <= n:
+        if n % num == 0 and num not in answer:
+            answer.append(num)
+            n = n//num
+        else:
+            num += 1
+    return answer
+print(solution(12))
