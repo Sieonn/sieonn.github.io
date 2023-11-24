@@ -1,19 +1,16 @@
 ---
 title: "AWS restart"
-layout: single
+layout: sieonm
 permalink: /AWS restart/
 author_profile: true
 sidebar: true
+category: AWS restart
 ---
 
-{% assign posts = site.categories.['AWS restart'] %}
+{% assign posts = site.categories.Are %}
 {% for post in posts %} {% include archive-single.html type=page.entries_layout %} {% endfor %}
 
 {% assign posts = site.categories.security %}
-{% for post in posts %} {% include archive-single.html type=page.entries_layout %} {% endfor %}
-
-
-{% assign posts = site.categories.programmers %}
 {% for post in posts %} {% include archive-single.html type=page.entries_layout %} {% endfor %}
 
 
@@ -26,7 +23,7 @@ sidebar: true
 {% assign posts = site.categories.Linux %}
 {% for post in posts %} {% include archive-single.html type=page.entries_layout %} {% endfor %}
 
-{% assign posts = site.categories.['Jumpstart on AWS Advanced'] %}
+{% assign posts = site.categories.JAre %}
 {% for post in posts %} {% include archive-single.html type=page.entries_layout %} {% endfor %}
 
 {% assign posts = site.categories.batabase %}
