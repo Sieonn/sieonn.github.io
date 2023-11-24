@@ -41,10 +41,14 @@
 #     return new
 # print(solution("people"))
 
-def solution(sides):
-    sides = sorted(sides)
-    if sides[2]< sides[0] + sides[1]: 
-        return 1
-    else:
-        return 2
-print(solution([199, 72, 222]))
+# def solution(sides):
+#     sides = sorted(sides)
+#     if sides[2]< sides[0] + sides[1]: 
+#         return 1
+#     else:
+#         return 2
+# print(solution([199, 72, 222]))
+
+# def solution(sides):
+#     sides = sorted(sides)
+#     return 2 - int(sides[2]< sides[0] + sides[1])
