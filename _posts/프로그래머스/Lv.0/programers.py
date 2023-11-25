@@ -41,23 +41,35 @@
 #     return int(numbers)
 # print(solution("onetwothreefourfivesixseveneightnine"))
 
-def solution(my_string, num1, num2):
-    new_string = [i for i in my_string]
-    new = []
-    # for j in new_string:
-    for i, v in enumerate(new_string):
-        if i == num1:
-            new.append(my_string[num2])
-        elif i == num2:
-            new.append(my_string[num2])
-        else:
-            new.append(v)
-    print(new)
-    return ''.join(new)
+# def solution(my_string, num1, num2):
+#     new_string = [i for i in my_string]
+#     new = []
+#     for i, v in enumerate(new_string):
+#         if i == num1:
+#             new.append(my_string[num2])
+#         elif i == num2:
+#             new.append(my_string[num1])
+#         else:
+#             new.append(v)
+#     return ''.join(new)
             
             
             
         
         
 
-print(solution("I love you", 3, 6))
+# print(solution("I love you", 3, 6))
+
+
+def solution(s):
+    ss = sorted(list(s))
+    cnt = []
+    for i in ss:
+        cnt.append(ss.count(i))
+    new = []
+    for j, v in enumerate(cnt):
+        if v == 1:
+            new.append(ss[j])         
+    return ''.join(new)
+s = "hello"
+print(solution(s))
