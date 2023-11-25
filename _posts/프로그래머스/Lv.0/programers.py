@@ -34,9 +34,30 @@
 #             sol = ""
 #     return int(answer)
 
-def solution(numbers):
-    num = ["zero", "one", "two", "three", "four", "five", "six", "seven", "eight", "nine"]
-    for i, v in enumerate(num):
-        numbers = numbers.replace(v, str(i))
-    return int(numbers)
-print(solution("onetwothreefourfivesixseveneightnine"))
+# def solution(numbers):
+#     num = ["zero", "one", "two", "three", "four", "five", "six", "seven", "eight", "nine"]
+#     for i, v in enumerate(num):
+#         numbers = numbers.replace(v, str(i))
+#     return int(numbers)
+# print(solution("onetwothreefourfivesixseveneightnine"))
+
+def solution(my_string, num1, num2):
+    new_string = [i for i in my_string]
+    new = []
+    # for j in new_string:
+    for i, v in enumerate(new_string):
+        if i == num1:
+            new.append(my_string[num2])
+        elif i == num2:
+            new.append(my_string[num2])
+        else:
+            new.append(v)
+    print(new)
+    return ''.join(new)
+            
+            
+            
+        
+        
+
+print(solution("I love you", 3, 6))
