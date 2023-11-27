@@ -69,11 +69,43 @@
 #     return ''.join(new)
 # s = "hello"
 # print(solution(s))
-def solution(num, k):
-    for i, v in enumerate(str(num)):
-        if v == str(k):
-            return i
-    return -1
+# def solution(num, k):
+#     for i, v in enumerate(str(num)):
+#         if v == str(k):
+#             return i+1
+#     return -1
 
 
-print(solution(29183, 1))
+# print(solution(29183, 1))
+
+
+# def solution(quiz):
+#     answer = []
+#     for i in quiz:
+#         new = i.split("=")
+#         if eval(new[0]) == int(new[1]):
+#             answer.append("O")
+#         else:
+#             answer.append("X")
+#     return answer
+
+def solution(quiz):
+    answer = []
+    for i in quiz:
+        a = i.split()
+        if a[1] == '-':
+            dab = int(a[0]) - int(a[2])
+            if dab == int(a[-1]):
+                answer.append("O")
+            else:
+                answer.append("X")
+        else:
+            dab = int(a[0]) + int(a[2])
+            if dab == int(a[-1]):
+                answer.append("O")
+            else:
+                answer.append("X")
+    return answer
+
+
+print(solution(["19 - 6 = 13", "5 + 66 = 71", "5 - 15 = 63", "3 - 1 = 2"]))
