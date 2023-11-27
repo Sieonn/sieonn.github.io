@@ -1,5 +1,5 @@
 # def solution(array, n):
-#     sol = []   
+#     sol = []
 #     array = sorted(array)
 #     for i in array:
 #         num = i - n
@@ -52,24 +52,28 @@
 #         else:
 #             new.append(v)
 #     return ''.join(new)
-            
-            
-            
-        
-        
+
 
 # print(solution("I love you", 3, 6))
 
 
-def solution(s):
-    ss = sorted(list(s))
-    cnt = []
-    for i in ss:
-        cnt.append(ss.count(i))
-    new = []
-    for j, v in enumerate(cnt):
-        if v == 1:
-            new.append(ss[j])         
-    return ''.join(new)
-s = "hello"
-print(solution(s))
+# def solution(s):
+#     ss = sorted(list(s))
+#     cnt = []
+#     for i in ss:
+#         cnt.append(ss.count(i))
+#     new = []
+#     for j, v in enumerate(cnt):
+#         if v == 1:
+#             new.append(ss[j])
+#     return ''.join(new)
+# s = "hello"
+# print(solution(s))
+def solution(num, k):
+    for i, v in enumerate(str(num)):
+        if v == str(k):
+            return i
+    return -1
+
+
+print(solution(29183, 1))
