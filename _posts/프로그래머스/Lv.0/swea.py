@@ -19,7 +19,6 @@ for tc in range(1, T+1):
     now = 0
     for i in range(int(input())):
         speed = list(map(int,input().split()))
-        # print(speed)
         if speed[0] == 1:
             now = now + speed[1]
             answer += now
