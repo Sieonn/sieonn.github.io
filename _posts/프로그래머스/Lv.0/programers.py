@@ -89,23 +89,35 @@
 #             answer.append("X")
 #     return answer
 
-def solution(quiz):
-    answer = []
-    for i in quiz:
-        a = i.split()
-        if a[1] == '-':
-            dab = int(a[0]) - int(a[2])
-            if dab == int(a[-1]):
-                answer.append("O")
-            else:
-                answer.append("X")
+# def solution(quiz):
+#     answer = []
+#     for i in quiz:
+#         a = i.split()
+#         if a[1] == '-':
+#             dab = int(a[0]) - int(a[2])
+#             if dab == int(a[-1]):
+#                 answer.append("O")
+#             else:
+#                 answer.append("X")
+#         else:
+#             dab = int(a[0]) + int(a[2])
+#             if dab == int(a[-1]):
+#                 answer.append("O")
+#             else:
+#                 answer.append("X")
+#     return answer
+
+
+# print(solution(["19 - 6 = 13", "5 + 66 = 71", "5 - 15 = 63", "3 - 1 = 2"]))
+
+
+def solution(my_string):
+    new = ""
+    for i in my_string:
+        print(my_string)
+        if i.isupper():
+            new += i.lower()
         else:
-            dab = int(a[0]) + int(a[2])
-            if dab == int(a[-1]):
-                answer.append("O")
-            else:
-                answer.append("X")
-    return answer
-
-
-print(solution(["19 - 6 = 13", "5 + 66 = 71", "5 - 15 = 63", "3 - 1 = 2"]))
+            new += i
+    return ''.join(sorted(new))
+print(solution("Bcad"))
