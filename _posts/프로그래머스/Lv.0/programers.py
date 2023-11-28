@@ -110,14 +110,17 @@
 
 # print(solution(["19 - 6 = 13", "5 + 66 = 71", "5 - 15 = 63", "3 - 1 = 2"]))
 
+# 
+# def solution(my_string):
+    # new = ""
+    # for i in my_string:
+        # if i.isupper():
+            # new += i.lower()
+        # else:
+            # new += i
+    # return ''.join(sorted(new))
+# print(solution("Bcad"))
 
-def solution(my_string):
-    new = ""
-    for i in my_string:
-        print(my_string)
-        if i.isupper():
-            new += i.lower()
-        else:
-            new += i
-    return ''.join(sorted(new))
-print(solution("Bcad"))
+def solution(array):
+    return str(array).count('7')
+print(solution([7, 17, 77]))
