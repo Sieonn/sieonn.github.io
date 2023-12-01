@@ -120,7 +120,38 @@
             # new += i
     # return ''.join(sorted(new))
 # print(solution("Bcad"))
+# 
+# def solution(array):
+    # return str(array).count('7')
+# print(solution([7, 17, 77]))
+# def solution(keyinput, board):
+    # dist = {"up": [0,1],"down": [0,-1],"left": [-1, 0], "right": [1, 0]}
+    # start = [0, 0]
+    # 
+    # for i in keyinput:
+        # if -(board[0]//2) < start[0] < board[1]//2 and -(board[1]//2) < start[1] < board[1]//2 :
+            # start[0] += dist[i][0]
+            # start[1] += dist[i][1]
+    # return start
+def solution(keyinput, borad):
+    x, y = borad[0]//2, borad[1]//2
+    dist = {"up": [0,1],"down": [0,-1],"left": [-1, 0], "right": [1, 0]}
+    a , b = 0, 0
+    for i in keyinput:
+        if a >= x or a <= -x or b >= y or y <= -b:
+            pass
+        else:
+            a += dist[i][0]
+            b += dist[i][1]
+    return [a, b]
 
-def solution(array):
-    return str(array).count('7')
-print(solution([7, 17, 77]))
+print(solution(["left", "right", "up", "right", "right"],[11,11]))
+
+
+
+
+            
+    
+    
+# 
+# print(solution(["left", "right", "up", "right", "right"],[11, 11]))
