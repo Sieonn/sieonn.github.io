@@ -110,48 +110,93 @@
 
 # print(solution(["19 - 6 = 13", "5 + 66 = 71", "5 - 15 = 63", "3 - 1 = 2"]))
 
-# 
+#
 # def solution(my_string):
-    # new = ""
-    # for i in my_string:
-        # if i.isupper():
-            # new += i.lower()
-        # else:
-            # new += i
-    # return ''.join(sorted(new))
+# new = ""
+# for i in my_string:
+# if i.isupper():
+# new += i.lower()
+# else:
+# new += i
+# return ''.join(sorted(new))
 # print(solution("Bcad"))
-# 
+#
 # def solution(array):
-    # return str(array).count('7')
+# return str(array).count('7')
 # print(solution([7, 17, 77]))
 # def solution(keyinput, board):
-    # dist = {"up": [0,1],"down": [0,-1],"left": [-1, 0], "right": [1, 0]}
-    # start = [0, 0]
-    # 
-    # for i in keyinput:
-        # if -(board[0]//2) < start[0] < board[1]//2 and -(board[1]//2) < start[1] < board[1]//2 :
-            # start[0] += dist[i][0]
-            # start[1] += dist[i][1]
-    # return start
-def solution(keyinput, borad):
-    x, y = borad[0]//2, borad[1]//2
-    dist = {"up": [0,1],"down": [0,-1],"left": [-1, 0], "right": [1, 0]}
-    a , b = 0, 0
-    for i in keyinput:
-        if a >= x or a <= -x or b >= y or y <= -b:
-            pass
-        else:
-            a += dist[i][0]
-            b += dist[i][1]
-    return [a, b]
+# dist = {"up": [0,1],"down": [0,-1],"left": [-1, 0], "right": [1, 0]}
+# start = [0, 0]
+#
+# for i in keyinput:
+# if -(board[0]//2) < start[0] < board[1]//2 and -(board[1]//2) < start[1] < board[1]//2 :
+# start[0] += dist[i][0]
+# start[1] += dist[i][1]
+# return start
+# def solution(keyinput, borad):
+#     x, y = 0, 0
+#     wx = borad[0]//2
+#     wy = borad[1]//2
+#     for i in keyinput:
+#         if i == "left" and x > -wx:
+#             x -= 1
+#         elif i == "right" and x < wx:
+#             x += 1
+#         elif i == "up" and y < wy:
+#             y += 1
+#         elif i == "down" and y > -wy:
+#             y -= 1
+#     return [x, y]
 
-print(solution(["left", "right", "up", "right", "right"],[11,11]))
 
+# print(solution(["left", "right", "up", "right", "right"], [11, 11]))
 
-
-
-            
-    
-    
-# 
 # print(solution(["left", "right", "up", "right", "right"],[11, 11]))
+
+
+# def solution(numbers):
+#     max = 0
+#     for i, k in enumerate(numbers):
+#         for j, l in enumerate(numbers):
+#             num = k * l
+#             if k * l >= num and i != j:
+#                 max = num
+#     return max
+# def solution(numbers):
+#     m = []
+#     for i in range(len(numbers)):
+#         for j in range(len(numbers)):
+#             num = numbers[i] * numbers[j]
+#             if i != j:
+#                 m.append(num)
+#     return max(m)
+
+
+# print(solution([1, 2, -3, 4, -5]))
+
+
+def solution(polynomial):
+    num = polynomial.split(" + ")
+    print(num)
+    x, y = 0, 0
+    sol = []
+    for i in num:
+        if "x" in i:
+            if len(i) != 1:
+                x += int(i[:-1])
+            else:
+                x += 1
+        elif i.isdigit():
+            y += int(i)
+    if x > 1:
+        sol.append(str(x)+"x")
+    elif x == 1:
+        sol.append("x")
+
+    if y != 0:
+        sol.append(str(y))
+
+    return ' + '.join(sol)
+
+
+print(solution("x + 1"))
