@@ -284,4 +284,23 @@
 # print(solution([[1, 0, 0], [0, 0, 0], [0, 0, 0]]))
 
 
-print(sum(i for i in range(10)))
+def solution(sides):
+    a, b = sorted(sides)
+    # 배열 내에 가장 긴 변이 포함된 경우 [3,6]
+    count = 0
+    num = b - a+1
+    while b - a < num <= b:
+        count += 1
+        num += 1
+    num2 = b
+    while b < num2+1 < b + a:
+        count += 1
+        num2 += 1
+
+    return count
+
+    # 주어진 배열의 값이 같은 경우[6,6]
+    # 가장 긴변을 구해야하는 경우
+
+
+print(solution([11, 7]))
