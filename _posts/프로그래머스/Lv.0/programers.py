@@ -175,28 +175,64 @@
 # print(solution([1, 2, -3, 4, -5]))
 
 
-def solution(polynomial):
-    num = polynomial.split(" + ")
-    print(num)
-    x, y = 0, 0
-    sol = []
-    for i in num:
-        if "x" in i:
-            if len(i) != 1:
-                x += int(i[:-1])
-            else:
-                x += 1
-        elif i.isdigit():
-            y += int(i)
-    if x > 1:
-        sol.append(str(x)+"x")
-    elif x == 1:
-        sol.append("x")
+# def solution(polynomial):
+#     num = polynomial.split(" + ")
+#     print(num)
+#     x, y = 0, 0
+#     sol = []
+#     for i in num:
+#         if "x" in i:
+#             if len(i) != 1:
+#                 x += int(i[:-1])
+#             else:
+#                 x += 1
+#         elif i.isdigit():
+#             y += int(i)
+#     if x > 1:
+#         sol.append(str(x)+"x")
+#     elif x == 1:
+#         sol.append("x")
 
-    if y != 0:
-        sol.append(str(y))
+#     if y != 0:
+#         sol.append(str(y))
 
-    return ' + '.join(sol)
+#     return ' + '.join(sol)
 
 
-print(solution("x + 1"))
+# print(solution("x + 1"))
+
+
+# def solution(my_string):
+#     num = ""
+#     sol = []
+
+#     for v, i in enumerate(my_string):
+#         if i.isdigit():
+#             if my_string[v-1].isdigit() and v != 0:
+#                 num = num + i
+#                 if v == len(my_string)-1:
+#                     sol.append(int(num))
+#             else:
+#                 num += i
+#                 if v == len(my_string)-1:
+#                     sol.append(int(num))
+#         else:
+#             if num != "":
+#                 sol.append(int(num))
+#                 num = ""
+#     if sol == []:
+#         return 0
+#     # print(sol)
+#     return sum(sol)
+
+
+# print(solution(""))
+
+
+def solution(my_string):
+    s = ''.join(i if i.isdigit() else ' ' for i in my_string)
+    print(s, s.split())
+    return sum(int(i) for i in s.split())
+
+
+print(solution("aAb1B2cC34oOP"))
