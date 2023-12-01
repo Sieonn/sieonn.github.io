@@ -237,37 +237,51 @@
 
 # print(solution("aAb1B2cC34oOP"))
 
-def solution(board):
-    N = len(board)
-    bomb = [[i, j] for i in range(N) for j in range(N) if board[i][j] == 1]
-    print(bomb)
-    if N < 3:
-        if len(bomb) > 0:
-            return 0
-        else:
-            return N*N
-    region = []
-    for x, y in bomb:
-        if x - 1 < 0:
-            xx = 0
-        else:
-            xx = x-1
-        if y - 1 < 0:
-            yy = 0
-        else:
-            yy = y - 1
+# def solution(board):
+#     N = len(board)
+#     bomb = [[i, j] for i in range(N) for j in range(N) if board[i][j] == 1]
+#     if N < 3:
+#         if len(bomb) > 0:
+#             return 0
+#         else:
+#             return N*N
+#     region = []
+#     for x, y in bomb:
+#         if x - 1 < 0:
+#             xx = 0
+#         else:
+#             xx = x-1
+#         if y - 1 < 0:
+#             yy = 0
+#         else:
+#             yy = y - 1
 
-        for a in range(xx, x+2):
-            for b in range(yy, y+2):
-                if [a, b] not in region:
-                    region.append([a, b])
-    if N*N - len(region) > 0:
-        return N*N - len(region)
-    else:
-        return 0
+#         for a in range(xx, x+2):
+#             for b in range(yy, y+2):
+#                 if [a, b] not in region and a < N and b < N:
+#                     region.append([a, b])
+#     print(region)
+#     if N*N - len(region) > 0:
+#         return N*N - len(region)
+#     else:
+#         return 0
 
-
-    # return answer
+# return answer
 # print(solution([[0, 0, 0, 0, 0], [0, 0, 0, 0, 0], [
 #       0, 0, 0, 0, 0], [0, 0, 1, 0, 0], [0, 0, 0, 0, 0]]))
-print(solution([[0, 1, 0], [0, 0, 0], [0, 0, 0]]))
+# def solution(board):
+#     n = len(board)
+#     danger = set()
+#     for i, row in enumerate(board):
+#         for j, k in enumerate(row):
+#             if not k:
+#                 continue
+#             danger.update((i+a, j+b) for a in [-1, 0, 1] for b in [-1, 0, 1])
+#     print(danger)
+#     return n*n - sum(0 <= i < n and 0 <= j < n for i, j in danger)
+
+
+# print(solution([[1, 0, 0], [0, 0, 0], [0, 0, 0]]))
+
+
+print(sum(i for i in range(10)))
