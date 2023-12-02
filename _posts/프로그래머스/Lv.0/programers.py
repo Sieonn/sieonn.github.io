@@ -284,23 +284,41 @@
 # print(solution([[1, 0, 0], [0, 0, 0], [0, 0, 0]]))
 
 
-def solution(sides):
-    a, b = sorted(sides)
-    # 배열 내에 가장 긴 변이 포함된 경우 [3,6]
-    count = 0
-    num = b - a+1
-    while b - a < num <= b:
-        count += 1
-        num += 1
-    num2 = b
-    while b < num2+1 < b + a:
-        count += 1
-        num2 += 1
+# def solution(sides):
+#     a, b = sorted(sides)
+#     # 배열 내에 가장 긴 변이 포함된 경우 [3,6]
+#     count = 0
+#     num = b - a+1
+#     while b - a < num <= b:
+#         count += 1
+#         num += 1
+#     num2 = b
+#     while b < num2+1 < b + a:
+#         count += 1
+#         num2 += 1
 
-    return count
+#     return count
 
-    # 주어진 배열의 값이 같은 경우[6,6]
-    # 가장 긴변을 구해야하는 경우
+#     # 주어진 배열의 값이 같은 경우[6,6]
+#     # 가장 긴변을 구해야하는 경우
 
 
-print(solution([11, 7]))
+# print(solution([11, 7]))
+
+def solution(spell, dic):
+    s = 0
+    for i in dic:
+        count = 0
+        for j in spell:
+            if j in i:
+                count += 1
+            else:
+                count = 0
+        if count == len(spell):
+            s += 1
+    return int(s == 0)+1
+
+    # pos,pso,ops,ops, spo, pos
+
+
+print(solution(["s", "o", "m", "d"], ["moos", "dzx", "smm", "sunmmo", "som"]))
