@@ -305,20 +305,80 @@
 
 # print(solution([11, 7]))
 
-def solution(spell, dic):
-    s = 0
-    for i in dic:
-        count = 0
-        for j in spell:
-            if j in i:
-                count += 1
+# def solution(spell, dic):
+#     s = 0
+#     for i in dic:
+#         count = 0
+#         for j in spell:
+#             if j in i:
+#                 count += 1
+#             else:
+#                 count = 0
+#         if count == len(spell):
+#             s += 1
+#     return int(s == 0)+1
+
+#     # pos,pso,ops,ops, spo, pos
+
+
+# print(solution(["s", "o", "m", "d"], ["moos", "dzx", "smm", "sunmmo", "som"]))
+
+# def solution(n):
+#     # 3의 배수 일때
+#     # index가 3의 배수이거나 3이 들어갈때, 10진법이 3의 배수이거나 3이 들어갈때.
+#     # n,m으로 구분하고
+#     v = 0  # 값
+#     # m = 0  # 인덱스
+#     for i in range(1, 1+n):
+#         v += 1
+#         # if i % 3 == 0 or "3" in str(i):
+#         #     if v != i:
+#         #         v = v + 1
+#         #     else:
+#         #         v = 1 + i
+#         if v % 3 == 0 or "3" in str(v):
+#             if v != i:
+#                 v = v + 1
+#                 if v % 3 == 0 or "3" in str(v):
+#                     v = v + 1
+#             else:
+#                 v = 1 + i
+#         if 29 < v < 40:
+#             v = 40
+#         print(i, v)
+# while m < n:
+#     v += 1
+#     m += 1
+#     if m % 3 == 0 or "3" in str(m):
+#         print("인덱스:", m, v)
+#         v = m + m//3
+#         if v % 3 == 0 or "3" in str(v):
+#             v = m + v//3
+#         # print("들어온 인덱스m1", m)
+#         print("저장된 값:", v)
+
+#     else:
+#         print("들어온 인덱스m2:", m, v)
+#         if v % 3 == 0 or "3" in str(v):
+#             v = m + v//3
+#             print("저장될 값:", v)
+#     print("인덱스:", m, "값:", v)
+#     print("----------")
+def solution(n):
+    v = 0
+    for i in range(1, 1+n):
+        v += 1
+        if v % 3 == 0 or "3" in str(v).split():
+            if v != i:
+                v = v + 1
+                if v % 3 == 0 or "3" in str(v):
+                    v = v + 1
             else:
-                count = 0
-        if count == len(spell):
-            s += 1
-    return int(s == 0)+1
+                v = 1 + i
+        if "3" in :
+            v = (v//10+1)*10
+        print(i, v)
+    return v
 
-    # pos,pso,ops,ops, spo, pos
 
-
-print(solution(["s", "o", "m", "d"], ["moos", "dzx", "smm", "sunmmo", "som"]))
+print(solution(100))
