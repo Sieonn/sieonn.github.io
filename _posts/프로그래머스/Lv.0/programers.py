@@ -384,24 +384,28 @@
 # print(solution(100))
 
 
-def solution(dots):
-    # 두 직선이 경치는 경우는 점이 (x1, x2)(x1,x3)(x1,x4)(x2,x3),(X2,x4)(x3,x4) 이 점들 다 비교.
-    r = [0, 1, 2, 3]
-    for i in range(4):
-        for j in range(4):
-            a, s = [], []
-            if i != j:
-                r.remove(i)
-                r.remove(j)
-                a.append(dots[i])
-                a.append(dots[j])
-                s.append(dots[r[0]])
-                s.append(dots[r[1]])
-                if a[1][0] - a[0][0] == s[1][0] - s[0][0] and a[1][1] - a[0][1] == s[1][1] - s[0][1]:
-                    return 1
-            r = [0, 1, 2, 3]
+# def solution(dots):
+#     # 두 직선이 경치는 경우는 점이 (x1, x2)(x1,x3)(x1,x4)(x2,x3),(X2,x4)(x3,x4) 이 점들 다 비교.
+#     r = [0, 1, 2, 3]
+#     for i in range(4):
+#         for j in range(4):
+#             a, s = [], []
+#             if i != j:
+#                 r.remove(i)
+#                 r.remove(j)
+#                 a.append(dots[i])
+#                 a.append(dots[j])
+#                 s.append(dots[r[0]])
+#                 s.append(dots[r[1]])
+#                 if a[1][0] - a[0][0] == s[1][0] - s[0][0] and a[1][1] - a[0][1] == s[1][1] - s[0][1]:
+#                     return 1
+#             r = [0, 1, 2, 3]
 
-    return 0
+#     return 0
 
 
-print(solution([(1, 0), (0, 1), (1, 2), (2, 1)]))
+# print(solution([(1, 0), (0, 1), (1, 2), (2, 1)]))
+
+line = [[0, 2], [-2, 1]]
+i = max(line[0][0], line[1][0])
+print(i)
