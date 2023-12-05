@@ -522,11 +522,26 @@ from fractions import Fraction
 #     while s % 5 == 0:
 #         s //= 5
 #     return int(s != 1) + 1
-from math import gcd
+# def solution(numlist, n):
+#     nset = {}
+#     for i, v in enumerate(numlist):
+#         nset[str(i)] = abs(v - n)
+#     bb = sorted(list(map(int, nset.values())))
+#     return [nset.get(j) for j in bb], bb
+def solution(numlist, n):
+    new = {}
+    for j in numlist:
+        s = j - n
+        if s > 0:
+            new[str(j)] = abs(s)
+        elif s < 0:
+            new[str(j)] = abs(s) + 0.1
+        else:
+            new[str(j)] = abs(s)
+
+    vv = sorted(new.values())
+    convert_new = {v: k for k, v in new.items()}
+    return [int(convert_new.get(i)) for i in vv]
 
 
-def solution(a, b):
-    return gcd(a, b)
-
-
-print(solution(7, 20))
+print(solution([1, 2, 3, 4, 5], 4))
