@@ -468,17 +468,30 @@ def solution(a, b):
     answer = []
     for i in [a, b]:
         c = i
-        n = 2
+        n = 1
         s = []
         while n <= i:
             if c % n == 0:
-                c //= n
-                s.append(n)
+                if n == 1:
+                    s.append(n)
+                    n += 1
+                else:
+                    c //= n
+                    s.append(n)
             else:
                 n += 1
         answer.append(s)
 
-    return answer
+    l1 = [1] + [_ for _ in answer[0] if _ not in answer[1]]
+    l2 = [1] + [_ for _ in answer[1] if _ not in answer[0]]
+
+    if len(l2) != 1:
+        for _ in l2:
+            if _ not in [1, 2, 5]:
+                return 2
+        return 1
+
+    # return l1, l2
 
 
-print(solution(12, 21))
+print(solution(11, 22))
