@@ -406,6 +406,79 @@
 
 # print(solution([(1, 0), (0, 1), (1, 2), (2, 1)]))
 
-line = [[0, 2], [-2, 1]]
-i = max(line[0][0], line[1][0])
-print(i)
+# line = [[0, 2], [-2, 1]]
+# i = max(line[0][0], line[1][0])
+# print(i)
+
+# def solution(a, b):
+#     new = []
+#     for n in [a, b]:
+#         while n % 2 == 0 or n % 5 ==0:
+#             if n % 2 == 0:
+#                 n = n / 2
+#             elif n % 5 == 0:
+#                 n = n / 5
+#     return int(b != 1) + 1
+# def solution(a, b):
+# while a != 1 or b != 1:
+#     if a % 2 == 0 and b % 2 == 0:
+#         a /= 2
+#         b /= 2
+#     elif a % 5 == 0 and b % 5 == 0:
+#         a /= 5
+#         b /= 5
+
+# bb = []
+# i = 1
+# while i < b:
+#     if b % i == 0:
+#         bb.append(i)
+#         b /= i
+#         i += 1
+# return int(len(set(bb)) != 3) + 1
+#     n = 2
+#     num = [2, 5]
+#     new = []
+#     d = 0
+#     while n > 0:
+#         if a % 2 == 0  and b % 2 ==0:
+#             a /= 2
+#             b /= 2
+#         elif a % 5 == 0 and b % 5 == 0:
+#             a /= 5
+#             b /= 5
+#         else:
+#             if b % 2 == 0:
+#                 b /= 2
+#         else:
+#             a, b = a/n, b/n
+
+
+# print(solution(12, 21))
+
+# s1 = [1, 2, 3, 4, 5]
+# s2 = [2, 4, 25]
+# s3 = s1.intersection(s2)
+# print(s2  s1)
+# print(s1-s2)
+# print(s1-s3, s2-s3)
+def solution(a, b):
+    # n = 2
+    # s = []
+    answer = []
+    for i in [a, b]:
+        c = i
+        n = 2
+        s = []
+        while n <= i:
+            if c % n == 0:
+                c //= n
+                s.append(n)
+            else:
+                n += 1
+        answer.append(s)
+
+    return answer
+
+
+print(solution(12, 21))
