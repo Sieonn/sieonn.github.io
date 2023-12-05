@@ -462,36 +462,71 @@
 # print(s2  s1)
 # print(s1-s2)
 # print(s1-s3, s2-s3)
+# def solution(a, b):
+#     # n = 2
+#     # s = []
+#     answer = []
+#     for i in [a, b]:
+#         c = i
+#         n = 1
+#         s = []
+#         while n <= i:
+#             if c % n == 0:
+#                 if n == 1:
+#                     s.append(n)
+#                     n += 1
+#                 else:
+#                     c //= n
+#                     s.append(n)
+#             else:
+#                 n += 1
+#         answer.append(s)
+
+#     l1 = [1] + [_ for _ in answer[0] if _ not in answer[1]]
+#     l2 = [1] + [_ for _ in answer[1] if _ not in answer[0]]
+
+#     if len(l2) != 1:
+#         for _ in l2:
+#             if _ not in [1, 2, 5]:
+#                 return 2
+#         return 1
+
+# return l1, l2
+
+from fractions import Fraction
+
+
+# def solution(a, b):
+#     F = Fraction(a, b)
+#     s = F.denominator
+#     n = 2
+#     new = []
+#     v = s
+#     while n < s+1:
+#         if v % n == 0:
+#             v /= n
+#             new.append(n)
+#         else:
+#             n += 1
+#     for _ in new:
+#         if _ not in [2, 5]:
+#             return 2
+#     return 1
+# from fractions import Fraction
+
+# def solution(a, b):
+#     F = Fraction(a, b)
+#     s = F.denominator
+#     while s % 2 == 0:
+#         s //= 2
+#     while s % 5 == 0:
+#         s //= 5
+#     return int(s != 1) + 1
+from math import gcd
+
+
 def solution(a, b):
-    # n = 2
-    # s = []
-    answer = []
-    for i in [a, b]:
-        c = i
-        n = 1
-        s = []
-        while n <= i:
-            if c % n == 0:
-                if n == 1:
-                    s.append(n)
-                    n += 1
-                else:
-                    c //= n
-                    s.append(n)
-            else:
-                n += 1
-        answer.append(s)
-
-    l1 = [1] + [_ for _ in answer[0] if _ not in answer[1]]
-    l2 = [1] + [_ for _ in answer[1] if _ not in answer[0]]
-
-    if len(l2) != 1:
-        for _ in l2:
-            if _ not in [1, 2, 5]:
-                return 2
-        return 1
-
-    # return l1, l2
+    return gcd(a, b)
 
 
-print(solution(11, 22))
+print(solution(7, 20))
