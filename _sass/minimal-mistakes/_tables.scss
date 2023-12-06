@@ -17,10 +17,11 @@ table {
 }
 
 thead {
-  background-color: #8e8ffa;
-  color: #fff;
+  background-color: $primary-color;
+  color: #000;
   text-align: center;
   font-size: 14.5px;
+  border: 1px solid;
   // height: 200%;
   // table-layout: fixed;
   // mix(#000, $border-color, 25%)
@@ -30,7 +31,7 @@ th {
   padding: 0.5em;
   font-weight: bold;
   text-size-adjust: 16px;
-  color: #fff;
+  color: #000;
   text-align: center;
   border-bottom: 2px solid #c1bebe;
   border: 1px solid #fff;

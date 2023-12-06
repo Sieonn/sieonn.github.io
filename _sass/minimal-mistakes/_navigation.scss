@@ -488,7 +488,7 @@
 
 .nav__title {
   margin: 0;
-  padding: 0.5rem 0.75rem;
+  padding: 0.5rem;
   font-family: $sans-serif-narrow;
   font-size: $type-size-4;
   font-weight: bold;
@@ -502,8 +502,8 @@
   font-size: $type-size-5;
   font-weight: bold;
   text-transform: uppercase;
-  border-bottom: 1px solid #8e8ffa;
-  border-left: 0.5rem solid #8e8ffa;
+  border-bottom: 1px solid #000;
+  border-left: 0.5rem solid $primary-color;
   padding-left: 0.5em;
 }
 
@@ -523,9 +523,9 @@
   box-shadow: $box-shadow;
 
   .nav__title {
-    color: #fff;
+    color: #000;
     font-size: $type-size-6;
-    background: #a8aafa;
+    background: $primary-color;
     border-top-left-radius: $border-radius;
     border-top-right-radius: $border-radius;
   }
@@ -541,7 +541,7 @@
   margin: 0;
   padding: 0;
   width: 100%;
-  border: 1px solid #a8aafa;
+  border: 1px solid $primary-color;
   list-style: none;
   font-size: 12px;
 

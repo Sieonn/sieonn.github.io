@@ -196,7 +196,6 @@
 # print(solution(["ayaye", "uuuma", "ye", "yemawoo", "ayaa"]))
 
 def solution(id_pw, db):
-    answer = ''
     for id, pw  in db:
         if id == id_pw[0]:
             if pw == id_pw[1]:
