@@ -1,6 +1,6 @@
 ---
 title: "AWS restart"
-layout: sieonm
+layout: default
 permalink: /AWS restart/
 author_profile: true
 sidebar: true
