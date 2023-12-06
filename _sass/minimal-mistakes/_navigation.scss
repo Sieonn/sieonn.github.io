@@ -61,6 +61,7 @@
   margin-top: 1em;
   padding-top: 1em;
   width: 100%;
+  border: 2px solid;
 
   ul {
     margin: 0;
@@ -94,7 +95,7 @@
 
       &.current,
       &.current.disabled {
-        color: #fff;
+        color: #000;
         background: $primary-color;
       }
 
