@@ -560,12 +560,14 @@
     font-size: 11px;
 
     &:hover {
-      color: #fff;//mix(#fff, $text-color, 70%);
+      background-color: #000 ;
+      color: $primary-color;//mix(#fff, $text-color, 70%);
+      font-weight: bold;
     }
   }
 
   li ul > li a {
-    // margin-left: 1.25rem;
+    padding-left: 1.25rem;
     font-weight: normal;
   }
 

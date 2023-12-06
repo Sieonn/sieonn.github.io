@@ -135,6 +135,7 @@ body {
       -o-transition: opacity 0.2s ease-in-out 0.1s;
       transition: opacity 0.2s ease-in-out 0.1s;
       font-weight: 500;
+      color: $primary-color;
     }
 
     &:hover .header-link {
