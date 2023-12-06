@@ -79,7 +79,7 @@ $danger-color: #ee5f5b !default;
 $info-color: #3b9cba !default;
 $focus-color: $primary-color !default;
 $highlight-color: #8be8e5 !default;
-$active-color: #8be8e5; // mix(#fff, #8be8e5, 10%) !default;
+$active-color: #000; // mix(#fff, #8be8e5, 10%) !default;
 
 /* YIQ color contrast */
 $yiq-contrasted-dark-default: $dark-gray !default;

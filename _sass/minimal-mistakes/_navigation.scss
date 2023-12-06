@@ -61,7 +61,6 @@
   margin-top: 1em;
   padding-top: 1em;
   width: 100%;
-  border: 2px solid;
 
   ul {
     margin: 0;
@@ -403,7 +402,7 @@
     /* selected*/
     input:checked + label {
       color: white;
-      background-color: mix(white, #8e8ffa, 20%);
+      background-color: mix(white, $primary-color, 20%);
 
       &:before,
       &:after {
@@ -492,7 +491,7 @@
   padding: 0.5rem;
   font-family: $sans-serif-narrow;
   font-size: $type-size-4;
-  font-weight: bold;
+  font-weight: 900;
 }
 
 .nav__sub-title {
@@ -518,7 +517,7 @@
   font-family: $sans-serif-narrow;
   color: $gray;
   background-color: $background-color;
-  border: 0.5px solid #bcbdda;
+  // border: 0.5px solid #bcbdda;
   border-radius: $border-radius;
   -webkit-box-shadow: $box-shadow;
   box-shadow: $box-shadow;
@@ -542,7 +541,7 @@
   margin: 0;
   padding: 0;
   width: 100%;
-  border: 1px solid $primary-color;
+  border: 2px solid $primary-color;
   list-style: none;
   font-size: 12px;
 
@@ -561,29 +560,33 @@
     font-size: 11px;
 
     &:hover {
-      color: mix(#fff, $text-color, 60%);
+      color: #fff;//mix(#fff, $text-color, 70%);
     }
   }
 
   li ul > li a {
-    padding-left: 1.25rem;
+    // margin-left: 1.25rem;
     font-weight: normal;
   }
 
   li ul li ul > li a {
-    padding-left: 1.75rem;
+    // padding-left: 1.75rem;
+    font-weight: normal;
   }
 
   li ul li ul li ul > li a {
-    padding-left: 2.25rem;
+    // padding-left: 2.25rem;1
+    font-weight: normal;
   }
 
   li ul li ul li ul li ul > li a {
-    padding-left: 2.75rem;
+    // padding-left: 2.75rem;
+    font-weight: normal;
   }
 
   li ul li ul li ul li ul li ul > li a {
-    padding-left: 3.25rem;
+    // padding-left: 3.25rem;
+    font-weight: normal;
   }
 }
 .toc__menu::-webkit-scrollbar {
