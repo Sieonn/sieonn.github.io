@@ -83,7 +83,7 @@ $active-color: #000; // mix(#fff, #8be8e5, 10%) !default;
 
 /* YIQ color contrast */
 $yiq-contrasted-dark-default: $dark-gray !default;
-$yiq-contrasted-light-default: $primary-color !default;
+$yiq-contrasted-light-default: #fff !default;
 $yiq-contrasted-threshold: 175 !default;
 $yiq-debug: false !default;
 
