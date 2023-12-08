@@ -266,14 +266,16 @@
             # return 1
     # else:
         # return -1
-from collections import deque
-
-def solution(A, B):
-    a, b = deque(A), deque(B)
-    print(a, b)
-    for cnt in range(0, len(A)):
-        if a == b:
-            return cnt
-        a.rotate(1)
-    return -1
-print(solution("hello", "ollhe"))
+# from collections import deque
+# 
+# def solution(A, B):
+    # a, b = deque(A), deque(B)
+    # print(a, b)
+    # for cnt in range(0, len(A)):
+        # if a == b:
+            # return cnt
+        # a.rotate(1)
+    # return -1
+# print(solution("hello", "ollhe"))
+for i in range(1,0):
+    print(i)
