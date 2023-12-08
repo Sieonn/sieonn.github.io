@@ -277,5 +277,8 @@
         # a.rotate(1)
     # return -1
 # print(solution("hello", "ollhe"))
-for i in range(1,0):
-    print(i)
+# for i in range(1,0):
+    # print(i)
+def solution(num, total):
+    return [ (total//num)-1+i for i in range(num)]
+print(solution(3,0)) 
