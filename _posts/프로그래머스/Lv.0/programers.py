@@ -247,9 +247,33 @@
 # print(bin(num))
 # two = "0b1001101"
 # print(int(two, 2))
-def solution(before, after):
-    for i in before:
-        after = after.replace(i,"",1)
-    print(after)
-    return int(len(after) == 0)
-print(solution("ollhe", "hello"))
+# def solution(before, after):
+    # for i in before:
+        # after = after.replace(i,"",1)
+    # return int(len(after) == 0)
+#def solution(A,B):
+# for _ in range(len(A)):
+# A = A[-1]+ A[:-1]
+# if A == B:
+# return 1
+# n("ollhe", "hello"))
+# def solution(A,B):
+    # for _ in range(len(A)):
+        # if A == B:
+            # return 0 
+        # B = B[-1] + B[:-1]
+        # if A == B:
+            # return 1
+    # else:
+        # return -1
+from collections import deque
+
+def solution(A, B):
+    a, b = deque(A), deque(B)
+    print(a, b)
+    for cnt in range(0, len(A)):
+        if a == b:
+            return cnt
+        a.rotate(1)
+    return -1
+print(solution("hello", "ollhe"))
