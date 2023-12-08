@@ -216,5 +216,40 @@
 
 
 
-chicken = 1081
-print(max(chicken,1))
+
+# def solution(bin1, bin2):
+    # nums = []
+    # for i in [bin1, bin2]:
+        # num = 0
+        # for j, k in enumerate(i[::-1]):
+            # if k == "1":
+                # num += 2**j
+        # nums.append(num)
+    # binnum = sum(nums)
+    # anwser = ''
+    # while binnum > 0:
+        # x, y = divmod(binnum, 2)
+        # binnum = x
+        # if binnum == 1:
+            # anwser += str(y)
+        # else:
+            # anwser += str(y)
+    # return anwser[::-1]    
+
+
+
+
+#         
+# print(solution("10", "11"))
+
+
+# num = 77
+# print(bin(num))
+# two = "0b1001101"
+# print(int(two, 2))
+def solution(before, after):
+    for i in before:
+        after = after.replace(i,"",1)
+    print(after)
+    return int(len(after) == 0)
+print(solution("ollhe", "hello"))
