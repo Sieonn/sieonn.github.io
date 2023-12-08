@@ -194,14 +194,27 @@
     # return count
 # 
 # print(solution(["ayaye", "uuuma", "ye", "yemawoo", "ayaa"]))
+# 
+# def solution(id_pw, db):
+    # for id, pw  in db:
+        # if id == id_pw[0]:
+            # if pw == id_pw[1]:
+                # return "login"
+            # else:
+                # return "wrong"
+    # return "fail"
+# 
+# print(solution(["programmer01", "15789"], [["programmer02", "111111"], ["programmer00", "134"], ["programmer01", "1145"]]))
+# def solution(chicken):
+    # service = 0
+    # while chicken >= 10:
+        # rest = chicken % 10
+        # service += chicken // 10
+        # chicken = rest + chicken //10
+    # return service
 
-def solution(id_pw, db):
-    for id, pw  in db:
-        if id == id_pw[0]:
-            if pw == id_pw[1]:
-                return "login"
-            else:
-                return "wrong"
-    return "fail"
 
-print(solution(["programmer01", "15789"], [["programmer02", "111111"], ["programmer00", "134"], ["programmer01", "1145"]]))
+
+
+chicken = 1081
+print(max(chicken,1))
