@@ -110,136 +110,114 @@
 
 # print(solution(["19 - 6 = 13", "5 + 66 = 71", "5 - 15 = 63", "3 - 1 = 2"]))
 
-# 
+#
 # def solution(my_string):
-    # new = ""
-    # for i in my_string:
-        # if i.isupper():
-            # new += i.lower()
-        # else:
-            # new += i
-    # return ''.join(sorted(new))
+# new = ""
+# for i in my_string:
+# if i.isupper():
+# new += i.lower()
+# else:
+# new += i
+# return ''.join(sorted(new))
 # print(solution("Bcad"))
-# 
+#
 # def solution(array):
-    # return str(array).count('7')
+# return str(array).count('7')
 # print(solution([7, 17, 77]))
 # def solution(keyinput, board):
-    # dist = {"up": [0,1],"down": [0,-1],"left": [-1, 0], "right": [1, 0]}
-    # start = [0, 0]
-    # 
-    # for i in keyinput:
-        # if -(board[0]//2) < start[0] < board[1]//2 and -(board[1]//2) < start[1] < board[1]//2 :
-            # start[0] += dist[i][0]
-            # start[1] += dist[i][1]
-    # return start
-
-
-
-
+# dist = {"up": [0,1],"down": [0,-1],"left": [-1, 0], "right": [1, 0]}
+# start = [0, 0]
+#
+# for i in keyinput:
+# if -(board[0]//2) < start[0] < board[1]//2 and -(board[1]//2) < start[1] < board[1]//2 :
+# start[0] += dist[i][0]
+# start[1] += dist[i][1]
+# return start
 
 
 # print(solution(["left", "right", "up", "right", "right"],[11,11]))
 
 
-
-
-            
-    
-    
-# 
+#
 # print(solution(["left", "right", "up", "right", "right"],[11, 11]))
 
 # def solution(score):
-    # slist = [(x + y)/2 for x, y in score]
-    # s = sorted(slist, reverse=True)
-    # val = {}
-    # for x, y in enumerate(s):
-        # if y not in val.keys():
-            # val[y] = x+1
-    # return [val[i] for i in slist]
-            
+# slist = [(x + y)/2 for x, y in score]
+# s = sorted(slist, reverse=True)
+# val = {}
+# for x, y in enumerate(s):
+# if y not in val.keys():
+# val[y] = x+1
+# return [val[i] for i in slist]
 
-        
-    # print(key,s)
-        
-        
+# print(key,s)
 
-        
+# n = 1
+# for x,y in score:
+# key.append(n)
+#
+# val.append((x+y)/2)
+# n += 1
+# average = dict(zip(key,val))
+# for i in sorted(val, reverse=True):
 
-    # n = 1
-    # for x,y in score:
-        # key.append(n)
-        # 
-        # val.append((x+y)/2)
-        # n += 1
-    # average = dict(zip(key,val))
-    # for i in sorted(val, reverse=True):
-
-
-
-    # return answer
-# 
+# return answer
+#
 # print(solution([[80, 70], [70, 80], [30, 50], [90, 100], [100, 90], [100, 100], [10, 30]]))
 # def solution(babbling):
-    # baby = ["aya", "ye", "woo", "ma"]
-    # count = 0
-    # for i in babbling:
-        # for j in baby:
-            # i = i.replace(j, "1")
-        # if set(i) == {'1'}:
-            # count += 1
-    # return count        
-                    # 
-    # return count
-# 
+# baby = ["aya", "ye", "woo", "ma"]
+# count = 0
+# for i in babbling:
+# for j in baby:
+# i = i.replace(j, "1")
+# if set(i) == {'1'}:
+# count += 1
+# return count
+#
+# return count
+#
 # print(solution(["ayaye", "uuuma", "ye", "yemawoo", "ayaa"]))
-# 
+#
 # def solution(id_pw, db):
-    # for id, pw  in db:
-        # if id == id_pw[0]:
-            # if pw == id_pw[1]:
-                # return "login"
-            # else:
-                # return "wrong"
-    # return "fail"
-# 
+# for id, pw  in db:
+# if id == id_pw[0]:
+# if pw == id_pw[1]:
+# return "login"
+# else:
+# return "wrong"
+# return "fail"
+#
 # print(solution(["programmer01", "15789"], [["programmer02", "111111"], ["programmer00", "134"], ["programmer01", "1145"]]))
 # def solution(chicken):
-    # service = 0
-    # while chicken >= 10:
-        # rest = chicken % 10
-        # service += chicken // 10
-        # chicken = rest + chicken //10
-    # return service
-
-
-
+# service = 0
+# while chicken >= 10:
+# rest = chicken % 10
+# service += chicken // 10
+# chicken = rest + chicken //10
+# return service
 
 
 # def solution(bin1, bin2):
-    # nums = []
-    # for i in [bin1, bin2]:
-        # num = 0
-        # for j, k in enumerate(i[::-1]):
-            # if k == "1":
-                # num += 2**j
-        # nums.append(num)
-    # binnum = sum(nums)
-    # anwser = ''
-    # while binnum > 0:
-        # x, y = divmod(binnum, 2)
-        # binnum = x
-        # if binnum == 1:
-            # anwser += str(y)
-        # else:
-            # anwser += str(y)
-    # return anwser[::-1]    
+# nums = []
+# for i in [bin1, bin2]:
+# num = 0
+# for j, k in enumerate(i[::-1]):
+# if k == "1":
+# num += 2**j
+# nums.append(num)
+# binnum = sum(nums)
+# anwser = ''
+# while binnum > 0:
+# x, y = divmod(binnum, 2)
+# binnum = x
+# if binnum == 1:
+# anwser += str(y)
+# else:
+# anwser += str(y)
+# return anwser[::-1]
 
 
-
-
-#         
+#
 # print(solution("10", "11"))
 
 
@@ -248,37 +226,48 @@
 # two = "0b1001101"
 # print(int(two, 2))
 # def solution(before, after):
-    # for i in before:
-        # after = after.replace(i,"",1)
-    # return int(len(after) == 0)
-#def solution(A,B):
+# for i in before:
+# after = after.replace(i,"",1)
+# return int(len(after) == 0)
+# def solution(A,B):
 # for _ in range(len(A)):
 # A = A[-1]+ A[:-1]
 # if A == B:
 # return 1
 # n("ollhe", "hello"))
 # def solution(A,B):
-    # for _ in range(len(A)):
-        # if A == B:
-            # return 0 
-        # B = B[-1] + B[:-1]
-        # if A == B:
-            # return 1
-    # else:
-        # return -1
+# for _ in range(len(A)):
+# if A == B:
+# return 0
+# B = B[-1] + B[:-1]
+# if A == B:
+# return 1
+# else:
+# return -1
 # from collections import deque
-# 
+#
 # def solution(A, B):
-    # a, b = deque(A), deque(B)
-    # print(a, b)
-    # for cnt in range(0, len(A)):
-        # if a == b:
-            # return cnt
-        # a.rotate(1)
-    # return -1
+# a, b = deque(A), deque(B)
+# print(a, b)
+# for cnt in range(0, len(A)):
+# if a == b:
+# return cnt
+# a.rotate(1)
+# return -1
 # print(solution("hello", "ollhe"))
 # for i in range(1,0):
-    # print(i)
-def solution(num, total):
-    return [ (total//num)-1+i for i in range(num)]
-print(solution(3,0)) 
+# print(i)
+# def solution(num, total):
+#     return [ (total//num)-1+i for i in range(num)]
+# print(solution(3,0))
+
+def solution(common):
+    if common[1] - common[0] == common[2] - common[1]:
+        w = common[1] - common[0]
+        return common[-1] + w
+    else:
+        w = common[1]//common[0]
+        return common[-1] * w
+
+
+print(solution([2, 4, 8]))

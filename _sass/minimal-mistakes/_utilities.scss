@@ -611,3 +611,11 @@ a.reversefootnote {
 $jamong: #ffc4b3;
 $ygreen: #caee12;
 $graymint: #abdbdb;
+.stt {
+  border-bottom: 7px double $primary-color;
+  padding: 4px; //linear-gradient(to top, #8be8e5 60%, transparent 40%);
+  // margin: 5px;
+  font-weight: 900;
+  font-size: 16px;
+  // border-radius: 1rem;
+}
