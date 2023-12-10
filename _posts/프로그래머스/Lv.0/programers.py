@@ -280,15 +280,16 @@ for tc in range(1, T+1):
             v = bin(ord(i)-65)[2:]
         elif i.islower():
             # v = bin(ord(i))
-            v = bin(ord(i)-55)[2:]
+            v = bin(ord(i)-71)[2:]
         elif i.isdigit():
             v = bin(ord(i)+4)[2:]
-        if len(v) != 5:
-            v = (5-len(v))*"0" + v
+        if len(v) != 6:
+            v = (6-len(v))*"0" + v
+        b += v
     c = ''
     for j in range(0, len(b), 8):
-        c = chr(int('0b'+b[j:j+8], 2))
-        print(c)
+        c += chr(int('0b'+b[j:j+8], 2))
+    print(f'#{tc} {c}')
 
     # print(c)
     # # Stringc += chr(int('0b' + b[j:j+6], 2))
