@@ -279,7 +279,6 @@ for tc in range(1, T+1):
         if i.isupper():
             v = bin(ord(i)-65)[2:]
         elif i.islower():
-            # v = bin(ord(i))
             v = bin(ord(i)-71)[2:]
         elif i.isdigit():
             v = bin(ord(i)+4)[2:]
