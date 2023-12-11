@@ -271,30 +271,41 @@
 
 
 # print(solution([2, 4, 8]))
-T = int(input())
-for tc in range(1, T+1):
-    S = input()
-    b = ""
-    for i in S:
-        if i.isupper():
-            v = bin(ord(i)-65)[2:]
-        elif i.islower():
-            v = bin(ord(i)-71)[2:]
-        elif i.isdigit():
-            v = bin(ord(i)+4)[2:]
-        if len(v) != 6:
-            v = (6-len(v))*"0" + v
-        b += v
-    c = ''
-    for j in range(0, len(b), 8):
-        c += chr(int('0b'+b[j:j+8], 2))
-    print(f'#{tc} {c}')
+# T = int(input())
+# for tc in range(1, T+1):
+#     S = input()
+#     b = ""
+#     for i in S:
+#         if i.isupper():
+#             v = bin(ord(i)-65)[2:]
+#         elif i.islower():
+#             v = bin(ord(i)-71)[2:]
+#         elif i.isdigit():
+#             v = bin(ord(i)+4)[2:]
+#         if len(v) != 6:
+#             v = (6-len(v))*"0" + v
+#         b += v
+#     c = ''
+#     for j in range(0, len(b), 8):
+#         c += chr(int('0b'+b[j:j+8], 2))
+#     print(f'#{tc} {c}')
 
-    # print(c)
-    # # Stringc += chr(int('0b' + b[j:j+6], 2))
-    # Stringc += j
-    # if len(Stringc) == 6:
-    #     p = int('0b' + Stringc, 2)
-    #     print(p)
-    #     # Stringd += chr(int('0b' + Stringc, 2))
-    #     Stringc = ''
+# print(c)
+# # Stringc += chr(int('0b' + b[j:j+6], 2))
+# Stringc += j
+# if len(Stringc) == 6:
+#     p = int('0b' + Stringc, 2)
+#     print(p)
+#     # Stringd += chr(int('0b' + Stringc, 2))
+#     Stringc = ''
+# i = [1, 2, 3, 4]
+# print(map(str, i))
+# result = list(filter(lambda x: x > 3 and x % 2 == 0, range(10)))
+# print(result)
+
+def func(n):
+    return lambda x: x**n
+
+
+squarer = func(3)
+print(squarer([1, 2, 3]))
