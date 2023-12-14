@@ -303,9 +303,17 @@
 # result = list(filter(lambda x: x > 3 and x % 2 == 0, range(10)))
 # print(result)
 
-def func(n):
-    return lambda x: x**n
+# def func(n):
+#     return map(lambda x: x**n)
 
 
-squarer = func(3)
-print(squarer([1, 2, 3]))
+# squarer = func(3)
+# print(squarer([1, 2, 3]))
+
+A, B = input().split()
+A, B = int(A), int(B)
+print(A+B)
+print(A-B)
+print(A*B)
+print(A//B)
+print(A % B)
