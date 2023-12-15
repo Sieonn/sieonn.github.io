@@ -33,16 +33,16 @@
 # print(f'#{tc}', answer)
 
 
-T = int(input())
-for tc in range(1, 1+T):
-    N = int(input())
-    count = 1
-    Nlist = [0 for _ in range(10)]
-    while len(Nlist) == 10:
-        for i in str(N*count):
-            Nlist[int(i)] = 1
-        if sum(Nlist) == 10:
-            print(f'#{tc} {count*N}')
-            break
-        else:
-            count += 1
+# T = int(input())
+# for tc in range(1, 1+T):
+#     N = int(input())
+#     count = 1
+#     Nlist = [0 for _ in range(10)]
+#     while len(Nlist) == 10:
+#         for i in str(N*count):
+#             Nlist[int(i)] = 1
+#         if sum(Nlist) == 10:
+#             print(f'#{tc} {count*N}')
+#             break
+#         else:
+#             count += 1
