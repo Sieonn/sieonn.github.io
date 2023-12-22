@@ -35,6 +35,10 @@ sticky: true
 
   action 속성에서 지정한 스크립트 파일을 현재 창이 아닌 다른 위치에 열도록 지정합니다.
 
+---
+
+예를 하나 보도록 하겠습니다.
+
 ```html
 	
 <form action="search.php" method="post">
@@ -42,8 +46,6 @@ sticky: true
     <input type="subtitle" value="검색">
 </form>    
 ```
-
-
 
 
 
