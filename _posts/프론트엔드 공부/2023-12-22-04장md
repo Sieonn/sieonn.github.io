@@ -1,0 +1,30 @@
+---
+title: "[Do it] HTML5 + CSS3 04장"
+toc: true
+toc_label: "목차"
+sticky: true
+---
+
+## 04 폼 관련 태그들
+
+
+
+
+
+
+
+```html
+	
+<form action="search.php" method="post">
+    <input type="text" title="검색">
+    <input type="subtitle" value="검색">
+</form>    
+```
+
+
+
+
+
+<div class="notice">![image-20231222212915587](/../images/Untitled/image-20231222212915587.png)
+</div>    
+
