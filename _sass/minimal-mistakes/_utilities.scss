@@ -614,9 +614,9 @@ $graymint: #abdbdb;
 .stt {
   background-color: $primary-color;
   color: #000;
-  border-radius: 25px 2px 25px 2px;
-  padding: 4px; //linear-gradient(to top, #8be8e5 60%, transparent 40%);
-  font-weight: 900;
+  border-radius: 7px;
+  padding: 2px 6px 2px 6px; //linear-gradient(to top, #8be8e5 60%, transparent 40%);
+  font-weight: bolder;
   font-size: 16px;
   // border-radius: 1rem;
 }
