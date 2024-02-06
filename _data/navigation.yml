@@ -59,3 +59,9 @@ sidebar-category:
         url: /AWS restart/Jumpstart on AWS Advanced/
       - title: "ACP"
         url: /AWS restart/ACP/
+        #Fullstack과정
+   - title: "KOSTA FullStack"
+      url: /KOSTA/ 
+    children:
+      - title: "Java"
+        url: /KOSTA/Java/
