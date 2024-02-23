@@ -488,7 +488,7 @@ body {
   transition: $global-transition;
 
   &.disabled {
-    // input,
+    input,
     button,
     textarea,
     label {
