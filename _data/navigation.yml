@@ -68,9 +68,9 @@ sidebar-category:
         url: /KOSTA/Java/
       - title: 'DB'
         url: /KOSTA/DB/
-        
+
   - title: '정보처리기사'
     url: /정보처리기사/ 
     children:
       - title: '정보처리기사'
-        url: /정처기/기출문제/
+        url: /정보처리기사/기출문제/
