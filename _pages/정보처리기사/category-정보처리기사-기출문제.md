@@ -4,7 +4,7 @@ layout: default
 permalink: /정보처리기사/기출문제/
 author_profile: true
 sidebar: true
-category: 정처기
+category: 기출문제
 ---
 
 {% assign posts = site.categories.정처기 %}
