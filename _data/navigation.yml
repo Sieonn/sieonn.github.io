@@ -70,7 +70,7 @@ sidebar-category:
         url: /KOSTA/DB/
 
   - title: '정보처리기사'
-    url: /정보처리기사/ 
+    url: /DataProcess/ 
     children:
-      - title: '정보처리기사'
-        url: /정보처리기사/기출문제/
+      - title: '기출문제'
+        url: /DataProcess/DPCBT/
