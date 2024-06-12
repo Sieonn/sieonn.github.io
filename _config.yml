@@ -207,6 +207,13 @@ plugins:
   - jekyll-feed
   - jekyll-include-cache
   # - jekyll-archives
+    - jekyll-coffeescript
+  - jekyll-default-layout
+  - jekyll-github-metadata
+  - jekyll-optional-front-matter
+  - jekyll-readme-index
+  - jekyll-titles-from-headings
+  - jekyll-relative-links
 
 # mimic GitHub Pages with --safe
 whitelist:
