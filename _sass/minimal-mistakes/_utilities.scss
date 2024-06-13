@@ -598,6 +598,12 @@ a.reversefootnote {
   background: $primary-color; //linear-gradient(to top, #8be8e5 60%, transparent 40%);
   font-weight: 500;
 } //highlight mint
+
+.hlm2 {
+  background-color: #000;
+  color: $primary-color; //linear-gradient(to top, #8be8e5 60%, transparent 40%);
+  font-weight: 500;
+}
 .hlm_h {
   background: linear-gradient(to top, $primary-color 20%, transparent 30%);
   font-weight: 500;
