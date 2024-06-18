@@ -1,0 +1,12 @@
+package com.ureca;
+
+public class Abc {
+	
+	Abc() {//이를 생성자라고 하는데 클래스와 이름이 같고
+			//리턴타입이 없기 때문에 기본생성자라고 말할수 있다.
+		
+	}
+	void hello() {
+		System.out.println("안녕");
+	}
+}

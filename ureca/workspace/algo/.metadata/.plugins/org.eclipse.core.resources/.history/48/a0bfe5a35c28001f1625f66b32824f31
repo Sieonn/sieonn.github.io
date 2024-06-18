@@ -1,0 +1,21 @@
+package com.ureca;
+
+public class NameMenu {
+		//데이터에 대한 CRUD
+	
+	//데이터 저장소
+	String[] names = new String [5];
+	
+	void create() {
+		
+	}
+	void read() {
+		
+	}
+	void update() {
+		
+	}
+	void delete() {
+		
+	}
+}

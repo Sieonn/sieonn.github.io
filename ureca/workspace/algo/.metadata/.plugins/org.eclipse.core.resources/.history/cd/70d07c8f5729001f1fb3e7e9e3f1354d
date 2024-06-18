@@ -1,0 +1,12 @@
+package Mission;
+
+public class Person {
+	String name;
+	int age;
+	String job;
+	int year;
+	
+	public Person(String name, int age, String job, int year) {
+		
+	}
+}

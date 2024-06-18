@@ -1,0 +1,32 @@
+import java.util.Arrays;
+import java.util.Scanner;
+
+public class Main_BJ_1244_스위치켜고끄기 {
+
+	public static void main(String[] args) {
+		Scanner scan = new Scanner(System.in);
+		int N = scan.nextInt();// 스위치 개수
+//		int [] swithArry = new int[N];
+		int [] swithArry = new int[N+1]; //스위치정보를 담을 배열
+		//입력되는 스위치 정보가 1부터 사용되기 때문에
+		//==> 배열의 0번지를 버림으로써 입력값과 배열번지를 일치시켜준다.
+		
+//		for (int i = 0; i < N; i++) {
+		for (int i = 1; i <= N; i++) {
+			swithArry[i] = scan.nextInt();//스위치정보 입력
+		}
+		
+		//데이터 입력에 대해서 확인
+//		System.out.println(Arrays.toString(swithArry));
+		
+		int stuNum = scan.nextInt(); //학생수
+		
+		int [][] stuArray = new int  [stuNum][];
+		
+		for(int i=0; i<stuNum; i++) { //학생수 만큼 반복
+			
+		}
+		scan.close();
+	}//main
+
+}//end class

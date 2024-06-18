@@ -1,0 +1,25 @@
+import java.io.BufferedReader;
+import java.io.InputStreamReader;
+import java.util.StringTokenizer;
+
+public class Main_BJ_12891_DNA비밀번호 {
+//민호가 만들 수 잇는 비밀번호 종류의 수를 출력하라.
+	public static void main(String[] args) throws Exception {
+		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+		String str = br.readLine();
+		StringTokenizer tokens = new StringTokenizer(str," ");
+		int s = Integer.parseInt(tokens.nextToken()); //민호가 만든 문자열의 길이
+		int p = Integer.parseInt(tokens.nextToken());// 비밀번호로 사용할 부분문자열의 길이
+		
+		String password = br.readLine();
+		
+		//{‘A’, ‘C’, ‘G’, ‘T’}의 최소 개수가 공백을 구분으로 주어진다.
+		char [] dArray = {'A', 'C', 'G', 'T'};
+		String partStrNum = br.readLine();
+		StringTokenizer tokens2 = new StringTokenizer(partStrNum," ");
+		for()
+		
+		
+	}
+
+}

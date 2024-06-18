@@ -1,0 +1,35 @@
+package com.ureca;
+
+import java.util.Scanner;
+
+public class NameMenuTest {
+
+	public static void main(String[] args) {
+		// 화면 출력
+		// 사용자 데이터 입력
+		Scanner scan = new Scanner(System.in);
+		int no;
+		do {
+			System.out.print("<이름메뉴>\r\n" + "1.추가 2.검색 3.수정 4.삭제 5.종료\r\n" + "번호입력 ==>");
+			no = scan.nextInt();
+			switch (no) {
+			case 1: System.out.print("이름입력: ");
+			break;{
+
+			}
+			case 2: {
+				
+			}
+			case 3: {
+				
+			}
+			case 4: {
+				
+			}
+
+			}
+		} while (no != 5);// (no<5)
+		scan.close(); // 입력객체 반환
+	}
+
+}

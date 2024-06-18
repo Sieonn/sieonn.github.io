@@ -1,0 +1,13 @@
+package day0612;
+
+import java.util.ArrayList;
+
+public class OverridingTest {
+
+	public static void main(String[] args) {
+		
+		//가변배열
+		ArrayList list1 = new ArrayList();
+	}
+
+}

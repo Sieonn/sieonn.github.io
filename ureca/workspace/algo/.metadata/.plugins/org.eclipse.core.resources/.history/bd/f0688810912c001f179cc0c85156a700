@@ -1,0 +1,50 @@
+import java.io.BufferedReader;
+import java.io.InputStreamReader;
+import java.util.HashMap;
+import java.util.Map;
+import java.util.StringTokenizer;
+
+public class Main_BJ_12891_DNA비밀번호 {
+//민호가 만들 수 잇는 비밀번호 종류의 수를 출력하라.
+	public static void main(String[] args) throws Exception {
+		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+		String str = br.readLine();//9 8
+		StringTokenizer tokens = new StringTokenizer(str," ");
+		int s = Integer.parseInt(tokens.nextToken()); //민호가 만든 문자열의 길이
+		int p = Integer.parseInt(tokens.nextToken());// 비밀번호로 사용할 부분문자열의 길이
+		
+		String password = br.readLine();//CCTGGATTG
+		
+		//{‘A’, ‘C’, ‘G’, ‘T’}의 최소 개수가 공백을 구분으로 주어진다.
+		String [] dArray = {"A", "C", "G", "T"};
+		String partStrNum = br.readLine();//2 0 1 1
+		StringTokenizer tokens2 = new StringTokenizer(partStrNum," ");
+		
+		//{"A": 2, "C":0, "G":1, "T":1}
+		int [] numArray = new int [4];
+		int count=0;
+		int result=0;
+
+		for(int i=0; i<s-p+1; i++ ) {
+			String dab="";
+			for(int j=i; j<i+s; j++) {
+				dab +=password.charAt(j);
+			}
+			System.out.println(dab);
+//			for(int k=0; k<4; k++) {
+//				int len2 = password.replace(dArray[k], "").length();
+//				numArray[k] = Integer.parseInt(tokens2.nextToken());
+//				if((p-len2) >= numArray[k]){
+//					count+=1;
+//				}
+//			}
+//			if(count == 4) {
+//				result +=1;
+//				dab = null;
+//			}
+		}
+		
+		System.out.println(result);
+	}
+
+}

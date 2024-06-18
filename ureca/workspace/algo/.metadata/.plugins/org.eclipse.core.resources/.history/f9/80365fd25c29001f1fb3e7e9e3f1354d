@@ -1,0 +1,15 @@
+package Mission;
+
+import java.util.Arrays;
+
+public class Mission2 {
+	public static void main(String[] args) {
+		char[]ch= {'J','a','v','A'};
+		String[]names= {"홍길동", "길라임", "김주원"};
+		
+		Arrays.sort(ch);
+		Arrays.sort(names);
+		System.out.println(Arrays.toString(ch));
+		System.out.println(Arrays.toString(names)));
+	}
+}

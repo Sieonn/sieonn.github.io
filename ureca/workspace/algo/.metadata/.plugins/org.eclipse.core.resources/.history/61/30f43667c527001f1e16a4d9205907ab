@@ -1,0 +1,14 @@
+package com.lguplus;
+
+//import java.io.IOException;
+
+public class InputTest {
+
+	public static void main(String[] args) throws Exception {// throws IOException {
+
+		int a = System.in.read();
+	}
+
+}
+
+//

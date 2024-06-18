@@ -1,0 +1,7 @@
+package Mission;
+
+public class Person {
+	public void Person(String name, int age, String job, int year) {
+		
+	}
+}

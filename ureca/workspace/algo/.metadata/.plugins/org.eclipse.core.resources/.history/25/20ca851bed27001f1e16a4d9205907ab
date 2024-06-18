@@ -1,0 +1,40 @@
+package com.lguplus;
+
+import java.io.BufferedReader;
+import java.io.InputStreamReader;
+
+public class BufferedReaderTest {
+/*
+	<입출력 4대 클래스>
+	
+	스트림(Stream) - 연속된 바이트의 흐름
+	
+		읽기				쓰기		
+	Inputstream		OutputStream	<== 바이트단위
+	------------------------------
+		Reader			Writer		<== 문자단위
+(문자단위로 캐릭터단위로 읽어들인다.)	
+=================================================
+대표메서드	read()			write()
+*/
+	
+//	입력값
+//	0 1 0 0 1
+//	1 3 5
+	public static void main(String[] args) throws Exception {
+		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+		//InputStreamReader 바이트를 묶어서 변환을 시켜서 문자로 읽을 수 있도록 하는것을 또 BufferedReader로
+		//그 문자들을 모아 문자열로 읽는다.
+		// a( b(  c()  )   )
+		String str =  br.readLine(); //Scanner의 nextLine()과 동일한 동작 ==> 엔터가
+		//str = "0 1 0 0 0 1";
+		String [] strArr = str.split(" "); //strArr={"0", "1", "0", "0", "1"};
+		//==> 정규 표현식(RegExporession)을 사용하는 split()메서드는 실행시간이 많이 걸린다.
+		int [] arr = new int[strArr.length];
+		
+		for(int i =0; i< strArr.length; i++) {
+			arr[i] = Integer.parseInt(strArr[i]);
+		}//arr {0,1,0,0,1}
+	}
+
+}

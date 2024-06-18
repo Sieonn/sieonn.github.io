@@ -1,0 +1,15 @@
+package com.lguplus;
+
+//import java.io.IOException;
+
+public class InputTest {
+
+	public static void main(String[] args) throws Exception {// throws IOException {
+		System.out.print("한 자리 수를 입력하세요:");
+		int su = System.in.read()-48;
+		System.out.println("su=" + su);
+	}
+
+}
+
+//

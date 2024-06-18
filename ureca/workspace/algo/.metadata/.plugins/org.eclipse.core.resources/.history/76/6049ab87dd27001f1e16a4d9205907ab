@@ -1,0 +1,9 @@
+package Study;
+
+
+public class Test {
+	public static void main(String[] args) throws Exception {
+		int su = System.in.read()-48;
+		System.out.print(su);
+	}
+}

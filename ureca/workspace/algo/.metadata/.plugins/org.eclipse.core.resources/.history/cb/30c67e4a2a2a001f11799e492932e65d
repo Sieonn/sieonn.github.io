@@ -1,0 +1,14 @@
+package Mission;
+
+import java.util.ArrayList;
+import java.util.List;
+
+public class LottoTest {
+
+	public static void main(String[] args) {
+		ArrayList<Integer> list = new ArrayList<Integer>();
+		List<String> list2 = new ArrayList<>();
+		Lotto L = new Lotto();
+		
+	}
+}

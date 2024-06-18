@@ -1,0 +1,11 @@
+package Mission;
+
+import java.util.Arrays;
+
+public class Mission1 {
+	public static void main(String[] args) {
+		int [] su = {13, 8, 7, 10, 100, 5};
+		Arrays.sort(su);
+		System.out.println(Arrays.toString(arr));
+	}
+}

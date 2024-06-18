@@ -1,0 +1,15 @@
+package com.lguplus;
+
+public class MethodCallTest {
+	void good() {
+		System.out.println("굳~");
+	}
+	public static void main(String[] args) {
+		System.out.println("안녕, 유플러스 ^o^");
+		A a = new A();
+		a.hello();
+		good();
+	}
+
+
+}

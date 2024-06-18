@@ -1,0 +1,15 @@
+package com.ureca;
+
+class A {
+	public void happy() {
+		System.out.println("즐거워?");
+	}
+}
+public class AnonymousInnerClassTest {
+
+	public static void main(String[] args) {
+		A a =new A();
+		a.happy();
+	}
+
+}

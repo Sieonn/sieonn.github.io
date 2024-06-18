@@ -1,0 +1,10 @@
+package com.lguplus;
+
+public class ArrayTest4 {
+	public static void main(String[] args) {
+		int [] su ={1,2,3,4,5};
+		int [] su2 = su;
+
+	}
+}
+			

@@ -1,0 +1,34 @@
+package com.ureca;
+
+class A {
+	public void happy() {
+		System.out.println("즐거우세요? 아 즐거우시냐고요ㅎ");
+	}
+}//class A
+
+class Child extends A{//=>클래스 시작 괄호
+	@Override
+	public void happy() {
+		System.out.println("행복 찾기(ﾉ◕ヮ◕)ﾉ*:･ﾟ✧");
+	}
+}//=>클래스 끝 괄호
+
+interface Ureca{
+	void good();
+}
+class My{
+	public static void go(Ureca u) {
+		u.good();
+	}
+}
+
+public class AnonymousInnerClassTest {
+
+	public static void main(String[] args) {
+		A a = new Child();//new A();
+		a.happy();
+	}
+
+}
+
+

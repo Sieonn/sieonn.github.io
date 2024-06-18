@@ -1,0 +1,10 @@
+package com.ureca;
+
+public class NameMenu {
+
+	public static void main(String[] args) {
+		//화면 출력
+		//사용자 데이터 입력
+	}
+
+}

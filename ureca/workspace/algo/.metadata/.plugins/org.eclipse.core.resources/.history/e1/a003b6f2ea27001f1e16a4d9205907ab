@@ -1,0 +1,14 @@
+package Study;
+
+import java.util.Arrays;
+
+public class Test {
+	public static void main(String[] args) throws Exception {
+		int[] su = { 1, 2, 3, 4, 5 };
+		int[] su3 = Arrays.copyOfRange(su, 0, su.length);
+//		for(int i=0; i<su.length; i++) {
+//			System.out.print(su3[i]);
+//		}
+		System.out.println("su3배열>>>" + Arrays.toString(su3));
+	}
+}

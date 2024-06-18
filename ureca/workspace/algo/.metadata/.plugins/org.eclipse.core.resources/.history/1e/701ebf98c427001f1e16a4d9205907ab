@@ -1,0 +1,10 @@
+package com.lguplus;
+
+public class InputTest {
+
+	public static void main(String[] args) {
+		
+		System.in.read();
+	}
+
+}

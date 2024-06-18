@@ -1,0 +1,13 @@
+package day0612;
+
+import java.util.ArrayList;
+
+public class My2 {
+		static void print(ArrayList<String> list) {
+			for(String str:list) {
+				
+			}
+		}
+	}
+
+

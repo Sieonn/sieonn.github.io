@@ -1,0 +1,17 @@
+package Mission;
+
+import java.util.ArrayList;
+
+public class Mission1 {
+	public static void main(String[] args) {
+		int [] su = {13, 8, 7, 10, 100, 5};
+		int [] su2 = new int[su.length];
+		int a;
+		for(int i =0; i<su.length; i++) {
+			if(su[i]> a) {
+				
+			}
+		}
+		System.out.println();
+	}
+}

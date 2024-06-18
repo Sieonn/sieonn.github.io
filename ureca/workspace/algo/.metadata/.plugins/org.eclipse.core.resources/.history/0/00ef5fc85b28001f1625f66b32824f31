@@ -1,0 +1,9 @@
+package com.ureca;
+
+public class NameMenu {
+
+	public static void main(String[] args) {
+		//데이터에 대한 CRUD
+	}
+
+}

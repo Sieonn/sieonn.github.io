@@ -1,0 +1,17 @@
+package com.lguplus;
+
+public class MissonArrayTest {
+
+	public static void main(String[] args) {
+		int [] su = {1,2,3,4,5};
+		System.out.println(su[0]);
+		System.out.println(su[1]);
+		System.out.println(su[2]);
+		System.out.println(su[3]);
+		System.out.println(su[4]);
+		
+		//배열 == 객체(필드, 메서드 포함)
+		//자바배열 ==> length속성(필드)
+	}//main
+
+}

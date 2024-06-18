@@ -1,0 +1,7 @@
+package ureca;
+
+public class LottoNumGenTest {
+	public static void main(String[] args) {
+		
+	}
+}

@@ -1,0 +1,37 @@
+package com.lguplus;
+
+public class MissonArrayTest {
+
+	public static void main(String[] args) {
+		int [] su = {1,2,3,4,5};
+		System.out.println(su[0]);
+		System.out.println(su[1]);
+		System.out.println(su[2]);
+		System.out.println(su[3]);
+		System.out.println(su[4]);
+		
+		//배열 == 객체(필드, 메서드 포함)
+		//자바배열 ==> length속성(필드)
+		for( int i=0; i<su.length; i++) 
+			System.err.print(su[i]+ " ");
+		
+		System.out.println();
+		// 나는 인덱스에 관심없고 데이터에만 관심이 있다.
+		//==> 개선된 for문 (forEach문)을 사용
+		//==> 형식) for(자료형 변수명: 배열명){}
+		System.out.println("==================");
+		for(int data: su) // 배열 인덱스 표현
+			System.err.print(data+ " ");
+		System.out.println();
+		
+		int [] su3;
+		su3 = su;
+		for(int data: su3) {
+			System.out.println(data);
+		}
+		su3[2] =33;
+		System.out.println("#su3[2]번지 데이터 출력=>"+su3[2]);
+		System.out.println("#su[2]번지 데이터 출력=>"+su[2]);
+		System.out.println("===================== 따로 메모리 할당을 해줘야한다.");
+	}//main
+}
