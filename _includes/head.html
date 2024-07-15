@@ -28,7 +28,6 @@
 {% for script in site.head_scripts %}
 <script src="{{ script | relative_url }}"></script>
 {% endfor %}
-<!-- MySQL에 highlight 적용안돼서 적용해봄 -->
 {% endif %}
 {% if site.highlighter == "highlight.js" %}
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.3.1/styles/default.min.css">
