@@ -20,7 +20,7 @@
 }
 
 body {
-  font-family: 'GmarketSansMedium', sans-serif; // 웹 폰트 적용
+  font-family: "GmarketSansMedium", sans-serif; // 웹 폰트 적용
   font-weight: 300;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -64,7 +64,7 @@ body {
       float: left;
       // margin-left: 5%;
       // margin-right: 5%;
-      padding:0 5%;
+      padding: 10px;
       width: 100%;
       clear: both;
       line-height: 1.3;
@@ -147,7 +147,7 @@ body {
   p,
   li,
   dl {
-    font-family: 'JeonjuCraftGoR';//'S-CoreDream-3Light';//'JeonjuCraftGoR';
+    font-family: "JeonjuCraftGoR"; //'S-CoreDream-3Light';//'JeonjuCraftGoR';
     font-size: 14px;
     font-weight: 400;
     //0.8em;
@@ -311,7 +311,7 @@ body {
    ========================================================================== */
 
 .page__share {
-  margin-top: 2em;
+  // margin-top: 2em;
   padding-top: 1em;
   border-top: 1px solid $border-color;
 
@@ -568,7 +568,7 @@ body {
 .page__related {
   @include clearfix();
   float: left;
-  margin-top: 2em;
+  margin-top: 10px; //2em;
   padding-top: 1em;
   border-top: 1px solid $border-color;
 
