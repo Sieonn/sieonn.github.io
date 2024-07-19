@@ -348,20 +348,22 @@ Servlet/JSP의 수식어 ➡️ 웹어플리케이션<small>(웹서비스하는 
 
 3. **계산기**: calc.jsp & result.jsp
     - calc.jsp:
-    ```html
-    <form action="result.jsp">
-        <input type="text" name="su1">
-        <select name="oper">
-            <option value="+">+</option>
-            <option value="-">-</option>
-            <option value="*">*</option>
-            <option value="/">/option>
-        </select>
-        <input type="text" name="su2">
-        <input type="submit" value="계산">
-    </form>
-    ```
 
+      ``` html
+      <form action="result.jsp">
+          <input type="text" name="su1">
+          <select name="oper">
+              <option value="+">+</option>
+              <option value="-">-</option>
+              <option value="*">*</option>
+              <option value="/">/option>
+          </select>
+          <input type="text" name="su2">
+          <input type="submit" value="계산">
+      </form>
+      ```
+
+      
     - result.jsp:
     ```jsp
     <%
