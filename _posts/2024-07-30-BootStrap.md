@@ -124,3 +124,12 @@ text 색상을 지정해서 보여주는 class들이 있다.
 : `.text-muted`, `.text-primary`, `.text-success`, `.text-info`, `.text-warning`, `.text-danger`, `.text-secondary`, `.text-white`, `.text-dark`, `.text-body` (default body color/often black) and `.text-light`
 
 <img src="../images/Untitled/image-20240730104907627.png" alt="image-20240730104907627" style="zoom:70%;" />
+
+<html>
+
+
+
+</html>
+
+
+
