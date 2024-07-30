@@ -125,11 +125,7 @@ text 색상을 지정해서 보여주는 class들이 있다.
 
 <img src="../images/Untitled/image-20240730104907627.png" alt="image-20240730104907627" style="zoom:70%;" />
 
-<html>
 
-
-
-</html>
 
 
 
