@@ -1,5 +1,5 @@
 ---
-titile: [LG 유레카] Bootstrap
+titile: "[LG 유레카] Bootstrap"
 ---
 
 ## Bootstrap
