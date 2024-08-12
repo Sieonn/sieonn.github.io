@@ -13,21 +13,21 @@ $paragraph-indent: false !default; // true, false (default)
 $indent-var: 1.3em !default;
 
 /* system typefaces */
-$customFont: "GmarketSansLight"; //"Noto Sans KR";
-$serif: $customFont, "GmarketSansLight", Georgia, Times, serif !default;
-$sans-serif: $customFont, "GmarketSansLight", -apple-system, BlinkMacSystemFont,
-  "GmarketSansLight", "Noto Sans KR", "Roboto", "Segoe UI", "Helvetica Neue",
+$customFont: "GmarketSansMedium"; //"Noto Sans KR";
+$serif: $customFont, "GmarketSansMedium", Georgia, Times, serif !default;
+$sans-serif: $customFont, "GmarketSansMedium", -apple-system, BlinkMacSystemFont,
+  "GmarketSansMedium", "Noto Sans KR", "Roboto", "Segoe UI", "Helvetica Neue",
   "Lucida Grande", Arial, sans-serif !default;
 $monospace: $customFont, Monaco, Consolas, "Lucida Console", monospace !default;
 
 /* sans serif typefaces */
 $sans-serif-narrow: $sans-serif !default;
-$helvetica: "GmarketSansLight", Helvetica, "Helvetica Neue", Arial, sans-serif !default;
+$helvetica: "GmarketSansMedium", Helvetica, "Helvetica Neue", Arial, sans-serif !default;
 
 /* serif typefaces */
-$georgia: "GmarketSansLight", Georgia, serif !default;
+$georgia: "GmarketSansMedium", Georgia, serif !default;
 $times: Times, serif !default;
-$bodoni: "GmarketSansLight", "Bodoni MT", serif !default;
+$bodoni: "GmarketSansMedium", "Bodoni MT", serif !default;
 $calisto: "Calisto MT", serif !default;
 $garamond: Garamond, serif !default;
 
