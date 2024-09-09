@@ -178,7 +178,31 @@ input[type="radio"],
 input[type="checkbox"] {
   cursor: pointer; /* improves usability and consistency of cursor style between image-type `input` and others*/
 }
+input[type="checkbox"] {
+  position: relative;
+  width: 16px;
+  height: 16px;
+  // -webkit-appearance: none;
+  background: #fff;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  cursor: pointer;
+}
 
+input[type="checkbox"]:checked {
+  background: #007bff;
+  border: 1px solid #007bff;
+}
+
+input[type="checkbox"]:checked::before {
+  content: "✓";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #fff;
+  font-size: 12px;
+}
 input[type="search"] {
   /* Appearance in Safari/Chrome*/
   box-sizing: border-box;
