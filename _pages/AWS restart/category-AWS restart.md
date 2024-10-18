@@ -1,6 +1,6 @@
 ---
 title: "AWS restart"
-layout: default
+layout: category
 permalink: /AWS restart/
 author_profile: true
 sidebar: true
