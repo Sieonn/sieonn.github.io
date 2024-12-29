@@ -1,9 +1,0 @@
-package com.lguplus;
-
-public class ArrayTest1 {
-	int []su={  1,  2,  3,  4,  5};
-	
-	public static void main(String[] args) {
-		
-	}
-}

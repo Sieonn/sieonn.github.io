@@ -1,8 +1,0 @@
-package com.ureca;
-
-public class Circle extends shape {
-	@Override
-	public void draw() {
-		System.out.println("사각형그리기");
-	}
-}

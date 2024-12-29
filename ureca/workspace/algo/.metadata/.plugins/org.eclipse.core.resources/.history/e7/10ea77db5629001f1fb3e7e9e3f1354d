@@ -1,7 +1,0 @@
-package Mission;
-
-public class Person {
-	public class Person(String name, int age, String job, int year) {
-		
-	}
-}

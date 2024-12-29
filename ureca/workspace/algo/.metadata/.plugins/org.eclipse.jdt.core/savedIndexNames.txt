@@ -1,9 +1,0 @@
-INDEX VERSION 1.134+C:\ureca\workspace\algo\.metadata\.plugins\org.eclipse.jdt.core
-404528595.index
-1351340349.index
-1752590684.index
-527522250.index
-2165689449.index
-2256013424.index
-1865797976.index
-4051646694.index

@@ -1,7 +1,0 @@
-package com.ureca;
-
-public class Abc {
-	void hello() {
-		System.out.println();
-	}
-}

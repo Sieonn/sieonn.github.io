@@ -1,9 +1,0 @@
-package com.lguplus;
-
-public class MethodCallTest {
-
-	public static void main(String[] args) {
-		
-	}
-
-}

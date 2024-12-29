@@ -1,7 +1,0 @@
-package com.ureca.pack2;
-
-public class Child extends Parent {
-	void methodCallTest() {
-		m1();
-	}
-}

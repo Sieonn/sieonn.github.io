@@ -1,9 +1,0 @@
-package test;
-
-public class Main_BJ_1008 {
-
-	public static void main(String[] args) {
-		Scanner sc =new Scanner(System.in);
-	}
-
-}

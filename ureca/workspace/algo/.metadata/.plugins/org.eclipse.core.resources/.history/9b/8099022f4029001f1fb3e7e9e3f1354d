@@ -1,7 +1,0 @@
-package com.ureca;
-
-public class FoodTest {
-	public static void main(String[] args) {
-		MenuPan menu = new MenuPan();
-	}
-}

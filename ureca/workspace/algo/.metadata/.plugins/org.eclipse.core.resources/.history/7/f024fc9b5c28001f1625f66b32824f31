@@ -1,8 +1,0 @@
-package com.ureca;
-
-public class NameMenu {
-		//데이터에 대한 CRUD
-	void create() {
-		
-	}
-}

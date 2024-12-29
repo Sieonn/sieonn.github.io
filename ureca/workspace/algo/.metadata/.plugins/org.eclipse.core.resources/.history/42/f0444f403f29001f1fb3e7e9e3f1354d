@@ -1,5 +1,0 @@
-package com.ureca;
-
-public class HongKong implements MenuPan {
-	void 짜장면() {}//접근제어자를 부모와 같거나 큰 접근제어자를 설정해 주어야한다
-}
