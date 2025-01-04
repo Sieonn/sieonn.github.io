@@ -107,7 +107,7 @@ author:
   avatar: # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
   bio: "끄적끄적 개발 블로그입니다."
   location: "South Korea"
-  email: "sieon.eve@gmail.com"
+  # email: "sieon.eve@gmail.com"
   links:
     - label: "Email"
       icon: "fas fa-fw fa-envelope-square"
@@ -115,7 +115,6 @@ author:
     - label: "Website"
       icon: "fas fa-fw fa-link"
       url: "https://sieonn.github.io"
-
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
       url: "https://github.com/Sieonn"
