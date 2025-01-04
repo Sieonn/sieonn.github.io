@@ -501,7 +501,7 @@
   font-size: $type-size-5;
   font-weight: bold;
   text-transform: uppercase;
-  border-bottom: 1px solid #000;
+  border-bottom: 1px solid $primary-color;
   border-left: 0.5rem solid $primary-color;
   padding-left: 0.5em;
 }
