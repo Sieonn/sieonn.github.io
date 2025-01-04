@@ -1,15 +1,15 @@
 # main links
 main:
-  - title: "category"
-    url: https://mmistakes.github.io/minimal-mistakes/docs/installation/#install-the-theme/
-  - title: "About"
-    url: https://mmistakes.github.io/minimal-mistakes/about/
-  - title: "Sample Posts"
-    url: /year-archive/
-  - title: "Sample Collections"
-    url: /collection-archive/
-  - title: "Sitemap"
-    url: /sitemap/
+  # - title: "category"
+  #   url: https://mmistakes.github.io/minimal-mistakes/docs/installation/#install-the-theme/
+  # - title: "About"
+  #   url: https://mmistakes.github.io/minimal-mistakes/about/
+  # - title: "Sample Posts"
+  #   url: /year-archive/
+  # - title: "Sample Collections"
+  #   url: /collection-archive/
+  # - title: "Sitemap"
+  #   url: /sitemap/
 
 sidebar-category:
   # blog 글

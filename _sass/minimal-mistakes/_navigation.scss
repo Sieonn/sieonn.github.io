@@ -8,10 +8,9 @@
 
 .breadcrumbs {
   @include clearfix;
-  margin: 0 auto;
-  max-width: 100%;
-  padding-left: 1em;
-  // padding-right: 300px;
+  // padding-left: 1em;
+  margin-left: 25px;
+  padding-left: $right-sidebar-width;
   font-family: $sans-serif;
   -webkit-animation: $intro-transition;
   animation: $intro-transition;
@@ -555,7 +554,6 @@
   a {
     display: block;
     padding: 0.4rem 0.8rem;
-    color: #303030;
     font-weight: 700;
     line-height: 1.5;
     // border: 1px solid #a0a0a0e3;

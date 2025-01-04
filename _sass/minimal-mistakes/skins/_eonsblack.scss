@@ -3,13 +3,13 @@
    ========================================================================== */
 
 /* Colors */
-$background-color: #ffff !default;
+$background-color: #1b1b1b !default;
 // #f3f6f6
-$text-color: #0f0f0f !default;
+$text-color: #ffff !default;
 $muted-text-color: #5c5c5c !default; //mix(#000000, #00ffaa, 75%)
 $primary-color: #00ffae !default;
 // #11999e
-$border-color: #000000 !default;
+$border-color: #ffff !default;
 //  mix(#fff, #7dd8ae, 75%) !default;
 $footer-background-color: linear-gradient(#000000, #c2d9ff);
 // linear-gradient(#190482, #C2D9FF) !default;
@@ -21,6 +21,7 @@ $navicon-link-color-hover: mix(#fff, $text-color, 80%) !default;
 
 .page__footer {
   color: #00ffa3 !important; // override
+  background-color: $footer-background-color !important;
 }
 
 .page__footer-follow .social-icons i,

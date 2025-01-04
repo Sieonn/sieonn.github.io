@@ -44,7 +44,6 @@
 
 @mixin clearfix {
   clear: both;
-
   &::after {
     clear: both;
     content: "";

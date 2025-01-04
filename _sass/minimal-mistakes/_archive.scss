@@ -36,7 +36,7 @@
   padding-bottom: 0.5em;
   font-size: 20px;
   font-weight: 900;
-  color: #000; //mix($primary-color, #000);
+  color: mix($primary-color, #fff);
   border-bottom: 2px solid $primary-color;
 
   + .list__item .archive__item-title {
@@ -76,6 +76,7 @@
 .archive__item-excerpt {
   margin-top: 0;
   font-size: $type-size-6;
+  color: $link-color-visited;
 
   & + p {
     text-indent: 0;
