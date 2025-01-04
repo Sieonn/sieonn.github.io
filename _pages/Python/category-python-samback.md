@@ -1,6 +1,6 @@
 ---
 title: "🌴기초 300제"
-layout: category
+layout: archive
 permalink: /python/samback/
 # category: 
 # author_profile: true
