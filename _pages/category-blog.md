@@ -1,7 +1,7 @@
 ---
 title: "GitHub Blog"
 layout: category
-permalink: /blog/
+permalink: /blog
 ---
 
 {% assign posts = site.categories.blog %}

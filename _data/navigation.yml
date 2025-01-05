@@ -17,7 +17,7 @@ sidebar-category:
     url: /blog/
     children:
       - title: '블로그 제작기'
-        url: /blog/블로그 제작기/
+        url: /blog
         # python 공부
   - title: 'Python'
     url: /python/
