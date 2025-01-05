@@ -20,6 +20,9 @@
   @include breakpoint($x-large) {
     max-width: $x-large;//1400px; //$x-large;
   }
+  @include breakpoint($small) {
+    padding-left: 0;
+  }
 
   ol {
     padding: 0;
