@@ -187,6 +187,7 @@ kramdown:
   smart_quotes: lsquo,rsquo,ldquo,rdquo
   enable_coderay: false
 
+
 # Sass/SCSS
 sass:
   sass_dir: _sass
@@ -205,6 +206,7 @@ plugins:
   - jekyll-gist
   - jekyll-feed
   - jekyll-include-cache
+  - jekyll-seo-tag
   # - jekyll-archives
 
 
@@ -216,6 +218,9 @@ whitelist:
   - jekyll-feed
   - jekyll-include-cache
 
+seo:
+  title: "언박스스"
+  description: "꾸준한 프론트엔드 공부 기록"
 # Archives
 #  Type
 #  - GitHub Pages compatible archive pages built with Liquid ~> type: liquid (default)
