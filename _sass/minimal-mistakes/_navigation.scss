@@ -9,8 +9,8 @@
 .breadcrumbs {
   @include clearfix;
   // padding-left: 1em;
-  margin-left: 25px;
-  padding-left: $right-sidebar-width;
+  // margin-left: 25px;
+  margin-left: $right-sidebar-width;
   font-family: $sans-serif;
   -webkit-animation: $intro-transition;
   animation: $intro-transition;
@@ -21,7 +21,7 @@
     max-width: $x-large;//1400px; //$x-large;
   }
   @include breakpoint($small) {
-    padding-left: 0;
+    margin-left: 25px;
   }
 
   ol {
