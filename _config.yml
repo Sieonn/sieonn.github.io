@@ -197,7 +197,7 @@ sass:
 permalink: /:categories/:title/
 paginate: 5 # amount of posts to show
 paginate_path: /page:num/
-# timezone: Asia/Seoul
+timezone: Asia/Seoul
 
 # Plugins (previously gems:)
 plugins:
@@ -219,8 +219,9 @@ whitelist:
   - jekyll-include-cache
 
 seo:
-  title: "언박스스"
+  title: "언박스"
   description: "꾸준한 프론트엔드 공부 기록"
+  open_graph: true
 # Archives
 #  Type
 #  - GitHub Pages compatible archive pages built with Liquid ~> type: liquid (default)
