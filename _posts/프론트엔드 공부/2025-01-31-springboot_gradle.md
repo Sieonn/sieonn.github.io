@@ -105,7 +105,7 @@ MyBatis설정하느라 고생을 많이 했기 때문에 이번에는 미리 추
 
 
 
-
+<img src="/../images/2025-01-31-springboot_gradle/image-20250131214847039.png" alt="image-20250131214847039" style="zoom:67%;" />
 
 ## 인텔리제이 자바 설정
 
