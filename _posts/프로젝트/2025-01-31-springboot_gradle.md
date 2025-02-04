@@ -3,6 +3,7 @@ title: "[PHOBUM](1) - Intellij 개발환경 설정"
 toc: true
 toc_label: "목차"
 toc_sticky: true
+category: phobum
 ---
 
 ## 프로젝트 기본 설정

@@ -31,6 +31,12 @@ sidebar-category:
       - title: 'SWEA'
         url: /python/SWEA/
 
+  - title: '프로젝트'
+    url: /project/ 
+    children:
+      - title: 'PHOBUM'
+        url: /project/phobum/
+        
         # AWS 정리
   - title: 'AWS restart'
     url: /AWS restart/
