@@ -1,7 +1,7 @@
 ---
-title: "Java"
+title: "PHOBUM"
 layout: archive
-category: Java
+category: phobum
 permalink: /project/phobum/
 ---
 
