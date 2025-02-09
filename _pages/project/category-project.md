@@ -1,6 +1,6 @@
 ---
 title: "project"
-layout: category
+layout: categories
 permalink: /project/
 author_profile: true
 sidebar: true
