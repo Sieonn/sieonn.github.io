@@ -2,7 +2,7 @@
 title: "DB"
 layout: archive
 category: DB
-permalink: /KOSTA/DB/
+permalink: /DB/
 author_profile: true
 sidebar:
     nav: "sidebar-category"

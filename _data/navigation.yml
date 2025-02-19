@@ -14,72 +14,66 @@ main:
 sidebar-category:
   # blog 글
   - title: 'GitHub Blog'
-    url: /blog/
     children:
       - title: '블로그 제작기'
         url: /blog
         # python 공부
   - title: 'Python'
-    url: /python/
     children:
       - title: '기초 300제'
-        url: /python/samback/
+        url: /samback/
 
       - title: '프로그래머스'
-        url: /python/programmers/
+        url: /programmers/
 
       - title: 'SWEA'
-        url: /python/SWEA/
+        url: /SWEA/
 
   - title: '프로젝트'
-    url: /project/ 
     children:
       - title: 'PHOBUM'
-        url: /project/phobum/
+        url: /phobum/
         
       - title: 'PEAUTY'
-        url: /project/peauty/
+        url: /peauty/
         
         # AWS 정리
   - title: 'AWS restart'
-    url: /AWS restart/
     children:
       - title: '클라우드 기본 사항'
-        url: /AWS restart/Cloud Base/
+        url: /Cloud Base/
 
       - title: 'Linux 기본 사항'
-        url: /AWS restart/Linux/
+        url: /Linux/
       - title: '네트워킹'
-        url: /AWS restart/networking/
+        url: /networking/
 
       - title: '보안'
-        url: /AWS restart/security/
+        url: /security/
 
       - title: 'python'
-        url: /AWS restart/python/
+        url: /python/
 
       - title: '데이터베이스'
-        url: /AWS restart/database/
+        url: /database/
 
       - title: 'Jumpstart on AWS'
-        url: /AWS restart/Jumpstart on AWS/
+        url: /Jumpstart on AWS/
 
       - title: 'Jumpstart on AWS Advanced'
-        url: /AWS restart/Jumpstart on AWS Advanced/
+        url: /Jumpstart on AWS Advanced/
       - title: 'ACP'
-        url: /AWS restart/ACP/
+        url: /ACP/
         #Fullstack과정
         
   - title: 'KOSTA FullStack'
-    url: /KOSTA/ 
     children:
       - title: 'Java'
-        url: /KOSTA/Java/
+        url: /Java/
       - title: 'DB'
-        url: /KOSTA/DB/
+        url: /DB/
 
   - title: '정보처리기사'
-    url: /DataProcess/ 
     children:
       - title: '기출문제'
-        url: /DataProcess/DPCBT/
+        url: /DPCBT/

@@ -1,8 +1,11 @@
 ---
 title: "Linux"
 layout: archive
-category: AWS restart
-permalink: /AWS restart/Linux/ 
+category: Linux
+permalink: /Linux/ 
+author_profile: true
+sidebar:
+    nav: "sidebar-category"
 ---
 
 {% assign posts = site.categories.Linux %}

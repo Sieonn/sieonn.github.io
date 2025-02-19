@@ -1,7 +1,7 @@
 ---
 title: "🌴SW Expert Academy"
 layout: archive
-permalink: /python/SWEA/
+permalink: /SWEA/
 author_profile: true
 sidebar:
     nav: "sidebar-category"

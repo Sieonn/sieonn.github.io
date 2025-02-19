@@ -1,8 +1,11 @@
 ---
 title: "데이터베이스"
 layout: archive
-category: AWS restart
-permalink: /AWS restart/database/
+category: database
+permalink: /database/
+author_profile: true
+sidebar:
+    nav: "sidebar-category"
 ---
 
 {% assign posts = site.categories.database %}

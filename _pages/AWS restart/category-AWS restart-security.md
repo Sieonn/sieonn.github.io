@@ -1,8 +1,9 @@
 ---
 title: "보안"
 layout: archive
-category: AWS restart
-permalink: /AWS restart/security/
+category: security
+permalink: /security/
+
 ---
 
 {% assign posts = site.categories.security %}

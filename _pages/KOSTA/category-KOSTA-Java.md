@@ -2,7 +2,7 @@
 title: "Java"
 layout: archive
 category: Java
-permalink: /KOSTA/Java/
+permalink: /Java/
 author_profile: true
 sidebar:
     nav: "sidebar-category"

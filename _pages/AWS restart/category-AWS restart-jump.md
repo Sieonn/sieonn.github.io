@@ -1,7 +1,10 @@
 ---
 title: "Jumpstart on AWS"
 layout: category
-permalink: /AWS restart/Jumpstart-on-AWS/
+permalink: /Jumpstart-on-AWS/
+author_profile: true
+sidebar:
+    nav: "sidebar-category"
 ---
 
 {% assign posts = site.categories.Are %}

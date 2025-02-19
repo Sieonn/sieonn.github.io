@@ -18,6 +18,7 @@
 
   @include breakpoint($x-large) {
     max-width: $x-large;//1400px; //$x-large;
+    // width: calc(100% - $right-sidebar-width);
   }
   @include breakpoint($small) {
     margin-left: 25px;
@@ -34,12 +35,12 @@
 
     @include breakpoint($large) {
       // float: right;
-      width: calc(100% - #{$right-sidebar-width-narrow});
+      // width: calc(100% - #{$right-sidebar-width-narrow});
       margin-left: $right-sidebar-width;
     }
 
     @include breakpoint($x-large) {
-      width: calc(100%);//calc(100% - #{$right-sidebar-width});
+      // width: calc(100% - #{$right-sidebar-width});//calc(100%);//
     }
   }
 
@@ -402,7 +403,7 @@
 
     /* selected*/
     input:checked + label {
-      color: white;
+      color: black;
       background-color: mix(white, $primary-color, 20%);
 
       &:before,
@@ -422,6 +423,7 @@
       -webkit-transform: rotate(0);
       -ms-transform: rotate(0);
       transform: rotate(0);
+      background-color: black;
     }
 
     ul {
@@ -457,6 +459,7 @@
     padding-left: 0.5em;
     padding-right: 0.5em;
     font-weight: bold;
+    color: $primary-color;
   }
 
   @include breakpoint(max-width $large - 1px) {
@@ -533,7 +536,7 @@
 
   // Scrollspy marks toc items as .active when they are in focus
   .active a {
-    background-color: #000;
+    // background-color: #000;
     color: $primary-color;
 
     // @include yiq-contrasted($active-color);

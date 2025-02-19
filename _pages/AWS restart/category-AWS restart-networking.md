@@ -1,8 +1,11 @@
 ---
 title: "네트워킹"
 layout: archive
-category: AWS restart
-permalink: /AWS restart/networking/
+category: networking
+permalink: /networking/
+author_profile: true
+sidebar:
+    nav: "sidebar-category"
 ---
 
 {% assign posts = site.categories.networking %}

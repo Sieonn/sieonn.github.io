@@ -2,7 +2,7 @@
 title: "PHOBUM"
 layout: archive
 category: phobum
-permalink: project/phobum/
+permalink: /phobum/
 author_profile: true
 sidebar:
     nav: "sidebar-category"

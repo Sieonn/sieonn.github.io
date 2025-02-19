@@ -1,8 +1,11 @@
 ---
 title: "Python"
 layout: archive
-category: AWS restart
-permalink: /AWS restart/python/
+category: python
+permalink: /python/
+author_profile: true
+sidebar:
+    nav: "sidebar-category"
 ---
 
 {% assign posts = site.categories.awspython %}

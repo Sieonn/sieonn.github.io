@@ -1,8 +1,11 @@
 ---
 title: "클라우드 기본 사항"
 layout: archive
-category: AWS restart
-permalink: /AWS restart/Cloud Base/ 
+category: Cloud Base
+permalink: /Cloud Base/ 
+author_profile: true
+sidebar:
+    nav: "sidebar-category"
 ---
 
 {% assign posts = site.categories.Base %}

@@ -1,7 +1,7 @@
 ---
 title: "🌴기초 300제"
 layout: archive
-permalink: /python/samback/
+permalink: /samback/
 author_profile: true
 sidebar:
     nav: "sidebar-category"

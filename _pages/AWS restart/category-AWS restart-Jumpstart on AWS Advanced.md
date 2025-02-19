@@ -1,8 +1,11 @@
 ---
 title: "Jumpstart on AWS Advanced"
 layout: archive
-category: AWS restart
-permalink: /AWS restart/Jumpstart on AWS Advanced/
+category: Jumpstart on AWS Advanced
+permalink: /Jumpstart on AWS Advanced/
+author_profile: true
+sidebar:
+    nav: "sidebar-category"
 ---
 
 {% assign posts = site.categories.JAre %}

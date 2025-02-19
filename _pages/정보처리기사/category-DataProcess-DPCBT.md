@@ -1,8 +1,8 @@
 ---
 title: "기출문제"
 layout: archive
-category: DataProcess
-permalink: /DataProcess/DPCBT/
+category: DPCBT
+permalink: /DPCBT/
 author_profile: true
 sidebar:
     nav: "sidebar-category"

@@ -1,8 +1,11 @@
 ---
 title: "ACP"
 layout: archive
-category: AWS restart
-permalink: /AWS restart/ACP/
+category: ACP
+permalink: /ACP/
+author_profile: true
+sidebar:
+    nav: "sidebar-category"
 ---
 
 {% assign posts = site.categories.acp %}
