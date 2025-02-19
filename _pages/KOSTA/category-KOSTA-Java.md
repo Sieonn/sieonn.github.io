@@ -3,6 +3,9 @@ title: "Java"
 layout: archive
 category: Java
 permalink: /KOSTA/Java/
+author_profile: true
+sidebar:
+    nav: "sidebar-category"
 ---
 
 {% assign posts = site.categories.java %}

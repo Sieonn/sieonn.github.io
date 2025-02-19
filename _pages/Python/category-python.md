@@ -2,6 +2,9 @@
 title: "Python"
 layout: category
 permalink: /python/
+author_profile: true
+sidebar:
+    nav: "sidebar-category"
 ---
 
 {% assign posts = site.categories.python %}

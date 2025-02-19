@@ -3,6 +3,9 @@ title: "DB"
 layout: archive
 category: DB
 permalink: /KOSTA/DB/
+author_profile: true
+sidebar:
+    nav: "sidebar-category"
 ---
 
 {% assign posts = site.categories.DB %}

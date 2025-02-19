@@ -2,6 +2,9 @@
 title: "GitHub Blog"
 layout: category
 permalink: /blog
+author_profile: true
+sidebar:
+    nav: "sidebar-category"
 ---
 
 {% assign posts = site.categories.blog %}

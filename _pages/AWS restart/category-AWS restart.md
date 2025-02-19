@@ -3,7 +3,8 @@ title: "AWS restart"
 layout: category
 permalink: /AWS restart/
 author_profile: true
-sidebar: true
+sidebar:
+    nav: "sidebar-category"
 category: AWS restart
 ---
 

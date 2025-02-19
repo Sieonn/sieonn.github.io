@@ -2,9 +2,10 @@
 title: "KOSTA FullStack"
 layout: default
 permalink: /KOSTA/
-author_profile: true
-sidebar: true
 category: kosta
+author_profile: true
+sidebar:
+    nav: "sidebar-category"
 ---
 
 {% assign posts = site.categories.java %}

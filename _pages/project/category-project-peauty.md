@@ -3,6 +3,9 @@ title: "PEAUTY"
 layout: archive
 category: peauty
 permalink: /project/peauty/
+author_profile: true
+sidebar:
+    nav: "sidebar-category"
 ---
 
 {% assign posts = site.categories.peauty %}

@@ -2,7 +2,10 @@
 title: "PHOBUM"
 layout: archive
 category: phobum
-permalink: /project/phobum/
+permalink: project/phobum/
+author_profile: true
+sidebar:
+    nav: "sidebar-category"
 ---
 
 {% assign posts = site.categories.phobum %}

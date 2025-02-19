@@ -3,6 +3,9 @@ title: "기출문제"
 layout: archive
 category: DataProcess
 permalink: /DataProcess/DPCBT/
+author_profile: true
+sidebar:
+    nav: "sidebar-category"
 ---
 
 {% assign posts = site.categories.DataProcess.DPCBT %}

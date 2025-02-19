@@ -3,8 +3,8 @@ title: "project"
 layout: categories
 permalink: /project/
 author_profile: true
-sidebar: true
-categories: project
+sidebar:
+    nav: "sidebar-category"
 ---
 
 ---
