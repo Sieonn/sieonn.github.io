@@ -3,7 +3,9 @@ title: "보안"
 layout: archive
 category: security
 permalink: /security/
-
+author_profile: true
+sidebar:
+    nav: "sidebar-category"
 ---
 
 {% assign posts = site.categories.security %}
