@@ -18,16 +18,16 @@ sidebar-category:
       - title: '블로그 제작기'
         url: /blog
         # python 공부
-  - title: 'Python'
-    children:
-      - title: '기초 300제'
-        url: /samback/
+  # - title: 'Python'
+  #   children:
+  #     - title: '기초 300제'
+  #       url: /samback/
 
-      - title: '프로그래머스'
-        url: /programmers/
+  #     - title: '프로그래머스'
+  #       url: /programmers/
 
-      - title: 'SWEA'
-        url: /SWEA/
+  #     - title: 'SWEA'
+  #       url: /SWEA/
 
   - title: '프로젝트'
     children:
@@ -73,7 +73,7 @@ sidebar-category:
       - title: 'DB'
         url: /DB/
 
-  - title: '정보처리기사'
-    children:
-      - title: '기출문제'
-        url: /DPCBT/
+  # - title: '정보처리기사'
+  #   children:
+  #     - title: '기출문제'
+  #       url: /DPCBT/
