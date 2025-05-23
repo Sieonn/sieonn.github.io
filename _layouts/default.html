@@ -8,65 +8,83 @@
   Free for personal and commercial use under the MIT license
   https://github.com/mmistakes/minimal-mistakes/blob/master/LICENSE
 -->
-<html lang="{{ site.locale | slice: 0,2 | default: "en" }}" class="no-js">
-  <head>
-    {% include head.html %}
-    {% include head/custom.html %}
-    {% if page.use_math%}
-      {% include mathjax_support.html %}
-    {% endif %}
-    <style>
-      ::-webkit-scrollbar{
-        width: 12px;
-      }
-      ::-webkit-scrollbar-track{
-        background-color: #dededee2;
-        border-radius: 16px;
-      }
-      ::-webkit-scrollbar-thumb{
-        background-color: #bababad5;
-        border-radius: 16px;
-      }
-      ::-webkit-scrollbar-thumb:hover{
-        background: #00ffa3;
-        /* <!-- 마우스 하이라이트 --> */
-      }
-      ::-webkit-scrollbar-button:start:decrement,
-      ::-webkit-scrollbar-button:end:increment 
-      {
-          width:auto;
-          height:auto;
-          background:transparent;
-      }
-      /* 사이드바 스크롤바 없애기 */
-      .sidebar{ -ms-overflow-style: none; }
-      .sidebar::-webkit-scrollbar{ display:none; }
-      .sidebar__right{ -ms-overflow-style: none; }
-      .sidebar__right::-webkit-scrollbar{ display:none; }
-    </style> 
-  </head>
+<html lang="{{ site.locale | slice: 0,2 | default: " en" }}" class="no-js">
 
-  <body class="layout--{{ page.layout | default: layout.layout }}{% if page.classes or layout.classes %}{{ page.classes | default: layout.classes | join: ' ' | prepend: ' ' }}{% endif %}">
-    {% include_cached skip-links.html %}
-    {% include_cached masthead.html %}
+<head>
+  {% include head.html %}
+  {% include head/custom.html %}
+  {% if page.use_math%}
+  {% include mathjax_support.html %}
+  {% endif %}
+  <style>
+    ::-webkit-scrollbar {
+      width: 12px;
+    }
 
-    <div class="initial-content">
-      {{ content }}
-    </div>
+    ::-webkit-scrollbar-track {
+      background-color: #dededee2;
+      border-radius: 16px;
+    }
 
-    {% if site.search == true %}
-      <div class="search-content">
-        {% include_cached search/search_form.html %}
-      </div>
-    {% endif %}
+    ::-webkit-scrollbar-thumb {
+      background-color: #bababad5;
+      border-radius: 16px;
+    }
 
-    <div id="footer" class="page__footer">
-      <footer>
-        {% include footer/custom.html %}
-        {% include_cached footer.html %}
-      </footer>
-    </div>
+    ::-webkit-scrollbar-thumb:hover {
+      background: #A6B1D1;
+      /* <!-- 마우스 하이라이트 --> */
+    }
 
-    {% include scripts.html %}
-  </body>
+    ::-webkit-scrollbar-button:start:decrement,
+    ::-webkit-scrollbar-button:end:increment {
+      width: auto;
+      height: auto;
+      background: transparent;
+    }
+
+    /* 사이드바 스크롤바 없애기 */
+    .sidebar {
+      -ms-overflow-style: none;
+    }
+
+    .sidebar::-webkit-scrollbar {
+      display: none;
+    }
+
+    .sidebar__right {
+      -ms-overflow-style: none;
+    }
+
+    .sidebar__right::-webkit-scrollbar {
+      display: none;
+    }
+  </style>
+</head>
+
+<body
+  class="layout--{{ page.layout | default: layout.layout }}{% if page.classes or layout.classes %}{{ page.classes | default: layout.classes | join: ' ' | prepend: ' ' }}{% endif %}">
+  {% include_cached skip-links.html %}
+  {% include_cached masthead.html %}
+
+  <div class="initial-content">
+    {{ content }}
+  </div>
+
+  {% if site.search == true %}
+  <div class="search-content">
+    {% include_cached search/search_form.html %}
+  </div>
+  {% endif %}
+
+  <div id="footer" class="page__footer">
+    <footer>
+      {% include footer/custom.html %}
+      {% include_cached footer.html %}
+    </footer>
+  </div>
+
+  {% include scripts.html %}
+</body>
+
 </html>

@@ -12,7 +12,7 @@
 
 #theme                  : "minimal-mistakes-jekyll"
 #remote_theme           : "mmistakes/minimal-mistakes"
-minimal_mistakes_skin: "eonsblack" # "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
+minimal_mistakes_skin: "eonsblue" #"eonsblack" # "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
 
 # Site Settings
 locale: "ko-KR"
@@ -118,9 +118,9 @@ author:
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
       url: "https://github.com/Sieonn"
-    - label: "Instagram"
-      icon: "fab fa-fw fa-instagram"
-      url: "https://www.instagram.com/eonny._.v/"
+    # - label: "Instagram"
+    #   icon: "fab fa-fw fa-instagram"
+    #   url: "https://www.instagram.com/eonny._.v/"
 
 # Site Footer
 footer:

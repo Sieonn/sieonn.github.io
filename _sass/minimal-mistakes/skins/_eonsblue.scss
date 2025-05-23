@@ -1,0 +1,30 @@
+/* ==========================================================================
+   나의 skin
+   ========================================================================== */
+
+/* Colors */
+$background-color: #ffff !default;
+// #f3f6f6
+$text-color: #02060F !default;
+$muted-text-color: #5c5c5c !default; //mix(#000000, #00ffaa, 75%)
+$primary-color: #A6B1D1 !default;
+// #11999e
+$border-color: #ffff !default;
+//  mix(#fff, #7dd8ae, 75%) !default;
+$footer-background-color: linear-gradient(#000000, #A6B1D1);
+// linear-gradient(#190482, #C2D9FF) !default;
+// #30e3ca#9EBECB#7296A4#97b197
+$link-color: #000000 !default;
+$masthead-link-color: $text-color !default;
+$masthead-link-color-hover: $text-color !default;
+$navicon-link-color-hover: mix(#fff, $text-color, 80%) !default;
+
+.page__footer {
+  color: #A6B1D1 !important; // override
+  background-color: $footer-background-color !important;
+}
+
+.page__footer-follow .social-icons i,
+s .page__footer-follow .social-icons .svg-inline--fa {
+  color: inherit;
+}
