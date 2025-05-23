@@ -18,8 +18,8 @@ $serif: $customFont, "Pretendard-Regular", Georgia, Times, serif !default;
 $sans-serif: $customFont, "Pretendard-Regular", -apple-system, BlinkMacSystemFont,
   "Pretendard-Regular", "Noto Sans KR", "Roboto", "Segoe UI", "Helvetica Neue",
   "Lucida Grande", Arial, sans-serif !default;
-$monospace: $customFont, Monaco, Consolas, "Lucida Console", monospace !default;
-
+$monospace: $customFont,"Space Mono", Monaco, Consolas, "Lucida Console", monospace !default;
+$code-font: "D2Coding" !default;
 /* sans serif typefaces */
 $sans-serif-narrow: $sans-serif !default;
 $helvetica: "Pretendard-Regular", Helvetica, "Helvetica Neue", Arial, sans-serif !default;
@@ -64,11 +64,11 @@ $light-gray: mix(#fff, $gray, 50%) !default;
 $lighter-gray: mix(#fff, $gray, 90%) !default;
 
 $background-color: #ffff !default;
-$code-background-color: #3a3a3a !default;
+$code-background-color: #FDF8F4 !default;
 $code-background-color-dark: $light-gray !default;
 $title-color: #191F28;
 $text-color: #333d4b;//$dark-gray !default;
-$muted-text-color: mix(#fff, $text-color, 20%) !default;
+$muted-text-color: mix(#fff, $text-color, 30%) !default;
 $border-color: $lighter-gray !default;
 $form-background-color: $lighter-gray !default;
 $footer-background-color: #000 !default;

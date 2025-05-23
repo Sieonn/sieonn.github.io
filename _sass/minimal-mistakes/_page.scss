@@ -179,13 +179,13 @@ body {
 
   :not(pre) > code {
     padding: 0.04rem 0.1rem;
-    font-family:'D2Coding';
-    font-size: 13px;
+    font-family: $code-font;
+    font-size: 0.8rem;
     margin: 1px 3px;
     background: $code-background-color;
     border-radius: $border-radius;
     font-weight: 500;
-    color: #ffbb00;
+    color: #6982F1;
     overflow: auto;
 
     &::before,
