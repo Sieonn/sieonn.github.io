@@ -6,6 +6,8 @@
    Breadcrumb navigation links
    ========================================================================== */
 
+
+
 .breadcrumbs {
   @include clearfix;
   // padding-left: 1em;
@@ -15,17 +17,19 @@
   animation: $intro-transition;
   -webkit-animation-delay: 0.3s;
   animation-delay: 0.3s;
-
+  position: relative; // 위치 조정을 위해 추가
   @include breakpoint($x-large) {
-    // max-width: $x-large;//1400px; //$x-large;
-    width: calc(100% - $right-sidebar-width);
-    // float: right;
+    width: calc(100% - #{$right-sidebar-width});
+    float: right;
+    padding-left: 2em;
   }
   @include breakpoint($small) {
-    margin-left: 25px;
+    // margin-left: 25px;
+    margin-right: 0;
   }
 
   ol {
+       margin: 0;
     padding: 0;
     list-style: none;
     font-size: $type-size-6;
@@ -342,14 +346,18 @@
     }
   }
 }
-
+.h-card {
+  position: sticky;
+  z-index: 10;
+  background: $background-color; // 배경색 추가로 스크롤 시 내용이 겹치지 않도록
+}
 /*
      Navigation list
      ========================================================================== */
 
 .nav__list {
   margin-bottom: 1.5em;
-
+ overflow-y: auto; // 스크롤 추가
   input[type="checkbox"],
   label {
     display: none;
