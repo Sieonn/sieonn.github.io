@@ -8,6 +8,7 @@
 
 .sidebar {
   @include clearfix();
+  margin-top: 0; 
   // @include breakpoint(max-width $large) {
   //   /* fix z-index order of follow links */
   //   position: relative;
@@ -15,13 +16,15 @@
   //   -webkit-transform: translate3d(0, 0, 0);
   //   transform: translate3d(0, 0, 0);
   // }
-  padding-bottom: 1rem;
+ 
   @include breakpoint($large) {
     float: left;
     width: calc(#{$right-sidebar-width-narrow} - 1em);
     opacity: 0.75;
     -webkit-transition: opacity 0.2s ease-in-out;
     transition: opacity 0.2s ease-in-out;
+    height:100%;
+    padding-top: 0; 
 
     &:hover {
       opacity: 1;
@@ -31,7 +34,12 @@
       /* calculate height of nav list
          viewport height - nav height - masthead x-padding
       */
-      max-height: 100vh;//calc(100vh - #{$nav-height} - 2em);
+      // max-height: calc(100vh - #{$nav-height} - 2em);
+      // padding-bottom: 1rem;
+       position: -webkit-sticky;
+      position: sticky;
+      top: -1em; // 상단 여백 줄이기
+      max-height: calc(100vh - 1em);
     }
   }
 
@@ -153,6 +161,7 @@
   padding-left: 15px;
   padding-right: 25px;
   line-height: 1;
+  color: $title-color;
 
   @include breakpoint($large) {
     display: block;
@@ -162,7 +171,8 @@
   }
 
   a {
-    color: inherit;
+    // color: inherit;
+    color: $title-color;
     text-decoration: none;
   }
 }
@@ -179,6 +189,7 @@
   font-family: $sans-serif;
   font-size: $type-size-4;
   font-weight: 900;
+  color: $title-color;
 
 }
 
