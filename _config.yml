@@ -20,7 +20,7 @@ title: "언박스"
 title_separator: "|"
 #subtitle                 : "개발 공부 기록"
 name: "EonBox"
-description: "꾸준하게 코딩하기"
+description: "기술을 뜯고, 사고를 담다."
 url: "https://sieonn.github.io"
 # baseurl                  :  "https://sieonn.github.io"
 repository: # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
@@ -103,9 +103,9 @@ analytics:
 
 # Site Author
 author:
-  name: "Eon's Box"
+  name: "EonBox"
   avatar: # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
-  bio: "끄적끄적 개발 블로그입니다."
+  bio: "기술을 뜯고, 사고를 담다.""
   location: "South Korea"
   # email: "sieon.eve@gmail.com"
   links:
