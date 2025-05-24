@@ -105,7 +105,7 @@ analytics:
 author:
   name: "EonBox"
   avatar: # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
-  bio: "기술을 뜯고, 사고를 담다.""
+  bio: "기술을 뜯고, 사고를 담다."
   location: "South Korea"
   # email: "sieon.eve@gmail.com"
   links:
