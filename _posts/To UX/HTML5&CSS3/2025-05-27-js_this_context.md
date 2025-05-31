@@ -3,7 +3,7 @@ title: "[To UX] this는 누구를 가리키고 있을까?"
 toc: true
 toc_label: "목차"
 toc_sticky: true
-category: "js"
+category: "JavaScript"
 ---
 
 ## 🚀 시작하며
