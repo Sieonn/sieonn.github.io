@@ -98,7 +98,12 @@ body {
 
 .page__content {
   margin: 0;
-
+h3{
+    font-weight: 900;
+}
+h2{
+    font-weight: 900;
+}
   // h3 {
   //   border-style: solid;
   //   border-width: 0px 0px 1px 10px;
@@ -134,7 +139,7 @@ body {
       -moz-transition: opacity 0.2s ease-in-out 0.1s;
       -o-transition: opacity 0.2s ease-in-out 0.1s;
       transition: opacity 0.2s ease-in-out 0.1s;
-      font-weight: 900;
+      font-weight: 500;
       color: #ffff;//$primary-color;
     }
 
