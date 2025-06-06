@@ -1,5 +1,5 @@
 ---
-title: "GitHub Blog"
+title: "블로그 제작기"
 layout: category
 permalink: /devlog/blog/
 author_profile: true
