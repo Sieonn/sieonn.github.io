@@ -2,7 +2,7 @@
 title: "기초 개념 정리"
 layout: archive
 category: basics
-permalink: /basics/
+permalink: /frontend/basics/
 author_profile: true
 sidebar:
     nav: "sidebar-category"
