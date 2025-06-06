@@ -1,9 +1,9 @@
 ---
-title: "[To UX] 커밋하신 코드가 다 틀어졌는데요? – Prettier와 ESLint가 필요한 이유"
+title: "[Tools] 커밋하신 코드가 다 틀어졌는데요? – Prettier와 ESLint가 필요한 이유"
 toc: true  
 toc_label: "목차"  
 toc_sticky: true  
-category: "code quality"
+category: "environment"
 ---
 
 ## 🚀 시작하며

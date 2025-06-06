@@ -1,9 +1,9 @@
 ---
-title: "[To UX] this는 누구를 가리키고 있을까?"
+title: "[JS Study #04] this는 누구를 가리키고 있을까?"
 toc: true
 toc_label: "목차"
 toc_sticky: true
-category: "JavaScript"
+category: "basic"
 ---
 
 ## 🚀 시작하며
