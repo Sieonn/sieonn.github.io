@@ -1,7 +1,7 @@
 ---
-title: "project"
+title: "Projects 🚀"
 layout: category
-permalink: /project/
+permalink: /projects/
 author_profile: true
 sidebar:
     nav: "sidebar-category"
