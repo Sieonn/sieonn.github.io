@@ -1,7 +1,6 @@
 ---
 title:  "블로그 만들기"
-categories:
-  - blog
+category: gitblog
 ---
 ### 블로그를 찾아서..
 

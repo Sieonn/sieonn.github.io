@@ -48,10 +48,13 @@ sidebar-category:
     children:
       - title: "블로그 제작기"
         url: /devlog/blog/
-      # - title: "회고 & 성장"
-      #   url: /devlog/retrospect/
-      # - title: "삽질 & 디버깅"
-      #   url: /devlog/debug/
+      - title: "회고 & 성장"
+        url: /devlog/retrospect/
+      - title: "삽질 & 디버깅"
+        url: /devlog/debug/
+      - title: "GitBlog 제작기"
+        url: /devlog/gitblog/
+
 
   - title: "Projects 🚀"
     children:

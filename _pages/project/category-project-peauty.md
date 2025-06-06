@@ -2,7 +2,7 @@
 title: "PEAUTY"
 layout: archive
 category: peauty
-permalink: /peauty/
+permalink: /projects/peauty/
 author_profile: true
 sidebar:
     nav: "sidebar-category"
