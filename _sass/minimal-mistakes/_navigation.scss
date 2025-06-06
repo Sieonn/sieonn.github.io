@@ -19,7 +19,7 @@
   animation-delay: 0.3s;
   position: relative; // 위치 조정을 위해 추가
   @include breakpoint($x-large) {
-    width: calc(100% - #{$right-sidebar-width});
+    width: calc(100vw - #{$right-sidebar-width});
     // float: right;
     // padding-left: 2em;
   }
@@ -40,12 +40,12 @@
 
     @include breakpoint($large) {
       // float: right;
-      width: calc(100% - #{$right-sidebar-width-narrow});
+      width: calc(100vw - #{$right-sidebar-width-narrow});
       // margin-left: $right-sidebar-width;
     }
 
     @include breakpoint($x-large) {
-      width: calc(100% - #{$right-sidebar-width});//calc(100%);//
+      width: calc(100vw - #{$right-sidebar-width});//calc(100%);//
     }
   }
 
