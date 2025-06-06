@@ -2,7 +2,7 @@
 title: "개발 환경 & 설정 모음"
 layout: archive
 category: environment
-permalink: /environment/
+permalink: /tools/environment/
 author_profile: true
 sidebar:
     nav: "sidebar-category"
