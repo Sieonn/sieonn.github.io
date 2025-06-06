@@ -12,68 +12,65 @@ main:
   #   url: /sitemap/
 
 sidebar-category:
-  # blog 글
-  - title: 'GitHub Blog'
-    children:
-      - title: '블로그 제작기'
-        url: /blog
-        # python 공부
-  # - title: 'Python'
+
+  # - title: "ToUX 📐"
   #   children:
-  #     - title: '기초 300제'
-  #       url: /samback/
+  #     - title: "UX Engineer 성장기"
+  #       url: /toux/journey/
+  #     - title: "UX/UI 설계 & 분석"
+  #       url: /toux/design-thinking/
+  #     - title: "디자인 시스템 분석"
+  #       url: /toux/design-system/
+  #     - title: "인터랙션 구현 사례"
+  #       url: /toux/interaction/
 
-  #     - title: '프로그래머스'
-  #       url: /programmers/
-
-  #     - title: 'SWEA'
-  #       url: /SWEA/
-
-  - title: '프로젝트'
+  - title: "Frontend Study 🌱"
     children:
-      - title: 'PHOBUM'
-        url: /phobum/
-        
-      - title: 'PEAUTY'
-        url: /peauty/
-        
-        # AWS 정리
-  - title: 'AWS restart'
+      - title: "개념 정리 (HTML/CSS/JS)"
+        url: /frontend/basics/
+      # - title: "웹 접근성 & 반응형"
+      #   url: /frontend/a11y/
+      # - title: "JavaScript 심화"
+      #   url: /frontend/js-advanced/
+      # - title: "React & SPA"
+      #   url: /frontend/react/
+
+  - title: "Frontend Tools 🛠️"
     children:
-      - title: '클라우드 기본 사항'
-        url: /Cloud Base/
+    - title: "개발 환경 & 설정 모음"
+      url: /tools/environment/
+      # - title: "Git & 협업 전략"
+      #   url: /tools/git/
+      # - title: "배포 & CI/CD"
+      #   url: /tools/deployment/
 
-      - title: 'Linux 기본 사항'
-        url: /Linux/
-      - title: '네트워킹'
-        url: /networking/
-
-      - title: '보안'
-        url: /security/
-
-      - title: 'python'
-        url: /python/
-
-      - title: '데이터베이스'
-        url: /database/
-
-      - title: 'Jumpstart on AWS'
-        url: /Jumpstart on AWS/
-
-      - title: 'Jumpstart on AWS Advanced'
-        url: /Jumpstart on AWS Advanced/
-      - title: 'ACP'
-        url: /ACP/
-        #Fullstack과정
-        
-  - title: 'KOSTA FullStack'
+  - title: "DevLog ✍️"
     children:
-      - title: 'Java'
-        url: /Java/
-      - title: 'DB'
-        url: /DB/
+      - title: "블로그 제작기"
+        url: /devlog/blog/
+      # - title: "회고 & 성장"
+      #   url: /devlog/retrospect/
+      # - title: "삽질 & 디버깅"
+      #   url: /devlog/debug/
 
-  # - title: '정보처리기사'
+  - title: "Projects 🚀"
+    children:
+      - title: "PHOBUM"
+        url: /projects/phobum/
+      - title: "PEAUTY"
+        url: /projects/peauty/
+
+  # - title: "Study Archive 📦"
   #   children:
-  #     - title: '기출문제'
-  #       url: /DPCBT/
+  #     - title: "AWS Restart 정리"
+  #       url: /study/aws/
+  #     - title: "CS 면접 대비"
+  #       url: /study/cs/
+
+  - title: "ETC 🍵"
+    children:
+      - title: "개인 챌린지"
+        url: /etc/challenge/
+      - title: "영감 받은 글"
+        url: /etc/inspiration/
+
