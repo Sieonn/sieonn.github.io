@@ -19,10 +19,11 @@
   animation-delay: 0.3s;
   position: relative; // 위치 조정을 위해 추가
   @include breakpoint($x-large) {
-    width: calc(100vw - #{$right-sidebar-width});
+    width: calc(100% - #{$right-sidebar-width});
     // float: right;
     // padding-left: 2em;
   }
+
   @include breakpoint($small) {
     // margin-left: 25px;
     margin-right: 0;
@@ -38,15 +39,14 @@
     padding-top: 1em;
     color: #8c8da1;
 
-    @include breakpoint($large) {
-      // float: right;
-      width: calc(100vw - #{$right-sidebar-width-narrow});
-      // margin-left: $right-sidebar-width;
-    }
-
-    @include breakpoint($x-large) {
-      width: calc(100vw - #{$right-sidebar-width});//calc(100%);//
-    }
+  //   @include breakpoint($large) {
+  //     // float: right;
+  //     width: calc(100% - #{$right-sidebar-width-narrow});
+  //     // margin-left: $right-sidebar-width;
+  //   }
+  //     @include breakpoint($x-large) {
+  //   width: calc(100% - #{$right-sidebar-width});
+  // }
   }
 
   li {
