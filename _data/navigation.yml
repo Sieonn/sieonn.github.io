@@ -67,10 +67,10 @@ sidebar-category:
   #     - title: "CS 면접 대비"
   #       url: /study/cs/
 
-  - title: "ETC 🍵"
-    children:
-      - title: "개인 챌린지"
-        url: /etc/challenge/
-      - title: "영감 받은 글"
-        url: /etc/inspiration/
+  # - title: "ETC 🍵"
+  #   children:
+  #     - title: "개인 챌린지"
+  #       url: /etc/challenge/
+  #     - title: "영감 받은 글"
+  #       url: /etc/inspiration/
 
