@@ -26,9 +26,10 @@
     height:100%;
     padding-top: 0; 
 
-    // &:hover {
-    //   opacity: 1;
-    // }
+    &:hover {
+      opacity: 1;
+      font-weight: 600;
+    }
 
     &.sticky {
       /* calculate height of nav list
