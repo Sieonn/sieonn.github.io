@@ -24,6 +24,18 @@ sidebar-category:
   #     - title: "인터랙션 구현 사례"
   #       url: /toux/interaction/
 
+
+  - title: "DevLog ✍️"
+    children:
+      - title: "회고 & 성장"
+        url: /devlog/retrospect/
+      - title: "삽질 & 디버깅"
+        url: /devlog/debug/
+      - title: "GitBlog 제작기"
+        url: /devlog/gitblog/
+      - title: "블로그 제작기"
+        url: /devlog/blog/
+        
   - title: "Frontend Study 🌱"
     children:
       - title: "개념 정리 (HTML/CSS/JS)"
@@ -43,17 +55,6 @@ sidebar-category:
       #   url: /tools/git/
       # - title: "배포 & CI/CD"
       #   url: /tools/deployment/
-
-  - title: "DevLog ✍️"
-    children:
-      - title: "블로그 제작기"
-        url: /devlog/blog/
-      - title: "회고 & 성장"
-        url: /devlog/retrospect/
-      - title: "삽질 & 디버깅"
-        url: /devlog/debug/
-      - title: "GitBlog 제작기"
-        url: /devlog/gitblog/
 
 
   - title: "Projects 🚀"
